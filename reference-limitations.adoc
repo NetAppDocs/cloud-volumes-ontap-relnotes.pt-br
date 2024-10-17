@@ -1,0 +1,109 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, detaching, snapmanager, features, disks, aggregates, features, svm 
+summary: As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações com cuidado. 
+---
+= Limitações em todos os provedores de nuvem
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações com cuidado.
+
+As limitações a seguir se aplicam ao Cloud Volumes ONTAP em todos os provedores de nuvem: AWS, Azure e Google Cloud.
+
+
+
+== Funcionalidades ONTAP não suportadas
+
+Os seguintes recursos não são compatíveis com o Cloud Volumes ONTAP:
+
+* Deduplicação in-line de nível de agregado
+* Deduplicação em segundo plano de nível de agregado
+* Centro de manutenção do disco
+* Sanitização de disco
+* Espelhamento FabricPool
+* Fibre Channel (FC)
+* Piscinas flash
+* Volumes infinitos
+* Grupos de interfaces
+* Failover de LIF Intranode
+* MetroCluster
+* Verificação multi-admin
++
+Ativar a verificação multi-admin no Cloud Volumes ONTAP resultará em uma configuração não suportada.
+
+* RAID4, RAID-DP, RAID-TEC (RAID0 é suportado)
+* Processador de serviço
+* Modos SnapLock Compliance e empresarial (somente o Cloud WORM é suportado)
+* SnapMirror síncrono
+* VLANs
+
+
+
+
+== Máximo de operações de replicação simultânea
+
+O número máximo de transferências simultâneas de SnapMirror ou SnapVault para Cloud Volumes ONTAP é de 100 por nó, independentemente do tipo de instância ou do tipo de máquina.
+
+
+
+== Os snapshots do fornecedor de nuvem não devem ser usados para seus planos de backup e recuperação
+
+Você não deve usar os snapshots do seu provedor de nuvem como parte do plano de backup e recuperação para dados do Cloud Volumes ONTAP. Você sempre deve usar as cópias Snapshot do ONTAP ou soluções de backup de terceiros para fazer backup e restaurar dados hospedados no Cloud Volumes ONTAP.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["Saiba como usar o backup e a recuperação do BlueXP  para fazer backup e restaurar dados do ONTAP"^].
+
+
+NOTE: Os pontos de consistência do ONTAP no sistema de arquivos WAFL determinam a consistência dos dados. Somente o ONTAP pode silenciar o sistema de arquivos WAFL para fazer um backup consistente com falhas.
+
+
+
+== O Cloud Volumes ONTAP é compatível apenas com instâncias de VM reservadas e sob demanda
+
+O Cloud Volumes ONTAP pode ser executado em uma instância de VM reservada ou sob demanda do seu provedor de nuvem. Outros tipos de instâncias de VM não são suportados.
+
+
+
+== As soluções de gerenciamento automático de recursos de aplicativos não devem ser usadas
+
+As soluções de gerenciamento automático de recursos de aplicativos não devem gerenciar sistemas Cloud Volumes ONTAP. Isso pode resultar em uma alteração para uma configuração não suportada. Por exemplo, a solução pode alterar o Cloud Volumes ONTAP para um tipo de instância de VM não suportado.
+
+
+
+== As atualizações de software devem ser concluídas pelo BlueXP 
+
+As atualizações do Cloud Volumes ONTAP devem ser concluídas a partir do BlueXP . Você não deve atualizar o Cloud Volumes ONTAP usando o Gerenciador de sistema ou a CLI. Isso pode afetar a estabilidade do sistema.
+
+
+
+== A implantação do Cloud Volumes ONTAP não deve ser modificada a partir do console do seu provedor de nuvem
+
+As alterações em uma configuração do Cloud Volumes ONTAP a partir do console do seu provedor de nuvem resultam em uma configuração não suportada. Quaisquer alterações aos recursos do Cloud Volumes ONTAP que o BlueXP  cria e gerencia podem afetar a estabilidade do sistema e a capacidade do BlueXP  de gerenciar o sistema.
+
+
+NOTE: Após a implantação inicial, a modificação do nome de assinatura do Azure usado para recursos do Cloud Volumes ONTAP é suportada.
+
+
+
+== Os discos e agregados devem ser gerenciados a partir do BlueXP 
+
+Todos os discos e agregados devem ser criados e excluídos diretamente do BlueXP . Você não deve executar essas ações de outra ferramenta de gerenciamento. Isso pode afetar a estabilidade do sistema, dificultar a capacidade de adicionar discos no futuro e, potencialmente, gerar taxas redundantes de provedores de nuvem.
+
+
+
+== Limitação de licenciamento do SnapManager
+
+As licenças SnapManager por servidor são suportadas com o Cloud Volumes ONTAP. As licenças por sistema de storage (pacote SnapManager) não são suportadas.
+
+
+
+== Limitações com agentes e extensões de terceiros
+
+Agentes de terceiros e extensões de VM não são suportados em instâncias de máquina virtual Cloud Volumes ONTAP.

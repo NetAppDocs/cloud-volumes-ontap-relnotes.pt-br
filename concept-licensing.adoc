@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: concept-licensing.html 
+keywords: freemium, professional, essential, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+summary: Várias opções de licenciamento estão disponíveis para o Cloud Volumes ONTAP. Cada opção permite que você escolha uma configuração que atenda às suas necessidades. 
+---
+= Licenciamento para Cloud Volumes ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+O Cloud Volumes ONTAP oferece diferentes opções de licenciamento que permitem escolher um modelo de consumo que atenda às suas necessidades.
+
+As opções de licenciamento a seguir estão disponíveis para novos clientes.
+
+Pacotes de licenciamento baseados em capacidade:: O licenciamento baseado em capacidade permite que você pague pelo Cloud Volumes ONTAP por TIB de capacidade. A licença está associada à sua conta NetApp e permite que você carregue vários sistemas contra a licença, contanto que a capacidade suficiente esteja disponível através da licença.
++
+--
+O licenciamento baseado em capacidade está disponível na forma de um _pacote_. Ao implantar um sistema Cloud Volumes ONTAP, você pode escolher entre vários pacotes de licenciamento com base nas necessidades da sua empresa.
+
+--
+Inscrição Keystone Flex:: Um serviço baseado em subscrição com pagamento conforme o uso que oferece uma experiência de nuvem híbrida otimizada para quem prefere modelos de consumo de despesas operacionais para CapEx adiantado ou aluguel.
++
+--
+O carregamento é baseado no tamanho da sua capacidade comprometida em um ou mais pares de HA da Cloud Volumes ONTAP na sua assinatura Keystone Flex.
+
+--
+
+
+O modelo de licenciamento por nó anterior permanece disponível para clientes existentes que já compraram uma licença ou que tenham uma assinatura ativa do mercado.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Saiba mais sobre essas opções de licenciamento"^]

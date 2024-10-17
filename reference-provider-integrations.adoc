@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: reference-provider-integrations.html 
+keywords: maintenance event, azure maintenance event, cloud provider, issues, support 
+summary: Esta página descreve como o NetApp funciona com provedores de nuvem para resolver problemas que possam surgir. 
+---
+= Integrações de fornecedor de nuvem
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Esta página descreve como o NetApp funciona com provedores de nuvem para resolver problemas que possam surgir.
+
+
+
+== Práticas recomendadas de suporte colaborativo
+
+A NetApp está empenhada em fornecer suporte ao Licenciado e envidará esforços comercialmente razoáveis para resolver problemas de suporte técnico para a Cloud Volumes ONTAP quando comunicados pelo Licenciado. A NetApp e o provedor de nuvem aplicável não têm nenhuma obrigação direta de suporte para o software ou a infraestrutura licenciados uns dos outros.
+
+A NetApp implementou ferramentas destinadas a se conetar com fornecedores de nuvem aplicáveis em questões técnicas do cliente que podem ser resultado dos serviços de fornecedores de nuvem aplicáveis. No entanto, a melhor maneira de manter um fluxo de suporte contínuo é que os clientes (i) mantenham um contrato de suporte atual com a NetApp e o provedor de nuvem aplicável e (ii) coordenem reuniões de encaminhamento conjunto com a NetApp e o provedor de nuvem aplicável quando surgirem problemas técnicos e o cliente precisar de clareza sobre quais produtos ou serviços estão causando esses problemas técnicos.
+
+
+
+== Eventos de manutenção do Azure
+
+A Microsoft agenda e anuncia programaticamente eventos de manutenção em sua infraestrutura de máquina virtual (VM) do Azure que podem afetar as VMs do Cloud Volumes ONTAP. Estes eventos são anunciados 15 minutos antes da janela de manutenção.
+
+O manuseio especial dos eventos de manutenção é suportado para pares de alta disponibilidade (HA) da Cloud Volumes ONTAP. Para manter a integridade das aplicações, realizamos uma aquisição preventiva para priorizar a estabilidade, pois qualquer perda de conetividade de mais de 15 segundos desativará os recursos de failover.
+
+Quando a janela de manutenção for anunciada, o nó parceiro do nó de destino executará um takeover. Quando a manutenção estiver concluída, um giveback será iniciado. Após a giveback, espera-se que o par HA retorne a um estado saudável. Se isso não ocorrer, entre em Contato com o suporte da NetApp para obter assistência. Observe que os eventos de manutenção são direcionados a uma das VMs em um par de HA de cada vez e, normalmente, ambos os nós são direcionados em um período de tempo relativamente curto.
+
+Os clientes CIFS/SMB que usam compartilhamentos CIFS não continuamente disponíveis do Cloud Volumes ONTAP sofrerão uma perda de sessão, tanto quando ocorre uma aquisição quanto quando o agregado que a sessão está usando é devolvido ao nó inicial do agregado. Esta é uma limitação imposta pelo próprio protocolo CIFS/SMB. Os clientes podem querer usar produtos de terceiros para evitar problemas que possam surgir com a aquisição e a giveback. Para obter mais assistência, entre em Contato com o suporte da NetApp.

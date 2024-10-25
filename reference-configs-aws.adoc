@@ -52,7 +52,7 @@ Cada licença suporta uma capacidade máxima de sistema diferente. A capacidade 
 
 
 
-| Disposição de dados inativos em categorias no S3 6+| Suportado 
+| Disposição de dados inativos em categorias no S3 2+| Suportado | Não suportado 3+| Suportado 
 |===
 . Para um par de HA, o limite de capacidade aplica-se a todo o par de HA. Não é por nó. Por exemplo, se você usar a licença Premium, poderá ter até 368 TIB de capacidade entre os dois nós.
 . Para algumas configurações, os limites de disco impedem que você alcance o limite de capacidade usando discos sozinhos. Nesses casos, você pode alcançar o limite de capacidade em https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["disposição em camadas dos dados inativos no storage de objetos"^]. Para obter informações sobre limites de disco, link:reference-limits-aws.html["limites de armazenamento"]consulte .

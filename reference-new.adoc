@@ -20,6 +20,14 @@ Recursos e aprimoramentos adicionais também são introduzidos nas versões mais
 
 
 
+== 9.15.1 P3 (29 de outubro de 2024)
+
+O patch 9.15.1 P3 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P3["Veja a lista de bugs corrigidos no patch P3"^] (É necessário iniciar sessão no site de suporte da NetApp).
+
+
+
 == 9.15.1 P2 (14 de outubro de 2024)
 
 O patch 9.15.1 P2 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.

@@ -51,7 +51,6 @@
   <block id="42e4a6694dd7d5280c1ebd4d2d70f50d" category="cell">Padrão PAYGO</block>
   <block id="158b2d2f93973854e733f030be8e4545" category="cell">PAYGO Premium</block>
   <block id="dc2065e297a9790d182a555ba250dbda" category="cell">BYOL baseado em nós</block>
-  <block id="2a3273b13e4da5a861913a955ede7809" category="cell">Capacidade máxima do sistema (discos e armazenamento de objetos) 1</block>
   <block id="5930fa6915753c61e8ef266f7efef7f6" category="cell">500 GiB</block>
   <block id="71235138fc0c3fda4c8fc946f34c4367" category="cell">2 PIB 2</block>
   <block id="7916f32f06eaabdf61df576419c0c138" category="cell">2 TIB</block>
@@ -723,7 +722,6 @@
   <block id="b4273b358a9e522bb090b6bbb65e080f" category="list-text"><block ref="b4273b358a9e522bb090b6bbb65e080f" category="inline-link-rx"></block></block>
   <block id="0bd904c1b3763b65f2cc9d002f6a74e1" category="inline-link">Saiba mais sobre pares de alta disponibilidade no Azure</block>
   <block id="0a60745fecbc79115b1e58a81d31e5cf" category="list-text"><block ref="80b3c96e29f809092ae7660c3123c5c7" category="inline-link-rx"></block>.</block>
-  <block id="8587098b07c4e4a23dccafd754dbc676" category="section-title">Notas de atualização.</block>
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">Leia estas notas para saber mais sobre a atualização para esta versão.</block>
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">Como atualizar</block>
   <block id="c716eebe2519c2ba4a2e109b59dd8b13" category="inline-link-macro">Saiba como atualizar quando o BlueXP  o notificar</block>
@@ -749,7 +747,6 @@
   <block id="5e486cb2e38fc7f03f038af21eb3cdb9" category="paragraph">O manuseio especial dos eventos de manutenção é suportado para pares de alta disponibilidade (HA) da Cloud Volumes ONTAP. Para manter a integridade das aplicações, realizamos uma aquisição preventiva para priorizar a estabilidade, pois qualquer perda de conetividade de mais de 15 segundos desativará os recursos de failover.</block>
   <block id="1222cf807490df82fd7e0146eb6798c1" category="paragraph">Quando a janela de manutenção for anunciada, o nó parceiro do nó de destino executará um takeover. Quando a manutenção estiver concluída, um giveback será iniciado. Após a giveback, espera-se que o par HA retorne a um estado saudável. Se isso não ocorrer, entre em Contato com o suporte da NetApp para obter assistência. Observe que os eventos de manutenção são direcionados a uma das VMs em um par de HA de cada vez e, normalmente, ambos os nós são direcionados em um período de tempo relativamente curto.</block>
   <block id="1355c3042f61af06b4a61506de6e8ad1" category="paragraph">Os clientes CIFS/SMB que usam compartilhamentos CIFS não continuamente disponíveis do Cloud Volumes ONTAP sofrerão uma perda de sessão, tanto quando ocorre uma aquisição quanto quando o agregado que a sessão está usando é devolvido ao nó inicial do agregado. Esta é uma limitação imposta pelo próprio protocolo CIFS/SMB. Os clientes podem querer usar produtos de terceiros para evitar problemas que possam surgir com a aquisição e a giveback. Para obter mais assistência, entre em Contato com o suporte da NetApp.</block>
-  <block id="8679be60a45e6f155a93161b9a8c5d43" category="sidebar">Essas notas de versão descrevem novos recursos, limitações e problemas conhecidos do Cloud Volumes ONTAP 1.</block>
   <block id="c32d4655f35315d6cd7ab368b1f0a6de" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.15.1</block>
   <block id="9b74e463f9eba3d7b2490736bd408da0" category="sidebar">Essas notas de versão descrevem novos recursos, limitações e problemas conhecidos do Cloud Volumes ONTAP 9.15.1.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Comece agora</block>
@@ -784,4 +781,9 @@
   <block id="c3e5d9aa8817ef74e74e8cd55f39570f" category="paragraph">O patch 9.15.1 P3 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
   <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P3</block>
   <block id="fae48ca93c7d21429a4d9efb8dbde929" category="paragraph"><block ref="03a97087fa51b558b394583b2ec67707" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
+  <block id="29aaeb333a41db01888c537148053c70" category="paragraph">* Capacidade máxima do sistema* (discos e armazenamento de objetos) 1</block>
+  <block id="06cf24f6f7b06cb3d2778a1a70e9ff2f" category="paragraph">*Tipos de disco suportados*</block>
+  <block id="17943cfde2a5e23c7925dc95a8dde6a4" category="paragraph">*Disposição em camadas de dados inativos até S3 TB*</block>
+  <block id="640897782baa10cc7d259d38d703b275" category="list-text">O desempenho de gravação aprimorado é habilitado ao usar SSDs com todas as configurações do Cloud Volumes ONTAP.</block>
+  <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">Notas de atualização</block>
 </blocks>

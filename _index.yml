@@ -5,7 +5,7 @@ indexpage:
     conhecidos do Cloud Volumes ONTAP 9.15.1.
   keywords: RN, CVO, release notes Cloud Volumes ONTAP
   lead: Essas notas de versão descrevem novos recursos, limitações e problemas conhecidos
-    do Cloud Volumes ONTAP 1.
+    do Cloud Volumes ONTAP 9.15.1.
   tiles:
   - title: Comece agora
     links:

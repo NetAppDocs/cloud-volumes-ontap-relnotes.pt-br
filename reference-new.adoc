@@ -83,7 +83,7 @@ O Cloud Volumes ONTAP 9.15.1 utiliza conjuntos de escala de máquinas virtuais n
 
 
 
-== Notas de atualização.
+== Notas de atualização
 
 Leia estas notas para saber mais sobre a atualização para esta versão.
 

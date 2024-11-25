@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
-  <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">O Cloud Volumes ONTAP oferece diferentes opções de licenciamento que permitem escolher um modelo de consumo que atenda às suas necessidades.</block>
   <block id="f008ecd5469e24eee31eb4e2e4a1e23f" category="paragraph">As opções de licenciamento a seguir estão disponíveis para novos clientes.</block>
   <block id="19bcaffbe8361f9d452beabc8065f223" category="list-text">Pacotes de licenciamento baseados em capacidade</block>
   <block id="e7cf94fb6f7d5441689859c52b410a98" category="list-text">O licenciamento baseado em capacidade permite que você pague pelo Cloud Volumes ONTAP por TIB de capacidade. A licença está associada à sua conta NetApp e permite que você carregue vários sistemas contra a licença, contanto que a capacidade suficiente esteja disponível através da licença.</block>
@@ -747,7 +746,6 @@
   <block id="5e486cb2e38fc7f03f038af21eb3cdb9" category="paragraph">O manuseio especial dos eventos de manutenção é suportado para pares de alta disponibilidade (HA) da Cloud Volumes ONTAP. Para manter a integridade das aplicações, realizamos uma aquisição preventiva para priorizar a estabilidade, pois qualquer perda de conetividade de mais de 15 segundos desativará os recursos de failover.</block>
   <block id="1222cf807490df82fd7e0146eb6798c1" category="paragraph">Quando a janela de manutenção for anunciada, o nó parceiro do nó de destino executará um takeover. Quando a manutenção estiver concluída, um giveback será iniciado. Após a giveback, espera-se que o par HA retorne a um estado saudável. Se isso não ocorrer, entre em Contato com o suporte da NetApp para obter assistência. Observe que os eventos de manutenção são direcionados a uma das VMs em um par de HA de cada vez e, normalmente, ambos os nós são direcionados em um período de tempo relativamente curto.</block>
   <block id="1355c3042f61af06b4a61506de6e8ad1" category="paragraph">Os clientes CIFS/SMB que usam compartilhamentos CIFS não continuamente disponíveis do Cloud Volumes ONTAP sofrerão uma perda de sessão, tanto quando ocorre uma aquisição quanto quando o agregado que a sessão está usando é devolvido ao nó inicial do agregado. Esta é uma limitação imposta pelo próprio protocolo CIFS/SMB. Os clientes podem querer usar produtos de terceiros para evitar problemas que possam surgir com a aquisição e a giveback. Para obter mais assistência, entre em Contato com o suporte da NetApp.</block>
-  <block id="c32d4655f35315d6cd7ab368b1f0a6de" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.15.1</block>
   <block id="9b74e463f9eba3d7b2490736bd408da0" category="sidebar">Essas notas de versão descrevem novos recursos, limitações e problemas conhecidos do Cloud Volumes ONTAP 9.15.1.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Comece agora</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">O que há de novo</block>
@@ -762,7 +760,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidade NetApp</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP  blog</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinars na nuvem</block>
-  <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">Notas de lançamento para casa</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="sidebar">AWS</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="sidebar">Azure</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">Limitações conhecidas</block>
@@ -786,4 +783,19 @@
   <block id="17943cfde2a5e23c7925dc95a8dde6a4" category="paragraph">*Disposição em camadas de dados inativos até S3 TB*</block>
   <block id="640897782baa10cc7d259d38d703b275" category="list-text">O desempenho de gravação aprimorado é habilitado ao usar SSDs com todas as configurações do Cloud Volumes ONTAP.</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">Notas de atualização</block>
+  <block id="6b32e99bddf60938239aabe092cb4c16" category="paragraph">Várias opções de licenciamento estão disponíveis para o Cloud Volumes ONTAP. Cada opção permite que você escolha um modelo de consumo que atenda às suas necessidades.</block>
+  <block id="27fe4eb3edbaff8f250e2d51f7462681" category="inline-link">Pacotes</block>
+  <block id="13dba612a4f942a80cbc82c5f678d57c" category="inline-link">Mais sobre licenças baseadas em capacidade</block>
+  <block id="d994821c78c4538d3406d1baa52bc470" category="paragraph"><block ref="55cb08b70ffaa99b7ec18860c0180e14" category="inline-link-rx"></block> <block ref="7c9574dfed81dad53ed1c2acf3a874b5" category="inline-link-rx"></block></block>
+  <block id="c3cf4ee6dc24f388844547c270dcc62a" category="section-title">9.15.1 P4 (25 de novembro de 2024)</block>
+  <block id="70801cc1e406ee3c5d3829c09f39d8cc" category="paragraph">O patch 9.15.1 P4 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
+  <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P4</block>
+  <block id="427f5af74d1c3371844f5ceb79ac74ea" category="paragraph"><block ref="d5d8d8f3e8dad9e51774bb89e5c4d87f" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
+  <block id="349b79620c55ff0a99622dc458417341" category="section-title">Suporte para FlexCache write-back</block>
+  <block id="7bab27e59a8093f7f1f9f208560906b5" category="paragraph">A partir do Cloud Volumes ONTAP 9.15.1, o FlexCache write-back é suportado como um modo alternativo de operação para gravação em um cache.</block>
+  <block id="145c5d02a1872aab28d9aee2ee7b1adb" category="inline-link">Visão geral do FlexCache write-back</block>
+  <block id="e9847573f516d487b3b41696529ea9ac" category="paragraph">Para obter mais informações sobre esse recurso, consulte a documentação do ONTAP<block ref="f66b7fc45c4e32762d53ba0f27132a8b" category="inline-link-rx"></block> .</block>
+  <block id="34756beb20b44cc3e732425639fae228" category="inline-link">Documentos de armazenamento em cache de volume BlueXP </block>
+  <block id="fadeb5a0a5453e49f671ad12a304756a" category="paragraph">Para obter informações sobre como o BlueXP  gerencia volumes do FlexCache, consulte o<block ref="4df7bdb090af4efb3896a25128ffcee3" category="inline-link-rx"></block>.</block>
+  <block id="9136e486881930be99a49d333eddb2ba" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.15.1</block>
 </blocks>

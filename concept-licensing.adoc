@@ -14,7 +14,7 @@ summary: Várias opções de licenciamento estão disponíveis para o Cloud Volu
 
 
 [role="lead"]
-O Cloud Volumes ONTAP oferece diferentes opções de licenciamento que permitem escolher um modelo de consumo que atenda às suas necessidades.
+Várias opções de licenciamento estão disponíveis para o Cloud Volumes ONTAP. Cada opção permite que você escolha um modelo de consumo que atenda às suas necessidades.
 
 As opções de licenciamento a seguir estão disponíveis para novos clientes.
 
@@ -24,6 +24,10 @@ Pacotes de licenciamento baseados em capacidade:: O licenciamento baseado em cap
 O licenciamento baseado em capacidade está disponível na forma de um _pacote_. Ao implantar um sistema Cloud Volumes ONTAP, você pode escolher entre vários pacotes de licenciamento com base nas necessidades da sua empresa.
 
 --
+
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Pacotes"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing-charging.html["Mais sobre licenças baseadas em capacidade"^]
+
 Inscrição Keystone Flex:: Um serviço baseado em subscrição com pagamento conforme o uso que oferece uma experiência de nuvem híbrida otimizada para quem prefere modelos de consumo de despesas operacionais para CapEx adiantado ou aluguel.
 +
 --

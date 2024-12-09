@@ -39,8 +39,8 @@ O Cloud Volumes ONTAP pode ser executado em uma instância de VM reservada ou so
 
 
 | Tipos de máquinas suportados 1  a| 
-* n1-padrão-8
-* n1-padrão-32
+* n1-standard-8 1
+* n1-standard-32 1
 * n2-padrão-4
 * n2-padrão-8
 * n2-padrão-16
@@ -53,8 +53,8 @@ O Cloud Volumes ONTAP pode ser executado em uma instância de VM reservada ou so
 * n2-padrão-8
 
  a| 
-* n1-padrão-8
-* n1-padrão-32
+* n1-standard-8 1
+* n1-standard-32 1
 * n2-padrão-4
 * n2-padrão-8
 * n2-padrão-16
@@ -65,22 +65,28 @@ O Cloud Volumes ONTAP pode ser executado em uma instância de VM reservada ou so
 
 
 
-| Os tipos de disco suportados 2 3+| Discos persistentes balanceados 3, discos persistentes Performance (SSD) 3 e discos persistentes Standard (HDD). 
+| Tipos de disco suportados 2 3+| Discos persistentes balanceados 3, discos persistentes Performance (SSD) 3 e discos persistentes Standard (HDD). 
 |===
 Notas:
 
-. As máquinas da série n1 não estão mais disponíveis para seleção no BlueXP  ao implantar novas instâncias do Cloud Volumes ONTAP no Google Cloud. As máquinas da série n1 serão mantidas e suportadas apenas em sistemas existentes mais antigos. Novas implantações do Cloud Volumes ONTAP são suportadas no Google Cloud apenas a partir da versão 9,8. Recomendamos que mude para os tipos de máquinas da série n2 compatíveis com o Cloud Volumes ONTAP 9,8 e posterior. As máquinas da série n1, no entanto, estarão disponíveis para novas implantações feitas através da API.
+. 1 as máquinas da série n1 não estão mais disponíveis para seleção no BlueXP  ao implantar novas instâncias do Cloud Volumes ONTAP no Google Cloud. As máquinas da série n1 serão mantidas e suportadas apenas em sistemas existentes mais antigos. Novas implantações do Cloud Volumes ONTAP são suportadas no Google Cloud apenas a partir da versão 9,8. Recomendamos que mude para as máquinas da série n2 compatíveis com o Cloud Volumes ONTAP 9,8 e posterior. As máquinas da série n1, no entanto, estarão disponíveis para novas implantações feitas através da API.
 +
 O tipo de máquina personalizado-4-16384 não é mais suportado com novos sistemas Cloud Volumes ONTAP. Se tiver um sistema existente a funcionar neste tipo de máquina, pode continuar a utilizá-lo, mas recomendamos que mude para o tipo de máquina n2-standard-4.
 
-. Os limites de disco podem impedir que você alcance o limite máximo de capacidade do sistema usando discos sozinhos. Você pode alcançar o limite de capacidade por https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["disposição em camadas dos dados inativos no storage de objetos"^].
+. 2 os limites de disco podem impedir que você alcance o limite máximo de capacidade do sistema usando discos sozinhos. Você pode alcançar o limite de capacidade por https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["disposição em camadas dos dados inativos no storage de objetos"^].
 +
 link:reference-limits-gcp.html["Saiba mais sobre os limites de disco no Google Cloud"].
 
-. O desempenho de gravação aprimorado é habilitado ao usar discos persistentes balanceados e discos persistentes de desempenho (SSD).
+. O desempenho de gravação aprimorado é habilitado ao usar discos persistentes balanceados e discos persistentes de desempenho (SSD). 3
 
 
-Começando com Cloud Volumes ONTAP 9.13.0, _Flash Cache_, alta velocidade de gravação e uma unidade máxima de transmissão (MTU) mais alta de 8.896 bytes, estão disponíveis para as seguintes instâncias de implantação de par HA: * n2-standard-16 * n2-standard-32 * n2-standard-48 * n2-standard-64
+A partir do Cloud Volumes ONTAP 9.13.0, _Flash Cache_, alta velocidade de gravação e uma unidade máxima de transmissão (MTU) mais alta de 8.896 bytes, estão disponíveis para as seguintes instâncias de implantação de par de HA:
+
+* n2-padrão-16
+* n2-padrão-32
+* n2-padrão-48
+* n2-padrão-64
+
 
 Você pode ativar _Flash Cache_ e alta velocidade de gravação ao implantar um tipo de instância elegível. Para ativar a unidade máxima de transmissão superior de 8.896 bytes, você deve escolher VPC-1, VPC-2 ou VPC-3 para a implantação. A MTU mais alta permite maior taxa de transferência de rede. Para obter mais informações sobre como iniciar uma dessas implantações, https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud["Lançamento de um par de HA no Google Cloud"] consulte .
 
@@ -102,19 +108,19 @@ NOTE: _Flash cache_, modo de gravação alta e um MTU de 8.896 dependem de recur
 * n2-padrão-4
 
  a| 
-* n1-padrão-8
+* n1-standard-8 3
 * n2-padrão-8
 
  a| 
-* n1-padrão-32
+* n1-standard-32 3
 * n2-padrão-16
 * n2-padrão-32
 * n2-padrão-48
 * n2-padrão-64
 
  a| 
-* n1-padrão-8
-* n1-padrão-32
+* n1-standard-8 3
+* n1-standard-32 3
 * n2-padrão-4
 * n2-padrão-8
 * n2-padrão-16
@@ -129,33 +135,32 @@ NOTE: _Flash cache_, modo de gravação alta e um MTU de 8.896 dependem de recur
 |===
 Notas:
 
-. Os limites de disco podem impedir que você alcance o limite máximo de capacidade do sistema usando discos sozinhos. Você pode alcançar o limite de capacidade por https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["disposição em camadas dos dados inativos no storage de objetos"^].
+. 1 os limites de disco podem impedir que você alcance o limite máximo de capacidade do sistema usando discos sozinhos. Você pode alcançar o limite de capacidade por https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["disposição em camadas dos dados inativos no storage de objetos"^].
 +
 link:reference-limits-gcp.html["Saiba mais sobre os limites de disco no Google Cloud"].
 
-. A disposição de dados em categorias no Google Cloud Storage não é compatível com o PAYGO Explore.
-. As máquinas da série n1 não estão mais disponíveis para seleção no BlueXP  ao implantar novas instâncias do Cloud Volumes ONTAP no Google Cloud. As máquinas da série n1 serão mantidas e suportadas apenas em sistemas existentes mais antigos. Novas implantações do Cloud Volumes ONTAP são suportadas no Google Cloud apenas a partir da versão 9,8. Recomendamos que mude para os tipos de máquinas da série n2 compatíveis com o Cloud Volumes ONTAP 9,8 e posterior. As máquinas da série n1, no entanto, estarão disponíveis para novas implantações realizadas através da API.
+. 2 a disposição de dados em camadas no Google Cloud Storage não é compatível com o PAYGO Explore.
+. 3 as máquinas da série n1 não estão mais disponíveis para seleção no BlueXP  ao implantar novas instâncias do Cloud Volumes ONTAP no Google Cloud. As máquinas da série n1 serão mantidas e suportadas apenas em sistemas existentes mais antigos. Novas implantações do Cloud Volumes ONTAP são suportadas no Google Cloud apenas a partir da versão 9,8. Recomendamos que mude para as máquinas da série n2 compatíveis com o Cloud Volumes ONTAP 9,8 e posterior. As máquinas da série n1, no entanto, estarão disponíveis para novas implantações realizadas através da API.
 +
 O tipo de máquina personalizado-4-16384 não é mais suportado com novos sistemas Cloud Volumes ONTAP. Se tiver um sistema existente a funcionar neste tipo de máquina, pode continuar a utilizá-lo, mas recomendamos que mude para o tipo de máquina n2-standard-4.
 
-. O desempenho de gravação aprimorado é habilitado ao usar discos persistentes balanceados e discos persistentes de desempenho (SSD).
-. A interface BlueXP  mostra um tipo de máquina compatível adicional para padrão e BYOL: N1-highmem-4. No entanto, este tipo de máquina não se destina a ambientes de produção. Disponibilizámos-o apenas para um ambiente de laboratório específico.
-. A partir do software Cloud Volumes ONTAP versão 9.13.0, _Flash Cache_, alta velocidade de gravação e uma unidade máxima de transmissão (MTU) mais alta de 8.896 bytes, estão disponíveis para as seguintes instâncias de implantação de par de HA:
-+
-** n2-padrão-16
-** n2-padrão-32
-** n2-padrão-48
-** n2-padrão-64
-+
+. O desempenho de gravação aprimorado é habilitado ao usar discos persistentes balanceados e discos persistentes de desempenho (SSD). 4
+
+
+A interface BlueXP  mostra um tipo de máquina compatível adicional para padrão e BYOL: N1-highmem-4. No entanto, este tipo de máquina não se destina a ambientes de produção. Disponibilizámos-o apenas para um ambiente de laboratório específico.
+
+A partir do software Cloud Volumes ONTAP versão 9.13.0, _Flash Cache_, alta velocidade de gravação e uma unidade máxima de transmissão (MTU) mais alta de 8.896 bytes, estão disponíveis para as seguintes instâncias de implantação de par de HA:
+
+* n2-padrão-16
+* n2-padrão-32
+* n2-padrão-48
+* n2-padrão-64
+
+
 Você pode ativar _Flash Cache_ e alta velocidade de gravação ao implantar um tipo de instância elegível. Para ativar a unidade máxima de transmissão superior de 8.896 bytes, você deve escolher VPC-1, VPC-2 ou VPC-3 para a implantação. A MTU mais alta permite maior taxa de transferência de rede. Para obter mais informações sobre como iniciar uma dessas implantações, https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud["Lançamento de um par de HA no Google Cloud"] consulte .
 
-+
 
 NOTE: _Flash cache_, modo de gravação alta e um MTU de 8.896 dependem de recursos e não podem ser desativados individualmente em uma instância configurada.
-
-
-
-
 
 --
 ====

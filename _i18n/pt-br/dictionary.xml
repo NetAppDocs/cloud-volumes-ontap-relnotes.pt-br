@@ -192,9 +192,6 @@
   <block id="f09d01e9299f4f1d66eff1fb0b840c5c" category="list-text">DS15_v2</block>
   <block id="31e15d90597db8f67574c519a0e03cff" category="list-text">E4s_v3</block>
   <block id="aa1cf82517b500e91f431051f2593e87" category="list-text">E8s_v3</block>
-  <block id="bd0bb2474f914a7c17554d85d8cb6d26" category="list-text">E32s_v3 3</block>
-  <block id="1624f99ad88b51c43999963b229ba280" category="list-text">E48s_v3 3</block>
-  <block id="d9af7f53ca0f2c89d44909998314253e" category="list-text">E64is_v3 3</block>
   <block id="aafab9b991240605f56b3df780360449" category="list-text">E4ds_v4</block>
   <block id="47518ea66849dbbe24f40b9d9b33f828" category="list-text">E8ds_v4</block>
   <block id="75cf995c16e77b49815f8da9d6034987" category="list-text">E32ds_v4 3</block>
@@ -216,19 +213,14 @@
   <block id="233d7152c6f49c17f5310a33fd5a0139" category="cell">Tipos de disco suportados 4</block>
   <block id="3feaeead4352aa22a5e23895ca44ad6f" category="cell">Discos gerenciados HDD padrão, discos gerenciados SSD padrão, discos gerenciados SSD premium e discos gerenciados SSD premium v2.</block>
   <block id="2a01d572b1447155c310cabafac3fae9" category="paragraph">Notas:</block>
-  <block id="24aa50b65a436c4efc843ed62aab1f03" category="list-text">A disposição de dados em camadas no storage Blob do Azure não é compatível com o PAYGO Explore.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">Saiba mais</block>
   <block id="3959237302934c658e49cff52293a2a5" category="list-text">Esse tipo de VM inclui storage NVMe local, que o Cloud Volumes ONTAP usa como _Flash Cache_. O Flash Cache acelera o acesso aos dados por meio do armazenamento em cache inteligente em tempo real dos dados do usuário lidos recentemente e dos metadados do NetApp. Ele é eficaz para workloads com uso intenso de leitura aleatória, incluindo bancos de dados, e-mail e serviços de arquivos.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
   <block id="7ac4ad805c5f62c422ac040e484787d7" category="paragraph">A versão mínima do ONTAP necessária para configurar o Flash Cache no Azure é 9.13.1 GA.</block>
   <block id="11509498a3f1573cdde878f927dc10bd" category="inline-link">SSD ultra</block>
-  <block id="9147ab73e7498660eae7ed2b4b8cca5c" category="list-text">Esses tipos de VM usam um<block ref="d656d82278337f3ecf8db6b2a30a45f2" category="inline-link-rx"></block> para VNVRAM, que fornece melhor desempenho de gravação.</block>
   <block id="28440751cbe2a16368822f02f298a2f4" category="inline-link">Configuração de zona de disponibilidade única DE HA com discos gerenciados compartilhados</block>
   <block id="e2a0553d4c47017042ca1689993f9c8b" category="paragraph">Se você escolher qualquer um desses tipos de VM ao implantar um novo sistema Cloud Volumes ONTAP, não será possível alterar para outro tipo de VM que _não_ use um SSD Ultra para VNVRAM. Por exemplo, você não pode mudar de E8ds_v4 para E8s_v3, mas você pode mudar de E8ds_v4 para E32ds_v4 porque ambos os tipos de VM usam SSDs Ultra. Da mesma forma, ao implantar um novo sistema Cloud Volumes ONTAP, você não pode alterar o tipo de VM para um que _não_ suporte discos gerenciados SSD premium v2. Para saber mais sobre as configurações suportadas para discos gerenciados Premium SSD v2,<block ref="6fd1548aedf3667cd5a4b1b43bc16181" category="inline-link-rx"></block> consulte .</block>
   <block id="c0f95d0d2e06eba7eb0522dabf1c9d76" category="paragraph">Por outro lado, se você implantou o Cloud Volumes ONTAP usando qualquer outro tipo de VM, não será possível alterar para um tipo de VM que use um SSD Ultra para VNVRAM. Por exemplo, você não pode mudar de E8s_v3 para E8ds_v4.</block>
-  <block id="9655d27d34aaf491a4183d57c0530647" category="list-text">A alta velocidade de gravação é suportada em todos os tipos de instância ao usar um sistema de nó único. Você pode ativar a alta velocidade de gravação do BlueXP  durante a implantação ou a qualquer momento depois.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
-  <block id="5063d3259058d90bbca06465957626d7" category="list-text">O desempenho de gravação aprimorado é habilitado ao usar SSDs.</block>
   <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">Licenças baseadas em nós</block>
-  <block id="4493785e0b2d5a6ea8c24204ebf19dc5" category="cell">2 TIB 1</block>
   <block id="61dcfaac24363a16e4b318c1317f0309" category="cell">368 TIB</block>
   <block id="7751129b8546a0da65fb379b1cc9c243" category="cell">368 TIB por licença</block>
   <block id="19482872b5fad6ff5e1e34947a759a98" category="cell">Discos gerenciados HDD padrão, discos gerenciados SSD padrão e discos gerenciados SSD Premium</block>
@@ -236,7 +228,6 @@
   <block id="b049fcbe8198301adc6bf87634a02845" category="section-title">Pares HA</block>
   <block id="2eacfdd792ca3ab121472c95654b43ec" category="paragraph">Você pode escolher entre as configurações a seguir ao implantar o Cloud Volumes ONTAP como um par de HA no Azure.</block>
   <block id="b80fdfea42d505d96700af73261164a3" category="section-title">HA pares com blob de página</block>
-  <block id="910e1bdd6baebdae0421711258065197" category="admonition">Você pode usar as configurações a seguir com as implantações de blob de página HA do Cloud Volumes ONTAP existentes no Azure. Blobs de página não são suportados para novas implantações.</block>
   <block id="2cdb7e570d475b109f07d648d27eec58" category="list-text">DS5_v2 1</block>
   <block id="5631d6c294c4b6398535b6dd0c9a2475" category="list-text">DS14_v2 1</block>
   <block id="1c593d3ddd7d37cba983231fd6abdd9d" category="list-text">DS15_v2 1</block>
@@ -297,8 +288,6 @@
   <block id="ea724697af39ce2b490b5643777ed273" category="paragraph">O Cloud Volumes ONTAP está disponível no Google Cloud como um sistema de nó único e como um par de nós de alta disponibilidade (HA) para tolerância de falhas e operações ininterruptas.</block>
   <block id="12fe559ef81ce645ef1aee77885e1827" category="paragraph">A atualização de um único sistema de nós para um par de HA não é compatível. Se você quiser alternar entre um único sistema de nós e um par de HA, precisará implantar um novo sistema e replicar dados do sistema existente para o novo sistema.</block>
   <block id="c217f1a10b2c84178d69b991f9ca2a8d" category="cell">Tipos de máquinas suportados 3</block>
-  <block id="0cd9470795b4cb3063783195b32f04ac" category="list-text">n1-padrão-8</block>
-  <block id="12f53e222fe53c58560223e660dcae57" category="list-text">n1-padrão-32</block>
   <block id="88ba83f191bd27de24492d3f347d8add" category="list-text">n2-padrão-4</block>
   <block id="056d5ee0191954b71fbb1a0eec04a22a" category="list-text">n2-padrão-8</block>
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">n2-padrão-16</block>
@@ -306,11 +295,8 @@
   <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">n2-padrão-48</block>
   <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">n2-padrão-64</block>
   <block id="8363a389e0c602867cfdadb32a0bb680" category="cell">Discos persistentes balanceados 4, discos persistentes Performance (SSD) 4 e discos persistentes Standard (HDD).</block>
-  <block id="efb78221b5926bd89d824f8dec9a7ed2" category="list-text">Os limites de disco podem impedir que você alcance o limite máximo de capacidade do sistema usando discos sozinhos. Você pode alcançar o limite de capacidade por<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.</block>
   <block id="f30cabe0a77d16d16cf1ef723d8eb186" category="inline-link-macro">Saiba mais sobre os limites de disco no Google Cloud</block>
   <block id="a93742b808592a2ce1b1926f98f391eb" category="paragraph"><block ref="46bbc0e4d7a811f26e46cbb2c2ad7173" category="inline-link-macro-rx"></block>.</block>
-  <block id="b4c4a8c75337dc28089aec3e79ae943c" category="list-text">A disposição de dados em categorias no Google Cloud Storage não é compatível com o PAYGO Explore.</block>
-  <block id="3ef8b2478ab52b4e7c7dd18d32c5bf06" category="list-text">O desempenho de gravação aprimorado é habilitado ao usar discos persistentes balanceados e discos persistentes de desempenho (SSD).</block>
   <block id="30749b02bc62d931d770e6c719254e7b" category="list-text">A interface BlueXP  mostra um tipo de máquina compatível adicional para padrão e BYOL: N1-highmem-4. No entanto, este tipo de máquina não se destina a ambientes de produção. Disponibilizámos-o apenas para um ambiente de laboratório específico.</block>
   <block id="f23467ff8f84fc95ca2baa4b362c7865" category="inline-link">Lançamento de um par de HA no Google Cloud</block>
   <block id="df25654d93147d2e6dc5b5b1fd1a4b82" category="paragraph">Você pode ativar _Flash Cache_ e alta velocidade de gravação ao implantar um tipo de instância elegível. Para ativar a unidade máxima de transmissão superior de 8.896 bytes, você deve escolher VPC-1, VPC-2 ou VPC-3 para a implantação. A MTU mais alta permite maior taxa de transferência de rede. Para obter mais informações sobre como iniciar uma dessas implantações,<block ref="663913c4edf07faddf2fc43cb75f2fe2" category="inline-link-rx"></block> consulte .</block>
@@ -768,12 +754,8 @@
   <block id="1fff298355326f8c77bd77059a41c1a2" category="sidebar">Limitações no Azure</block>
   <block id="9a3a0c4b2afbb088e029484d4b34ba8b" category="sidebar">Limitações no Google Cloud</block>
   <block id="e1e1effee5380369716ff955c2de6215" category="cell">Tipos de máquinas suportados 1</block>
-  <block id="bb748564d3fa0104390bb3440623c489" category="cell">Os tipos de disco suportados 2</block>
   <block id="1ea028151d07abb047b4e2f17d215216" category="cell">Discos persistentes balanceados 3, discos persistentes Performance (SSD) 3 e discos persistentes Standard (HDD).</block>
-  <block id="f443009bc7891aa0df061674e73b08e5" category="list-text">As máquinas da série n1 não estão mais disponíveis para seleção no BlueXP  ao implantar novas instâncias do Cloud Volumes ONTAP no Google Cloud. As máquinas da série n1 serão mantidas e suportadas apenas em sistemas existentes mais antigos. Novas implantações do Cloud Volumes ONTAP são suportadas no Google Cloud apenas a partir da versão 9,8. Recomendamos que mude para os tipos de máquinas da série n2 compatíveis com o Cloud Volumes ONTAP 9,8 e posterior. As máquinas da série n1, no entanto, estarão disponíveis para novas implantações feitas através da API.</block>
   <block id="6b145cfa91f7c68c4c0c6f2bf60bcf9d" category="paragraph">O tipo de máquina personalizado-4-16384 não é mais suportado com novos sistemas Cloud Volumes ONTAP. Se tiver um sistema existente a funcionar neste tipo de máquina, pode continuar a utilizá-lo, mas recomendamos que mude para o tipo de máquina n2-standard-4.</block>
-  <block id="4a700ade71b64bf589360a1f52b0bdd0" category="paragraph">Começando com Cloud Volumes ONTAP 9.13.0, _Flash Cache_, alta velocidade de gravação e uma unidade máxima de transmissão (MTU) mais alta de 8.896 bytes, estão disponíveis para as seguintes instâncias de implantação de par HA: * n2-standard-16 * n2-standard-32 * n2-standard-48 * n2-standard-64</block>
-  <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="list-text">As máquinas da série n1 não estão mais disponíveis para seleção no BlueXP  ao implantar novas instâncias do Cloud Volumes ONTAP no Google Cloud. As máquinas da série n1 serão mantidas e suportadas apenas em sistemas existentes mais antigos. Novas implantações do Cloud Volumes ONTAP são suportadas no Google Cloud apenas a partir da versão 9,8. Recomendamos que mude para os tipos de máquinas da série n2 compatíveis com o Cloud Volumes ONTAP 9,8 e posterior. As máquinas da série n1, no entanto, estarão disponíveis para novas implantações realizadas através da API.</block>
   <block id="7e2d62fe36583822ef49e7ee658d8b17" category="section-title">9.15.1 P3 (29 de outubro de 2024)</block>
   <block id="c3e5d9aa8817ef74e74e8cd55f39570f" category="paragraph">O patch 9.15.1 P3 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
   <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P3</block>
@@ -798,4 +780,32 @@
   <block id="34756beb20b44cc3e732425639fae228" category="inline-link">Documentos de armazenamento em cache de volume BlueXP </block>
   <block id="fadeb5a0a5453e49f671ad12a304756a" category="paragraph">Para obter informações sobre como o BlueXP  gerencia volumes do FlexCache, consulte o<block ref="4df7bdb090af4efb3896a25128ffcee3" category="inline-link-rx"></block>.</block>
   <block id="9136e486881930be99a49d333eddb2ba" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.15.1</block>
+  <block id="5e02a792172b179afc36359c80581d87" category="list-text">DS4_v2 1</block>
+  <block id="837d17a1b64de221e0265c2f7da393f0" category="list-text">DS13_v2 1</block>
+  <block id="14b3e8da6869b2f214b7efc306aea775" category="list-text">E4s_v3 1</block>
+  <block id="3e25b8eaf9ed482edf1d7cc1aa7dd3f1" category="list-text">E8s_v3 1</block>
+  <block id="475a08176fc17d0c6254ca6f0c476b75" category="list-text">E32s_v3 1,3</block>
+  <block id="c88c885a2fefa2da765b4c347fda5ae4" category="list-text">E48s_v3 1,3</block>
+  <block id="4692ba0d874f9b133db280379656a9ce" category="list-text">E64is_v3 1,3</block>
+  <block id="a63ee61a82be26dabec71dbc1e3c06a5" category="list-text">1 as famílias de máquinas DS_v2 e ES_v3 não estão mais disponíveis para seleção no BlueXP  ao implantar novas instâncias do Cloud Volumes ONTAP no Azure. Essas famílias serão mantidas e apoiadas apenas em sistemas antigos e existentes. Novas implantações do Cloud Volumes ONTAP são suportadas no Azure somente a partir da versão 9.12.1. Recomendamos que mude para ES_v4 ou qualquer outra série compatível com Cloud Volumes ONTAP 9.12.1 e posterior. No entanto, as máquinas das séries DS_v2 e ES_v3 estarão disponíveis para novas implantações feitas através da API.</block>
+  <block id="99b1f6d00bfb2ab2985a552648f9e5c1" category="list-text">2 este tipo de VM inclui armazenamento NVMe local, que o Cloud Volumes ONTAP usa como _Flash Cache_. O Flash Cache acelera o acesso aos dados por meio do armazenamento em cache inteligente em tempo real dos dados do usuário lidos recentemente e dos metadados do NetApp. Ele é eficaz para workloads com uso intenso de leitura aleatória, incluindo bancos de dados, e-mail e serviços de arquivos.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
+  <block id="9ea31caa0e1962ae75e1a321be9430b7" category="list-text">3 esses tipos de VM usam um<block ref="d656d82278337f3ecf8db6b2a30a45f2" category="inline-link-rx"></block> para VNVRAM, que fornece melhor desempenho de gravação.</block>
+  <block id="8b3b87610bfcad95c57bd42409dfca29" category="list-text">4 alta velocidade de gravação é suportada com todos os tipos de instância ao usar um sistema de nó único. Você pode ativar a alta velocidade de gravação do BlueXP  durante a implantação ou a qualquer momento depois.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>. O desempenho de gravação aprimorado é habilitado ao usar SSDs.</block>
+  <block id="24559871a19879472a902be1674774bd" category="cell">2 TIB 5</block>
+  <block id="85133a824a7524ff6b8a398dd3816914" category="list-text">5 a disposição em camadas de dados para armazenamento Blob do Azure não é suportada com o PAYGO Explore.</block>
+  <block id="10b45e1c6ef2fa44200d515d2a6fc694" category="paragraph">Você pode usar as configurações a seguir com as implantações de blob de página HA do Cloud Volumes ONTAP existentes no Azure.</block>
+  <block id="f9651e2727f6a117e21e37fdefa0c6b2" category="admonition">Os blobs de páginas do Azure não são suportados para nenhuma nova implantação.</block>
+  <block id="bd4a13e4ffdffbf6589318b707665ee9" category="list-text">n1-standard-8 1</block>
+  <block id="2adbdb8a41a872c39f798f0f7e1d4a41" category="list-text">n1-standard-32 1</block>
+  <block id="fd19b4f8d16fbd446f92c206592bcc85" category="cell">Tipos de disco suportados 2</block>
+  <block id="5d3dde9c211a10976121e86b1e72361e" category="list-text">1 as máquinas da série n1 não estão mais disponíveis para seleção no BlueXP  ao implantar novas instâncias do Cloud Volumes ONTAP no Google Cloud. As máquinas da série n1 serão mantidas e suportadas apenas em sistemas existentes mais antigos. Novas implantações do Cloud Volumes ONTAP são suportadas no Google Cloud apenas a partir da versão 9,8. Recomendamos que mude para as máquinas da série n2 compatíveis com o Cloud Volumes ONTAP 9,8 e posterior. As máquinas da série n1, no entanto, estarão disponíveis para novas implantações feitas através da API.</block>
+  <block id="c819caf9beab404b5f2223fbcc970eb7" category="list-text">2 os limites de disco podem impedir que você alcance o limite máximo de capacidade do sistema usando discos sozinhos. Você pode alcançar o limite de capacidade por<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.</block>
+  <block id="827de26590a8eaf472a57d852b9725a4" category="list-text">O desempenho de gravação aprimorado é habilitado ao usar discos persistentes balanceados e discos persistentes de desempenho (SSD). 3</block>
+  <block id="fb68df6302dcf52c3640cda14ef6c3e2" category="paragraph">A partir do Cloud Volumes ONTAP 9.13.0, _Flash Cache_, alta velocidade de gravação e uma unidade máxima de transmissão (MTU) mais alta de 8.896 bytes, estão disponíveis para as seguintes instâncias de implantação de par de HA:</block>
+  <block id="c42b3fdcbb4cdcddd43699859073f178" category="list-text">n1-standard-8 3</block>
+  <block id="6b5bde370fd32f6d8d3a5e33315ee222" category="list-text">n1-standard-32 3</block>
+  <block id="634926381cf0a7884523c112877267d0" category="list-text">1 os limites de disco podem impedir que você alcance o limite máximo de capacidade do sistema usando discos sozinhos. Você pode alcançar o limite de capacidade por<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.</block>
+  <block id="22bbad4e1cc44662dc7478520e4f0e07" category="list-text">2 a disposição de dados em camadas no Google Cloud Storage não é compatível com o PAYGO Explore.</block>
+  <block id="9c6d70371c04fac1c5b3babc1c1a755e" category="list-text">3 as máquinas da série n1 não estão mais disponíveis para seleção no BlueXP  ao implantar novas instâncias do Cloud Volumes ONTAP no Google Cloud. As máquinas da série n1 serão mantidas e suportadas apenas em sistemas existentes mais antigos. Novas implantações do Cloud Volumes ONTAP são suportadas no Google Cloud apenas a partir da versão 9,8. Recomendamos que mude para as máquinas da série n2 compatíveis com o Cloud Volumes ONTAP 9,8 e posterior. As máquinas da série n1, no entanto, estarão disponíveis para novas implantações realizadas através da API.</block>
+  <block id="31269d00cd277adf90f42f882afbd293" category="list-text">O desempenho de gravação aprimorado é habilitado ao usar discos persistentes balanceados e discos persistentes de desempenho (SSD). 4</block>
 </blocks>

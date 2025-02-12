@@ -566,4 +566,4 @@ Os pares DE HA usam discos gerenciados do Azure. Os seguintes tipos e tamanhos d
 
 == Regiões suportadas
 
-Para obter suporte à região do Azure, https://cloud.netapp.com/cloud-volumes-global-regions["Regiões globais do Cloud volumes"^] consulte .
+Para obter suporte à região do Azure, https://bluexp.netapp.com/cloud-volumes-global-regions["Regiões globais do Cloud volumes"^] consulte .

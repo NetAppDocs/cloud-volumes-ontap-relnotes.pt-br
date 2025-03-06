@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: O Cloud Volumes ONTAP 9.15.1 inclui uma nova melhoria. 
+summary: O Cloud Volumes ONTAP 9.16.1 inclui uma nova melhoria. 
 ---
-= Novidades do Cloud Volumes ONTAP 9.15.1
+= Novidades do Cloud Volumes ONTAP 9.16.1
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,106 +14,15 @@ summary: O Cloud Volumes ONTAP 9.15.1 inclui uma nova melhoria.
 
 
 [role="lead"]
-O Cloud Volumes ONTAP 9.15.1 inclui novos aprimoramentos.
+O Cloud Volumes ONTAP 9.16.1 inclui novos aprimoramentos.
 
 Recursos e aprimoramentos adicionais também são introduzidos nas versões mais recentes do BlueXP . Consulte https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Notas de versão do BlueXP "^] para obter detalhes.
 
 
 
-== 9.15.1 P6 (20 de janeiro de 2025)
+== 9.16.1 GA (6 de março de 2025)
 
-O patch 9.15.1 P6 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P6["Veja a lista de bugs corrigidos no patch P6"^] (É necessário iniciar sessão no site de suporte da NetApp).
-
-
-
-== 9.15.1 P5 (20 de janeiro de 2025)
-
-O patch 9.15.1 P5 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P5["Veja a lista de bugs corrigidos no patch P5"^] (É necessário iniciar sessão no site de suporte da NetApp).
-
-
-
-== 9.15.1 P4 (25 de novembro de 2024)
-
-O patch 9.15.1 P4 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P4["Veja a lista de bugs corrigidos no patch P4"^] (É necessário iniciar sessão no site de suporte da NetApp).
-
-
-
-== 9.15.1 P3 (29 de outubro de 2024)
-
-O patch 9.15.1 P3 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P3["Veja a lista de bugs corrigidos no patch P3"^] (É necessário iniciar sessão no site de suporte da NetApp).
-
-
-
-== 9.15.1 P2 (14 de outubro de 2024)
-
-O patch 9.15.1 P2 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P2["Veja a lista de bugs corrigidos no patch P2"^] (É necessário iniciar sessão no site de suporte da NetApp).
-
-
-
-== 9.15.1 P1 (3 de setembro de 2024)
-
-O patch 9.15.1 P1 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P1["Veja a lista de bugs corrigidos no patch P1"^] (É necessário iniciar sessão no site de suporte da NetApp).
-
-
-
-== 9.15.1 GA (22 de Agosto de 2024)
-
-O Cloud Volumes ONTAP 9.15.1 GA já está disponível na AWS, Azure e Google Cloud. A versão GA está disponível para implementação e atualização.
-
-Esta versão inclui os seguintes recursos e aprimoramentos para o Azure. Continue lendo para saber mais sobre as configurações específicas que suportam esses novos recursos.
-
-
-
-=== Suporte para discos gerenciados Premium SSD v2 no Azure
-
-Os discos gerenciados premium SSD v2 agora são suportados em sistemas Cloud Volumes ONTAP no Azure. Esses discos premium fornecem desempenho mais alto com latência mais baixa a um custo menor para pares de nó único e de alta disponibilidade (HA), em comparação com discos gerenciados SSD Premium. Como outros discos gerenciados, o tamanho máximo do disco é de 32 TIB. É possível configurar o desempenho (capacidade, taxa de transferência e IOPS) de um disco gerenciado SSD v2 Premium, permitindo que os workloads sejam econômicos, atendendo às mudanças nas necessidades de desempenho.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage.html#azure-storage["Saiba mais sobre o armazenamento Azure"^].
-
-
-
-=== Implante pares de HA em zonas de disponibilidade únicas no Azure
-
-A partir do Cloud Volumes ONTAP 9.15.1, é possível implantar instâncias de máquina virtual (VM) no modo HA em zonas de disponibilidade únicas (AZs) no Azure. Ao contrário das implantações não zonais anteriores, o Cloud Volumes ONTAP 9.15.1 usa conjuntos de escala de máquinas virtuais da Microsoft no modo de orquestração flexível para implantar todos os recursos, incluindo domínios de falha separados dentro da mesma AZ, garantindo a disponibilidade ideal. Este modo de implantação, por padrão, usa discos gerenciados Premium SSD v2 quando os seguintes critérios são atendidos:
-
-* A versão do Cloud Volumes ONTAP é 9.15.1 ou posterior.
-* A região e a zona selecionadas suportam discos gerenciados Premium SSD v2. Para obter informações sobre as regiões suportadas,  https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Site do Microsoft Azure: Produtos disponíveis por região"^]consulte . Para saber como adicioná-los, https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["Lançamento de um par de HA do Cloud Volumes ONTAP no Azure"^] consulte .
-* A assinatura está registrada para o recurso Microsoft `Microsoft.Compute/VMOrchestratorZonalMultiFD`. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-saz-feature.html["Saiba como ativar o VMOrchestratorZonalMultiFD para zonas de disponibilidade únicas"^].
-
-
-Se algum desses critérios não for cumprido, o modo de implantação não zonal anterior para armazenamento localmente redundante (LRS) torna-se efetivo.
-
-
-
-=== Suporte para conjuntos de dimensionamento de máquinas virtuais para unificar todos os tipos de HA do Azure
-
-O Cloud Volumes ONTAP 9.15.1 utiliza conjuntos de escala de máquinas virtuais no modo de orquestração flexível no Azure para implantar instâncias de máquina virtual (VM) em zonas de disponibilidade únicas para pares de alta disponibilidade (HA). Ele cobre todos os sabores do modo HA, blob de página, LRS, armazenamento redundante de zona (ZRS) ou multi-zonal, e LRS zonal (AZ único).
-
-* https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Documentação do Microsoft Azure: A escala de Máquina Virtual define a documentação"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html["Saiba mais sobre pares de alta disponibilidade no Azure"^].
-
-
-
-
-=== Suporte para FlexCache write-back
-
-A partir do Cloud Volumes ONTAP 9.15.1, o FlexCache write-back é suportado como um modo alternativo de operação para gravação em um cache.
-
-Para obter mais informações sobre esse recurso, consulte a documentação do ONTAP https://docs.netapp.com/us-en/ontap/flexcache-writeback/flexcache-write-back-overview.html["Visão geral do FlexCache write-back"^] .
-
-Para obter informações sobre como o BlueXP  gerencia volumes do FlexCache, consulte o https://docs.netapp.com/us-en/bluexp-volume-caching/index.html["Documentos de armazenamento em cache de volume BlueXP "^].
+Agora você pode usar a versão de disponibilidade geral do Cloud Volumes ONTAP 9.16.1 para implantação e atualização no Azure e no Google Cloud. No entanto, essa versão não está disponível para implantação e atualização na AWS.
 
 
 
@@ -133,7 +42,10 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === Caminho de atualização suportado
 
-Você pode atualizar para o Cloud Volumes ONTAP 9.15.1 a partir de versões 9.15.0 e 9.14.1. A BlueXP  solicitará que você atualize os sistemas Cloud Volumes ONTAP qualificados para esta versão.
+Você pode atualizar para o Cloud Volumes ONTAP 9.16.1 GA a partir da versão 9.15.1 no Azure e no Google Cloud. A BlueXP  solicitará que você atualize os sistemas Cloud Volumes ONTAP qualificados para esta versão.
+
+
+NOTE: Para a AWS, você não será solicitado a fazer essa atualização. A atualização para o Cloud Volumes ONTAP 9.16.1 GA não é suportada na AWS.
 
 
 

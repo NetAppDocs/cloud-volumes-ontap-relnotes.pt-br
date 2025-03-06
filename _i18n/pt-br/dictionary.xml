@@ -31,8 +31,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Código aberto</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Os arquivos de aviso fornecem informações sobre direitos autorais de terceiros e licenças usadas no software NetApp.</block>
-  <block id="524d94964962cd77e130e880d66b6c97" category="inline-link-macro">Aviso para o Cloud Volumes ONTAP 9.15.1</block>
-  <block id="69b9c8f99d9f922a1b39668eb1ca9f2d" category="list-text"><block ref="69b9c8f99d9f922a1b39668eb1ca9f2d" category="inline-link-macro-rx"></block></block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">Aviso para ONTAP</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
   <block id="fa082ab1a05e05550971e6e5f583dcfe" category="summary">Várias configurações do Cloud Volumes ONTAP são suportadas na AWS.</block>
@@ -668,50 +666,15 @@
   <block id="302f571fec3e23b2236f116e51e46721" category="cell">Profundidade do clone hierárquico 12</block>
   <block id="7b9e5415e02ff7ad5eaae61345740517" category="inline-link">Saiba como o storage funciona em um par de HA do Cloud Volumes ONTAP em execução no Google Cloud</block>
   <block id="81a074db33c6f62838933c92142f16d6" category="paragraph"><block ref="f969ecf664fae2f86e88c525c7dd7acf" category="inline-link-rx"></block>.</block>
-  <block id="fbd5af992908b9931b0ae311f285c7d5" category="summary">O Cloud Volumes ONTAP 9.15.1 inclui uma nova melhoria.</block>
-  <block id="83a60efee029f00eebfd929bdfd93b02" category="doc">Novidades do Cloud Volumes ONTAP 9.15.1</block>
-  <block id="b4c1aa9082f0d8e4483e610ea5ab6d33" category="paragraph">O Cloud Volumes ONTAP 9.15.1 inclui novos aprimoramentos.</block>
   <block id="9889b7a9df56580016f59ccd942fb1d1" category="inline-link">Notas de versão do BlueXP </block>
   <block id="4bdb15bfe1bad472d818dc31e8f53185" category="paragraph">Recursos e aprimoramentos adicionais também são introduzidos nas versões mais recentes do BlueXP . Consulte<block ref="c7887e85c6060ae2594d873a0f2ae025" category="inline-link-rx"></block> para obter detalhes.</block>
-  <block id="a05cf03e897f4068b5177ef70c7cf347" category="section-title">9.15.1 P2 (14 de outubro de 2024)</block>
-  <block id="8d4440801f529fd94fa4b15d11c84ac0" category="paragraph">O patch 9.15.1 P2 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
-  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P2</block>
-  <block id="46a5c1839a6c9667da9a201d204a30d8" category="paragraph"><block ref="8043c70c5f9f22a2d553b5b35821b45f" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
-  <block id="9d85572128910a61c3211c3fcb021921" category="section-title">9.15.1 P1 (3 de setembro de 2024)</block>
-  <block id="0af97325f311859f8c8335d28a3d334c" category="paragraph">O patch 9.15.1 P1 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
-  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P1</block>
-  <block id="26913715f6472de0e1115ad17f6b6bc8" category="paragraph"><block ref="0551aa4e2b5bd361ee5fdb2414ba928f" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
-  <block id="aa4ce9e7e0e2db885cfae0432f23eb02" category="section-title">9.15.1 GA (22 de Agosto de 2024)</block>
-  <block id="dfb5c8ec2223bd8a6413a4362da62637" category="paragraph">O Cloud Volumes ONTAP 9.15.1 GA já está disponível na AWS, Azure e Google Cloud. A versão GA está disponível para implementação e atualização.</block>
-  <block id="3e6d47920aca39db44843a3add6a6655" category="paragraph">Esta versão inclui os seguintes recursos e aprimoramentos para o Azure. Continue lendo para saber mais sobre as configurações específicas que suportam esses novos recursos.</block>
-  <block id="bc7175e423f6e0afd8f8a6b587844b59" category="section-title">Suporte para discos gerenciados Premium SSD v2 no Azure</block>
-  <block id="5b0ca394a998f1788658ece8c00dd5d2" category="paragraph">Os discos gerenciados premium SSD v2 agora são suportados em sistemas Cloud Volumes ONTAP no Azure. Esses discos premium fornecem desempenho mais alto com latência mais baixa a um custo menor para pares de nó único e de alta disponibilidade (HA), em comparação com discos gerenciados SSD Premium. Como outros discos gerenciados, o tamanho máximo do disco é de 32 TIB. É possível configurar o desempenho (capacidade, taxa de transferência e IOPS) de um disco gerenciado SSD v2 Premium, permitindo que os workloads sejam econômicos, atendendo às mudanças nas necessidades de desempenho.</block>
-  <block id="20bb913d178725401e1f129f9cd78e9e" category="inline-link">Saiba mais sobre o armazenamento Azure</block>
-  <block id="1aa9c656bf03d8824495d5c1ad3b6bda" category="paragraph"><block ref="b89aaee931541f273298fee7632a9cbf" category="inline-link-rx"></block>.</block>
-  <block id="892d55f6f43d490c5ac28471f96de68a" category="section-title">Implante pares de HA em zonas de disponibilidade únicas no Azure</block>
-  <block id="80b122992ec0ea80dc356ea01fdddcb4" category="paragraph">A partir do Cloud Volumes ONTAP 9.15.1, é possível implantar instâncias de máquina virtual (VM) no modo HA em zonas de disponibilidade únicas (AZs) no Azure. Ao contrário das implantações não zonais anteriores, o Cloud Volumes ONTAP 9.15.1 usa conjuntos de escala de máquinas virtuais da Microsoft no modo de orquestração flexível para implantar todos os recursos, incluindo domínios de falha separados dentro da mesma AZ, garantindo a disponibilidade ideal. Este modo de implantação, por padrão, usa discos gerenciados Premium SSD v2 quando os seguintes critérios são atendidos:</block>
-  <block id="6326d313b843fff1d57ed50ec7c000f1" category="list-text">A versão do Cloud Volumes ONTAP é 9.15.1 ou posterior.</block>
-  <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Site do Microsoft Azure: Produtos disponíveis por região</block>
-  <block id="68367d4408e943b9268a7a6d4314fb0a" category="inline-link">Lançamento de um par de HA do Cloud Volumes ONTAP no Azure</block>
-  <block id="3d58e19a0ad059c068ea94850f7f07b3" category="list-text">A região e a zona selecionadas suportam discos gerenciados Premium SSD v2. Para obter informações sobre as regiões suportadas, <block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>consulte . Para saber como adicioná-los,<block ref="21ec87e6eb67935050d7d05994bd62be" category="inline-link-rx"></block> consulte .</block>
-  <block id="ba9b674ef918293b2811c2896cb57927" category="inline-link">Saiba como ativar o VMOrchestratorZonalMultiFD para zonas de disponibilidade únicas</block>
-  <block id="ddcdfb16338cb24a868b379c7937a3f9" category="list-text">A assinatura está registrada para o recurso Microsoft<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block>. <block ref="37dbbe0007aba28a7312f0bdc995d21b" category="inline-link-rx"></block>.</block>
-  <block id="4c948eb331f4d29ab3fd543fd04028c3" category="paragraph">Se algum desses critérios não for cumprido, o modo de implantação não zonal anterior para armazenamento localmente redundante (LRS) torna-se efetivo.</block>
-  <block id="5f6ae050f79947b402a5730d141e65ee" category="section-title">Suporte para conjuntos de dimensionamento de máquinas virtuais para unificar todos os tipos de HA do Azure</block>
-  <block id="2e87e8a578558ca3febcb42e546e1af4" category="paragraph">O Cloud Volumes ONTAP 9.15.1 utiliza conjuntos de escala de máquinas virtuais no modo de orquestração flexível no Azure para implantar instâncias de máquina virtual (VM) em zonas de disponibilidade únicas para pares de alta disponibilidade (HA). Ele cobre todos os sabores do modo HA, blob de página, LRS, armazenamento redundante de zona (ZRS) ou multi-zonal, e LRS zonal (AZ único).</block>
-  <block id="fcb7516396bf1d9722f3e765d3004427" category="inline-link">Documentação do Microsoft Azure: A escala de Máquina Virtual define a documentação</block>
-  <block id="b4273b358a9e522bb090b6bbb65e080f" category="list-text"><block ref="b4273b358a9e522bb090b6bbb65e080f" category="inline-link-rx"></block></block>
-  <block id="0bd904c1b3763b65f2cc9d002f6a74e1" category="inline-link">Saiba mais sobre pares de alta disponibilidade no Azure</block>
-  <block id="0a60745fecbc79115b1e58a81d31e5cf" category="list-text"><block ref="80b3c96e29f809092ae7660c3123c5c7" category="inline-link-rx"></block>.</block>
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">Leia estas notas para saber mais sobre a atualização para esta versão.</block>
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">Como atualizar</block>
   <block id="c716eebe2519c2ba4a2e109b59dd8b13" category="inline-link-macro">Saiba como atualizar quando o BlueXP  o notificar</block>
   <block id="a92c2d98e174fb58a9af451a8c3413f9" category="paragraph"><block ref="8271d50d033781f1596acf863334de58" category="inline-link-macro-rx"></block>.</block>
   <block id="c4d6a904ef528003bf03bc2e65cffd26" category="section-title">Caminho de atualização suportado</block>
-  <block id="a30c58b20b60e5ffb9d932cee170af9a" category="paragraph">Você pode atualizar para o Cloud Volumes ONTAP 9.15.1 a partir de versões 9.15.0 e 9.14.1. A BlueXP  solicitará que você atualize os sistemas Cloud Volumes ONTAP qualificados para esta versão.</block>
   <block id="75026846c1403e202a52bdb027762fbb" category="section-title">Tempo de inatividade</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">A atualização de um sistema de nó único leva o sistema off-line por até 25 minutos, durante os quais a e/S é interrompida.</block>
-  <block id="00795e3f043d0bab791590ffc0257204" category="list-text">A atualização de um par de HA não causa interrupções e e/S é ininterrupta. Durante esse processo de atualização sem interrupções, cada nó é atualizado em conjunto para continuar fornecendo e/S aos clientes.</block>
   <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">as instâncias c4, m4 e r4 não são mais compatíveis</block>
   <block id="41104125a8a3ef6fe8985ff4df5257be" category="paragraph">Na AWS, os tipos de instância C4, M4 e R4 EC2 não são mais compatíveis com o Cloud Volumes ONTAP. Se você tiver um sistema existente que esteja sendo executado em um tipo de instância C4, M4 ou R4, será necessário alterar para um tipo de instância na família de instâncias C5, M5 ou R5. Não é possível atualizar para esta versão até alterar o tipo de instância.</block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">Saiba como alterar o tipo de instância EC2 para Cloud Volumes ONTAP</block>
@@ -728,7 +691,6 @@
   <block id="5e486cb2e38fc7f03f038af21eb3cdb9" category="paragraph">O manuseio especial dos eventos de manutenção é suportado para pares de alta disponibilidade (HA) da Cloud Volumes ONTAP. Para manter a integridade das aplicações, realizamos uma aquisição preventiva para priorizar a estabilidade, pois qualquer perda de conetividade de mais de 15 segundos desativará os recursos de failover.</block>
   <block id="1222cf807490df82fd7e0146eb6798c1" category="paragraph">Quando a janela de manutenção for anunciada, o nó parceiro do nó de destino executará um takeover. Quando a manutenção estiver concluída, um giveback será iniciado. Após a giveback, espera-se que o par HA retorne a um estado saudável. Se isso não ocorrer, entre em Contato com o suporte da NetApp para obter assistência. Observe que os eventos de manutenção são direcionados a uma das VMs em um par de HA de cada vez e, normalmente, ambos os nós são direcionados em um período de tempo relativamente curto.</block>
   <block id="1355c3042f61af06b4a61506de6e8ad1" category="paragraph">Os clientes CIFS/SMB que usam compartilhamentos CIFS não continuamente disponíveis do Cloud Volumes ONTAP sofrerão uma perda de sessão, tanto quando ocorre uma aquisição quanto quando o agregado que a sessão está usando é devolvido ao nó inicial do agregado. Esta é uma limitação imposta pelo próprio protocolo CIFS/SMB. Os clientes podem querer usar produtos de terceiros para evitar problemas que possam surgir com a aquisição e a giveback. Para obter mais assistência, entre em Contato com o suporte da NetApp.</block>
-  <block id="9b74e463f9eba3d7b2490736bd408da0" category="sidebar">Essas notas de versão descrevem novos recursos, limitações e problemas conhecidos do Cloud Volumes ONTAP 9.15.1.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Comece agora</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">O que há de novo</block>
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="sidebar">Visão geral do licenciamento</block>
@@ -752,10 +714,6 @@
   <block id="e1e1effee5380369716ff955c2de6215" category="cell">Tipos de máquinas suportados 1</block>
   <block id="1ea028151d07abb047b4e2f17d215216" category="cell">Discos persistentes balanceados 3, discos persistentes Performance (SSD) 3 e discos persistentes Standard (HDD).</block>
   <block id="6b145cfa91f7c68c4c0c6f2bf60bcf9d" category="paragraph">O tipo de máquina personalizado-4-16384 não é mais suportado com novos sistemas Cloud Volumes ONTAP. Se tiver um sistema existente a funcionar neste tipo de máquina, pode continuar a utilizá-lo, mas recomendamos que mude para o tipo de máquina n2-standard-4.</block>
-  <block id="7e2d62fe36583822ef49e7ee658d8b17" category="section-title">9.15.1 P3 (29 de outubro de 2024)</block>
-  <block id="c3e5d9aa8817ef74e74e8cd55f39570f" category="paragraph">O patch 9.15.1 P3 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
-  <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P3</block>
-  <block id="fae48ca93c7d21429a4d9efb8dbde929" category="paragraph"><block ref="03a97087fa51b558b394583b2ec67707" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
   <block id="29aaeb333a41db01888c537148053c70" category="paragraph">* Capacidade máxima do sistema* (discos e armazenamento de objetos) 1</block>
   <block id="06cf24f6f7b06cb3d2778a1a70e9ff2f" category="paragraph">*Tipos de disco suportados*</block>
   <block id="17943cfde2a5e23c7925dc95a8dde6a4" category="paragraph">*Disposição em camadas de dados inativos até S3 TB*</block>
@@ -765,17 +723,6 @@
   <block id="27fe4eb3edbaff8f250e2d51f7462681" category="inline-link">Pacotes</block>
   <block id="13dba612a4f942a80cbc82c5f678d57c" category="inline-link">Mais sobre licenças baseadas em capacidade</block>
   <block id="d994821c78c4538d3406d1baa52bc470" category="paragraph"><block ref="55cb08b70ffaa99b7ec18860c0180e14" category="inline-link-rx"></block> <block ref="7c9574dfed81dad53ed1c2acf3a874b5" category="inline-link-rx"></block></block>
-  <block id="c3cf4ee6dc24f388844547c270dcc62a" category="section-title">9.15.1 P4 (25 de novembro de 2024)</block>
-  <block id="70801cc1e406ee3c5d3829c09f39d8cc" category="paragraph">O patch 9.15.1 P4 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
-  <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P4</block>
-  <block id="427f5af74d1c3371844f5ceb79ac74ea" category="paragraph"><block ref="d5d8d8f3e8dad9e51774bb89e5c4d87f" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
-  <block id="349b79620c55ff0a99622dc458417341" category="section-title">Suporte para FlexCache write-back</block>
-  <block id="7bab27e59a8093f7f1f9f208560906b5" category="paragraph">A partir do Cloud Volumes ONTAP 9.15.1, o FlexCache write-back é suportado como um modo alternativo de operação para gravação em um cache.</block>
-  <block id="145c5d02a1872aab28d9aee2ee7b1adb" category="inline-link">Visão geral do FlexCache write-back</block>
-  <block id="e9847573f516d487b3b41696529ea9ac" category="paragraph">Para obter mais informações sobre esse recurso, consulte a documentação do ONTAP<block ref="f66b7fc45c4e32762d53ba0f27132a8b" category="inline-link-rx"></block> .</block>
-  <block id="34756beb20b44cc3e732425639fae228" category="inline-link">Documentos de armazenamento em cache de volume BlueXP </block>
-  <block id="fadeb5a0a5453e49f671ad12a304756a" category="paragraph">Para obter informações sobre como o BlueXP  gerencia volumes do FlexCache, consulte o<block ref="4df7bdb090af4efb3896a25128ffcee3" category="inline-link-rx"></block>.</block>
-  <block id="9136e486881930be99a49d333eddb2ba" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.15.1</block>
   <block id="5e02a792172b179afc36359c80581d87" category="list-text">DS4_v2 1</block>
   <block id="837d17a1b64de221e0265c2f7da393f0" category="list-text">DS13_v2 1</block>
   <block id="14b3e8da6869b2f214b7efc306aea775" category="list-text">E4s_v3 1</block>
@@ -804,18 +751,23 @@
   <block id="22bbad4e1cc44662dc7478520e4f0e07" category="list-text">2 a disposição de dados em camadas no Google Cloud Storage não é compatível com o PAYGO Explore.</block>
   <block id="9c6d70371c04fac1c5b3babc1c1a755e" category="list-text">3 as máquinas da série n1 não estão mais disponíveis para seleção no BlueXP  ao implantar novas instâncias do Cloud Volumes ONTAP no Google Cloud. As máquinas da série n1 serão mantidas e suportadas apenas em sistemas existentes mais antigos. Novas implantações do Cloud Volumes ONTAP são suportadas no Google Cloud apenas a partir da versão 9,8. Recomendamos que mude para as máquinas da série n2 compatíveis com o Cloud Volumes ONTAP 9,8 e posterior. As máquinas da série n1, no entanto, estarão disponíveis para novas implantações realizadas através da API.</block>
   <block id="31269d00cd277adf90f42f882afbd293" category="list-text">O desempenho de gravação aprimorado é habilitado ao usar discos persistentes balanceados e discos persistentes de desempenho (SSD). 4</block>
-  <block id="ae1d06c72e1d3684dc2b0784b447f8bb" category="section-title">9.15.1 P6 (20 de janeiro de 2025)</block>
-  <block id="e685687a0700868820f260439fea454f" category="paragraph">O patch 9.15.1 P6 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
-  <block id="4d90d21642c7222312363da000d7409f" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P6</block>
-  <block id="6dab4a75e78f4da6ffbd02ad6871cda1" category="paragraph"><block ref="6c7645cce7e25bc9b23c20eb84477db8" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
-  <block id="1f3004ca828e883c15cacfbf9150d29e" category="section-title">9.15.1 P5 (20 de janeiro de 2025)</block>
-  <block id="65e2877203eeb473a40f78bda7e6d3b4" category="paragraph">O patch 9.15.1 P5 já está disponível para o Cloud Volumes ONTAP para todos os provedores de nuvem. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
-  <block id="e890150484086859b9a5078abe9c6f20" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P5</block>
-  <block id="294d0a8af93eae96d1bba19b5a5f69c4" category="paragraph"><block ref="df0857167980a53ee1e89853022218d5" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
   <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">Limitações com o uso de extensões Azure VM</block>
   <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">O Cloud Volumes ONTAP não oferece suporte a extensões de máquina virtual (VM) do Azure e aplicativos de VM em uma implantação. O uso do Cloud Volumes ONTAP no Azure com extensões de VM causa atrasos nas operações e a NetApp recomenda evitá-las.</block>
   <block id="0890aa708cef7529c2bd35cb7d2895df" category="paragraph">Para obter suporte à região da AWS,<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block> consulte .</block>
   <block id="f0de068c81c765820aca0fa8fe017396" category="paragraph">Para obter suporte à região do Azure,<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block> consulte .</block>
   <block id="9b986795dc6a434c7339bfecbd5e5c8b" category="paragraph">Para obter suporte à região do Google Cloud,<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>consulte .</block>
   <block id="d798d4963d0ac509a1bda5483d9b9a52" category="paragraph"><block ref="5a94f18247116693735ff13d8eeaa964" category="inline-link-rx"></block>.</block>
+  <block id="1c182fc8eafc7e652c5e3a7cea77ae91" category="inline-link-macro">Aviso para o Cloud Volumes ONTAP 9.16.1</block>
+  <block id="f7087a9aa590270aa7eb0bf5d5eda74b" category="list-text"><block ref="f7087a9aa590270aa7eb0bf5d5eda74b" category="inline-link-macro-rx"></block></block>
+  <block id="6000586891d4341a74a8eb5979a68d8a" category="summary">O Cloud Volumes ONTAP 9.16.1 inclui uma nova melhoria.</block>
+  <block id="0d90329231a911346776f18bdb9fe1d9" category="doc">Novidades do Cloud Volumes ONTAP 9.16.1</block>
+  <block id="401876f2194826845d51d17f3f6e4236" category="paragraph">O Cloud Volumes ONTAP 9.16.1 inclui novos aprimoramentos.</block>
+  <block id="5c34e70965e9144b3d44955edb1b5d5e" category="section-title">9.16.1 GA (6 de março de 2025)</block>
+  <block id="2bb6251babdc5f589145b9c5611ca36d" category="paragraph">Agora você pode usar a versão de disponibilidade geral do Cloud Volumes ONTAP 9.16.1 para implantação e atualização no Azure e no Google Cloud. No entanto, essa versão não está disponível para implantação e atualização na AWS.</block>
+  <block id="25e5ddb54eebfa8e5f1383c46695e645" category="paragraph">Você pode atualizar para o Cloud Volumes ONTAP 9.16.1 GA a partir da versão 9.15.1 no Azure e no Google Cloud. A BlueXP  solicitará que você atualize os sistemas Cloud Volumes ONTAP qualificados para esta versão.</block>
+  <block id="0966109eb7f93cf95b69fc9bfb21fb7f" category="admonition">Para a AWS, você não será solicitado a fazer essa atualização. A atualização para o Cloud Volumes ONTAP 9.16.1 GA não é suportada na AWS.</block>
+  <block id="2dc71138ad7976e187566f7ce79883cc" category="list-text">A atualização de um par de HA não causa interrupções e e/S é ininterrupta. Durante esse processo de atualização sem interrupções, cada nó é atualizado em conjunto para continuar fornecendo e/S aos clientes.</block>
+  <block id="2da6ea8a8da761338b986437b7c763e3" category="sidebar">Essas notas de versão descrevem novos recursos, limitações e problemas conhecidos do Cloud Volumes ONTAP 9.16.1.</block>
+  <block id="5be79231089884d51ddb2bec45163e7f" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.16.1</block>
+  <block id="adf61d35044cf1717f8515aac5ebf98f" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.16.1</block>
 </blocks>

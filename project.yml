@@ -8,8 +8,10 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   versions:
-  - version-number: 9.15.1
+  - version-number: 9.16.1
     url: "/cloud-volumes-ontap-relnotes"
+  - version-number: 9.15.1
+    url: "/cloud-volumes-ontap-9151-relnotes"
   - version-number: 9.15.0
     url: "/cloud-volumes-ontap-9150-relnotes"
   - version-number: 9.14.1
@@ -51,7 +53,7 @@ settings:
   langs: pt-br,us-en,de-de,es-es,fr-fr,it-it,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: Notas de versão do Cloud Volumes ONTAP 9.15.1
+  - title: Notas de versão do Cloud Volumes ONTAP 9.16.1
     url: "/index.html"
   - title: O que há de novo
     url: "/reference-new.html"

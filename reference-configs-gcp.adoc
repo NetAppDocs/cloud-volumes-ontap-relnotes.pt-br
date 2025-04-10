@@ -4,7 +4,7 @@ permalink: reference-configs-gcp.html
 keywords: google, gcp, google cloud platform, explore, standard, premium, byol, paygo, disks, supported, capacity, machine types, sizes, HA, high availability, HA pairs 
 summary: Várias configurações do Cloud Volumes ONTAP são compatíveis com o Google Cloud. 
 ---
-= Configurações compatíveis no Google Cloud
+= Configurações compatíveis com o Cloud Volumes ONTAP no Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

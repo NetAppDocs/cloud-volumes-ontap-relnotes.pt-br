@@ -4,7 +4,7 @@ permalink: reference-limitations.html
 keywords: limitations, detaching, snapmanager, features, disks, aggregates, features, svm 
 summary: As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações com cuidado. 
 ---
-= Limitações em todos os provedores de nuvem
+= Limitações conhecidas do Cloud Volumes ONTAP em todos os fornecedores de nuvem
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -773,4 +773,12 @@
   <block id="f2642484d82ac71ab617437045e56b35" category="doc">Limites de armazenamento para Cloud Volumes ONTAP no Google Cloud</block>
   <block id="0d965f3057c75408feddc192acd12da8" category="doc">Colaboração com fornecedores de nuvem do Cloud Volumes ONTAP</block>
   <block id="6e9c766eb64d674ed321c13842973979" category="paragraph">Saiba como a NetApp colabora com fornecedores de nuvem para lidar com possíveis problemas.</block>
+  <block id="26207601cd717bed61f9a69941108f87" category="section-title">9.16.1 P2 (17 de abril de 2025)</block>
+  <block id="c4792f112f7f491e5d7e61fba2f33329" category="paragraph">O patch 9.16.1 P2 agora pode ser implantado e atualizado para o Cloud Volumes ONTAP no Azure e no Google Cloud. No entanto, essa versão não está disponível para implantação e atualização na AWS. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
+  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P2</block>
+  <block id="448f9263b6e5828ecbede3a8f78d17eb" category="paragraph"><block ref="6454149a5f999950d701a0bf861b958d" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
+  <block id="008c5c510153b3136387ddcd33bc112c" category="section-title">9.16.1 P1 (17 de abril de 2025)</block>
+  <block id="3b3592b54b76bb5d60a585ffacea4e61" category="paragraph">O patch 9.16.1 P1 agora pode ser implantado e atualizado para o Cloud Volumes ONTAP no Azure e no Google Cloud. No entanto, essa versão não está disponível para implantação e atualização na AWS. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
+  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P1</block>
+  <block id="664e6349e84880f6407173721fad810a" category="paragraph"><block ref="e1914bcb543b75972205a0cc76dbb433" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
 </blocks>

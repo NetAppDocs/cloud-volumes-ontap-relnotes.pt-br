@@ -334,8 +334,6 @@
   <block id="4e9780ecc95f5dbfb27e64e3ded5cd85" category="paragraph">As seguintes limitações conhecidas são específicas do Cloud Volumes ONTAP no Microsoft Azure. Certifique-se de também rever <block ref="edcf15b4d9d7d1e018ccca7ce112dd3e" category="inline-link-macro-rx"></block>.</block>
   <block id="0ef515bdf91048074b68adb0d7ce587e" category="paragraph">O Cloud Volumes ONTAP usa o storage NVMe local em alguns tipos de VM como _Flash Cache_. Observe esta limitação:</block>
   <block id="7616922b4f9b85f327fb9c04518fc90f" category="list-text">O reaquecimento do cache após uma reinicialização não é suportado.</block>
-  <block id="0066e8873a17823db601b98ebbc37dd2" category="section-title">Limitações DE HA</block>
-  <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">Pares HA não são suportados em algumas regiões.</block>
   <block id="d91c9372e1fdf74d651217f1a36e518b" category="inline-link">Veja a lista de regiões do Azure suportadas</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações com cuidado.</block>
   <block id="5caaf889f6f108c7753c8110e25e46bc" category="paragraph">As limitações conhecidas a seguir são específicas do Cloud Volumes ONTAP no Google Cloud Platform. Certifique-se de também rever <block ref="edcf15b4d9d7d1e018ccca7ce112dd3e" category="inline-link-macro-rx"></block>.</block>
@@ -781,4 +779,10 @@
   <block id="3b3592b54b76bb5d60a585ffacea4e61" category="paragraph">O patch 9.16.1 P1 agora pode ser implantado e atualizado para o Cloud Volumes ONTAP no Azure e no Google Cloud. No entanto, essa versão não está disponível para implantação e atualização na AWS. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P1</block>
   <block id="664e6349e84880f6407173721fad810a" category="paragraph"><block ref="e1914bcb543b75972205a0cc76dbb433" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
+  <block id="77d9dd558dce394d624e008a5015c43e" category="section-title">Limitações com implantações de alta disponibilidade</block>
+  <block id="47e6c824f3fe7a0a707fd6f94c2b0d5e" category="paragraph">Pares de alta disponibilidade (HA) não são compatíveis em algumas regiões.</block>
+  <block id="e62fa1e447749b7b88523431cfe1cb23" category="section-title">Limitações com implantações de HA em zonas de disponibilidade únicas</block>
+  <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">Implante pares de HA em zonas de disponibilidade únicas no Azure</block>
+  <block id="d8bb5ee8ceb2ff0c0fd5de1a5d8db6ea" category="paragraph">A partir do Cloud Volumes ONTAP 9.15.1, é possível implantar instâncias de máquina virtual (VM) no modo HA em zonas de disponibilidade únicas (AZs) no Azure. Para obter informações sobre os critérios que suportam este recurso,<block ref="70422bd689a7303399dff3dd5e571c65" category="inline-link-rx"></block> consulte .</block>
+  <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">Se a versão do Cloud Volumes ONTAP for anterior a 9.15.1 ou se alguma dessas condições não for atendida, o modelo de implantação anterior que utiliza conjuntos de disponibilidade entrará em vigor. Isso se aplica apenas a configurações de HA.</block>
 </blocks>

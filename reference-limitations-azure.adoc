@@ -33,8 +33,16 @@ O Cloud Volumes ONTAP usa o storage NVMe local em alguns tipos de VM como _Flash
 
 
 
-== Limitações DE HA
+== Limitações com implantações de alta disponibilidade
 
-Pares HA não são suportados em algumas regiões.
+Pares de alta disponibilidade (HA) não são compatíveis em algumas regiões.
 
 https://bluexp.netapp.com/cloud-volumes-global-regions["Veja a lista de regiões do Azure suportadas"^].
+
+
+
+== Limitações com implantações de HA em zonas de disponibilidade únicas
+
+A partir do Cloud Volumes ONTAP 9.15.1, é possível implantar instâncias de máquina virtual (VM) no modo HA em zonas de disponibilidade únicas (AZs) no Azure. Para obter informações sobre os critérios que suportam este recurso, https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-on-azure["Implante pares de HA em zonas de disponibilidade únicas no Azure"^] consulte .
+
+Se a versão do Cloud Volumes ONTAP for anterior a 9.15.1 ou se alguma dessas condições não for atendida, o modelo de implantação anterior que utiliza conjuntos de disponibilidade entrará em vigor. Isso se aplica apenas a configurações de HA.

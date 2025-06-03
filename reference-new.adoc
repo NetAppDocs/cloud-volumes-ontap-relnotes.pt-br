@@ -78,13 +78,3 @@ NOTE: Para a AWS, você não será solicitado a fazer essa atualização. A atua
 * A atualização de um sistema de nó único leva o sistema off-line por até 25 minutos, durante os quais a e/S é interrompida.
 * A atualização de um par de HA não causa interrupções e e/S é ininterrupta. Durante esse processo de atualização sem interrupções, cada nó é atualizado em conjunto para continuar fornecendo e/S aos clientes.
 
-
-
-
-=== as instâncias c4, m4 e r4 não são mais compatíveis
-
-Na AWS, os tipos de instância C4, M4 e R4 EC2 não são mais compatíveis com o Cloud Volumes ONTAP. Se você tiver um sistema existente que esteja sendo executado em um tipo de instância C4, M4 ou R4, será necessário alterar para um tipo de instância na família de instâncias C5, M5 ou R5. Não é possível atualizar para esta versão até alterar o tipo de instância.
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Saiba como alterar o tipo de instância EC2 para Cloud Volumes ONTAP"^].
-
-link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["Suporte à NetApp"^]Consulte para saber mais sobre o fim da disponibilidade e suporte para esses tipos de instância.

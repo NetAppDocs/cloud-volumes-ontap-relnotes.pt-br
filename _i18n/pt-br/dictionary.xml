@@ -662,11 +662,8 @@
   <block id="75026846c1403e202a52bdb027762fbb" category="section-title">Tempo de inatividade</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">A atualização de um sistema de nó único leva o sistema off-line por até 25 minutos, durante os quais a e/S é interrompida.</block>
   <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">as instâncias c4, m4 e r4 não são mais compatíveis</block>
-  <block id="41104125a8a3ef6fe8985ff4df5257be" category="paragraph">Na AWS, os tipos de instância C4, M4 e R4 EC2 não são mais compatíveis com o Cloud Volumes ONTAP. Se você tiver um sistema existente que esteja sendo executado em um tipo de instância C4, M4 ou R4, será necessário alterar para um tipo de instância na família de instâncias C5, M5 ou R5. Não é possível atualizar para esta versão até alterar o tipo de instância.</block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">Saiba como alterar o tipo de instância EC2 para Cloud Volumes ONTAP</block>
   <block id="34b2f4eab827285a262b1781e672e882" category="paragraph"><block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>.</block>
-  <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">Suporte à NetApp</block>
-  <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph"><block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block>Consulte para saber mais sobre o fim da disponibilidade e suporte para esses tipos de instância.</block>
   <block id="56ca786dd848302142c428b36f1c8b30" category="summary">Esta página descreve como o NetApp funciona com provedores de nuvem para resolver problemas que possam surgir.</block>
   <block id="b67ce24b0ef9db5e8910cc39a69b1ef6" category="doc">Integrações de fornecedor de nuvem</block>
   <block id="3ecb2b72be9054cc88589bb0cf193ca9" category="section-title">Práticas recomendadas de suporte colaborativo</block>
@@ -789,4 +786,25 @@
   <block id="79d2490a076742db13fbcc8f0776a458" category="paragraph">O patch 9.16.1 P3 agora pode ser implantado e atualizado para o Cloud Volumes ONTAP no Azure e no Google Cloud. No entanto, essa versão não está disponível para implantação e atualização na AWS. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
   <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P3</block>
   <block id="4beb9f52d4c281cb89fd47e4aaa780cf" category="paragraph"><block ref="77df283c529cda018d08e767dda3eebd" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
+  <block id="fbb17e3b93a1070f3de5e45b66842d95" category="list-text">As configurações do Cloud Volumes ONTAP nas zonas locais da AWS suportam apenas o tipo de disco SSD de uso geral (GP2). Nenhum outro tipo de disco é suportado no Cloud Volumes ONTAP nas Zonas Locais da AWS.</block>
+  <block id="f051f95f393c93123644b448ca3165c0" category="paragraph">O Cloud Volumes ONTAP não oferece mais suporte aos tipos de instância EC2 c4, m4 e r4 na AWS. Se o seu sistema for executado em uma instância c4, m4 ou r4, altere para uma instância c5, m5 ou r5. Não é possível atualizar para esta versão até alterar o tipo de instância.</block>
+  <block id="2f8299f876158db323c08455b12b585a" category="paragraph">Para obter mais informações, consulte:</block>
+  <block id="304f5226697d03123fa4611d02bf8546" category="inline-link">Artigo da base de conhecimento (KB): Convertendo uma instância AWS Xen CVO para Nitro KVM</block>
+  <block id="0dc3c417fc362585e0e7b3798f00b8bb" category="list-text"><block ref="0dc3c417fc362585e0e7b3798f00b8bb" category="inline-link-rx"></block></block>
+  <block id="b5dc3ce37b75c52be2427ecee207d24f" category="inline-link">Artigo da KB: Não é possível alterar o tipo de instância de r4 para r5 com erro de contagem de disco</block>
+  <block id="9ed042e52baa279a92fcf5c7a432ecf5" category="list-text"><block ref="9ed042e52baa279a92fcf5c7a432ecf5" category="inline-link-rx"></block></block>
+  <block id="ee47ffaac80894c9307ca443c334cf79" category="inline-link-macro">Saiba mais sobre o fim da disponibilidade e do suporte para esses tipos de instância</block>
+  <block id="c0857a6c0ade184c3afe7f293fc01755" category="list-text"><block ref="c0857a6c0ade184c3afe7f293fc01755" category="inline-link-macro-rx"></block></block>
+  <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Documentação do Microsoft Azure</block>
+  <block id="e2f4ab859b01d65da06c213f94a69131" category="paragraph">Para especificações de instâncias suportadas, consulte o <block ref="84495d3a9882d3bd6b6590d973db25e5" category="inline-link-rx"></block> .</block>
+  <block id="5639612d2f12168c8a83a7d9f034340d" category="inline-link">Azure (nó único)</block>
+  <block id="88e2312354057a90322664c2df9708ae" category="list-text">^4^ Para obter informações sobre os tipos de disco suportados em implantações de nó único, consulte <block ref="5d976ccca41daf11d6b5e395edda488a" category="inline-link-rx"></block> . A alta velocidade de gravação é suportada em todos os tipos de instância ao usar um sistema de nó único. Você pode ativar a alta velocidade de gravação do BlueXP  durante a implantação ou a qualquer momento depois.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>. O desempenho de gravação aprimorado é habilitado ao usar SSDs.</block>
+  <block id="9116d248ecfb6241ae0ac82e933291a7" category="cell">Tipos de disco suportados 6</block>
+  <block id="70ed196a226ad517ee4fecdca325036d" category="inline-link">Azure (par de HA)</block>
+  <block id="129a14de9bbb8e2dc343a37a19f5ea3d" category="list-text">Para obter informações sobre os tipos de disco suportados para implantações de HA em zonas de disponibilidade únicas e múltiplas, consulte <block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block> .</block>
+  <block id="7ec816bcf3858e037c57a46bfa8643ba" category="paragraph">Para obter mais informações sobre tipos específicos de máquinas, consulte a documentação do Google Cloud:</block>
+  <block id="7f53645b2b3a6e77999ceeea01208792" category="inline-link">Tipos de máquinas de uso geral da série n1</block>
+  <block id="b10cf18ba66c2ae046931259e614fe81" category="list-text"><block ref="b10cf18ba66c2ae046931259e614fe81" category="inline-link-rx"></block></block>
+  <block id="d59a55e5a766d0a45a73ef03504c6b5b" category="inline-link">Tipos de máquinas de uso geral da série N2</block>
+  <block id="0ab6f9218085a410dabf81dbe7da1b1a" category="list-text"><block ref="0ab6f9218085a410dabf81dbe7da1b1a" category="inline-link-rx"></block></block>
 </blocks>

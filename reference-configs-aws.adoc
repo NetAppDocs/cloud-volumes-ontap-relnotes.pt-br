@@ -72,7 +72,7 @@ Notas:
 . Para algumas configurações, os limites de disco impedem que você alcance o limite de capacidade usando discos sozinhos. Nesses casos, você pode alcançar o limite de capacidade em https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["disposição em camadas dos dados inativos no storage de objetos"^]. Para obter informações sobre limites de disco, link:reference-limits-aws.html["limites de armazenamento"]consulte .
 . O desempenho de gravação aprimorado é habilitado ao usar SSDs com todas as configurações do Cloud Volumes ONTAP.
 . A disposição em camadas dos dados no storage de objetos não é recomendada quando se usa HDDs otimizados para taxa de transferência (st1).
-. As configurações do Cloud Volumes ONTAP nas zonas locais da AWS suportam apenas o tipo de disco SSD de uso geral (GP2).
+. As configurações do Cloud Volumes ONTAP nas zonas locais da AWS suportam apenas o tipo de disco SSD de uso geral (GP2). Nenhum outro tipo de disco é suportado no Cloud Volumes ONTAP nas Zonas Locais da AWS.
 
 
 --
@@ -250,6 +250,21 @@ As larguras de banda mostradas na tabela abaixo correspondem aos limites documen
 +
 A alta velocidade de gravação não é suportada com esses tipos de instância nas zonas locais da AWS.
 
+
+
+
+
+=== as instâncias c4, m4 e r4 não são mais compatíveis
+
+O Cloud Volumes ONTAP não oferece mais suporte aos tipos de instância EC2 c4, m4 e r4 na AWS. Se o seu sistema for executado em uma instância c4, m4 ou r4, altere para uma instância c5, m5 ou r5. Não é possível atualizar para esta versão até alterar o tipo de instância.
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Saiba como alterar o tipo de instância EC2 para Cloud Volumes ONTAP"^].
+
+Para obter mais informações, consulte:
+
+* https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Converting_an_AWS_Xen_CVO_instance_to_Nitro_KVM["Artigo da base de conhecimento (KB): Convertendo uma instância AWS Xen CVO para Nitro KVM"^]
+* https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Unable_to_change_the_instance_type_from_r4_to_r5_with_disk_count_error["Artigo da KB: Não é possível alterar o tipo de instância de r4 para r5 com erro de contagem de disco"^]
+* link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["Saiba mais sobre o fim da disponibilidade e do suporte para esses tipos de instância"^]
 
 
 

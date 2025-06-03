@@ -164,6 +164,12 @@ NOTE: _Flash cache_, modo de gravação alta e um MTU de 8.896 dependem de recur
 
 --
 ====
+Para obter mais informações sobre tipos específicos de máquinas, consulte a documentação do Google Cloud:
+
+* https://cloud.google.com/compute/docs/general-purpose-machines#n1_machines["Tipos de máquinas de uso geral da série n1"^]
+* https://cloud.google.com/compute/docs/general-purpose-machines#n2_series["Tipos de máquinas de uso geral da série N2"^]
+
+
 
 
 == Tamanhos de disco suportados

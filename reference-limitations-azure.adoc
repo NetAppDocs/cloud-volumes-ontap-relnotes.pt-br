@@ -20,7 +20,7 @@ As seguintes limitações conhecidas são específicas do Cloud Volumes ONTAP no
 
 == Limitações com o uso de extensões Azure VM
 
-O Cloud Volumes ONTAP não oferece suporte a extensões de máquina virtual (VM) do Azure e aplicativos de VM em uma implantação. O uso do Cloud Volumes ONTAP no Azure com extensões de VM causa atrasos nas operações e a NetApp recomenda evitá-las.
+O Cloud Volumes ONTAP não oferece suporte a extensões de máquina virtual (VM) do Azure porque elas atrasam as operações. Após a implantação do Cloud Volumes ONTAP, o BlueXP desabilita periodicamente as extensões de VM. Se você instalou essas extensões em seu ambiente de trabalho, entre em contato com o Suporte do Microsoft Azure para desabilitá-las ou excluí-las.
 
 
 

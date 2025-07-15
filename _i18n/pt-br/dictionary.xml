@@ -207,7 +207,6 @@
   <block id="3feaeead4352aa22a5e23895ca44ad6f" category="cell">Discos gerenciados HDD padrão, discos gerenciados SSD padrão, discos gerenciados SSD premium e discos gerenciados SSD premium v2.</block>
   <block id="2a01d572b1447155c310cabafac3fae9" category="paragraph">Notas:</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">Saiba mais</block>
-  <block id="3959237302934c658e49cff52293a2a5" category="list-text">Esse tipo de VM inclui storage NVMe local, que o Cloud Volumes ONTAP usa como _Flash Cache_. O Flash Cache acelera o acesso aos dados por meio do armazenamento em cache inteligente em tempo real dos dados do usuário lidos recentemente e dos metadados do NetApp. Ele é eficaz para workloads com uso intenso de leitura aleatória, incluindo bancos de dados, e-mail e serviços de arquivos.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
   <block id="7ac4ad805c5f62c422ac040e484787d7" category="paragraph">A versão mínima do ONTAP necessária para configurar o Flash Cache no Azure é 9.13.1 GA.</block>
   <block id="11509498a3f1573cdde878f927dc10bd" category="inline-link">SSD ultra</block>
   <block id="28440751cbe2a16368822f02f298a2f4" category="inline-link">Configuração de zona de disponibilidade única DE HA com discos gerenciados compartilhados</block>
@@ -233,9 +232,6 @@
   <block id="c0147218881d0d0fb9dddce993d7c08c" category="list-text">E48ds_v5 1</block>
   <block id="d071b0d9481cad34966de3c7caf72b29" category="list-text">E64ds_v5 1</block>
   <block id="540e57f70019c3eb8d7fb999259fd473" category="cell">Blobs de página</block>
-  <block id="6098d03c49b315476cd9c4d4eb330395" category="list-text">O Cloud Volumes ONTAP dá suporte à alta velocidade de gravação com esses tipos de VM ao usar um par de HA. Você pode ativar a alta velocidade de gravação do BlueXP  durante a implantação ou a qualquer momento depois.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
-  <block id="4efc25f6cc7013d95ca2f5ab1dcc3366" category="list-text">Essa VM é recomendada somente quando o controle de manutenção do Azure for necessário. Não é recomendado para qualquer outro caso de uso devido ao preço mais alto.</block>
-  <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">Essas VMs são suportadas apenas em implantações do Cloud Volumes ONTAP 9.11.1 ou anteriores. Com esses tipos de VM, você pode atualizar uma implantação de blob de página existente do Cloud Volumes ONTAP 9.11.1 para o 9.12.1. Você não pode executar novas implantações de blob de página com o Cloud Volumes ONTAP 9.12.1 ou superior.</block>
   <block id="643a529396d04bbbe61c8daa70456163" category="cell">Capacidade máxima do sistema (discos e armazenamento de objetos)</block>
   <block id="8c41a0d9e980d7223b4ad7585ce70fa2" category="section-title">Pares DE HA com discos gerenciados compartilhados</block>
   <block id="5d47d15bb6c95cde595a22f670bc8cdf" category="list-text">E32ds_v4 1</block>
@@ -250,9 +246,6 @@
   <block id="2bb521d2d5cea05a3b9b29f1cf232c63" category="list-text">L32s_v3 1,3,5</block>
   <block id="6074c6f3226593d830e2700ab7f3f365" category="list-text">L48s_v3 1,3,5</block>
   <block id="1da7ab1581b8dde8d8bbb3d70c613cd5" category="list-text">L64s_v3 1,3,5</block>
-  <block id="44ed637222e5d571deff68351343db0d" category="list-text">O Cloud Volumes ONTAP dá suporte à alta velocidade de gravação com esses tipos de VM ao usar um par de HA. Você pode ativar a alta velocidade de gravação do BlueXP  durante a implantação ou a qualquer momento depois.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
-  <block id="9df1366281b2311753bea9dc8a7cc627" category="list-text">O suporte a várias zonas de disponibilidade começa a partir do ONTAP versão 9.13.1.</block>
-  <block id="6d8cc94524c51a3f77860bbede84b136" category="list-text">O suporte a várias zonas de disponibilidade começa a partir do ONTAP versão 9.14.1 RC1.</block>
   <block id="678bba9079ce79c3806a40a1b6306799" category="list-text">E8ds_v4 4</block>
   <block id="fd5fff93ea6b0d7a9072274f514573ae" category="list-text">E32ds_v4 1,4</block>
   <block id="6cddc6e542baa2aaad6e58fdc397ce90" category="list-text">E48ds_v4 1,4</block>
@@ -262,8 +255,6 @@
   <block id="2bf4a4b22f921c225f089ec2954ee9e8" category="list-text">L48s_v3 1,4,5</block>
   <block id="c130660d20dd5cec8fbf6045fb61af08" category="list-text">L64s_v3 1,4,5</block>
   <block id="b869cbdadaa9844d32c24de3f4db3242" category="cell">Discos gerenciados</block>
-  <block id="72e0d2497593ac6a5fdc024537224aed" category="list-text">Esses tipos de VM são compatíveis apenas com pares de HA em uma configuração de zona de disponibilidade única executada em discos gerenciados compartilhados.</block>
-  <block id="c3e43237d47ac4f8f0c184c56276c958" category="list-text">Esses tipos de VM são compatíveis com pares de HA em configurações de zona de disponibilidade única e várias zonas de disponibilidade executadas em discos gerenciados compartilhados. Para os tipos de VM LS_v3, o suporte a várias zonas de disponibilidade começa a partir do ONTAP versão 9.13.1. Para os tipos de VM EDS_v5, o suporte a várias zonas de disponibilidade começa a partir da versão 9.14.1 RC1 do ONTAP.</block>
   <block id="88d444d836b2ea3ca342f4cc3a6b2b50" category="paragraph">No Azure, um agregado pode conter até 12 discos com o mesmo tipo e tamanho.</block>
   <block id="90d1dad6ac7388ba65631ec0b927dabc" category="paragraph">Sistemas de nó único usam discos gerenciados do Azure. Os seguintes tamanhos de disco são suportados:</block>
   <block id="fac18bfae2384f6eccc3a9779ce41d25" category="cell">SSD premium</block>
@@ -735,7 +726,6 @@
   <block id="9c6d70371c04fac1c5b3babc1c1a755e" category="list-text">3 as máquinas da série n1 não estão mais disponíveis para seleção no BlueXP  ao implantar novas instâncias do Cloud Volumes ONTAP no Google Cloud. As máquinas da série n1 serão mantidas e suportadas apenas em sistemas existentes mais antigos. Novas implantações do Cloud Volumes ONTAP são suportadas no Google Cloud apenas a partir da versão 9,8. Recomendamos que mude para as máquinas da série n2 compatíveis com o Cloud Volumes ONTAP 9,8 e posterior. As máquinas da série n1, no entanto, estarão disponíveis para novas implantações realizadas através da API.</block>
   <block id="31269d00cd277adf90f42f882afbd293" category="list-text">O desempenho de gravação aprimorado é habilitado ao usar discos persistentes balanceados e discos persistentes de desempenho (SSD). 4</block>
   <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">Limitações com o uso de extensões Azure VM</block>
-  <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">O Cloud Volumes ONTAP não oferece suporte a extensões de máquina virtual (VM) do Azure e aplicativos de VM em uma implantação. O uso do Cloud Volumes ONTAP no Azure com extensões de VM causa atrasos nas operações e a NetApp recomenda evitá-las.</block>
   <block id="0890aa708cef7529c2bd35cb7d2895df" category="paragraph">Para obter suporte à região da AWS,<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block> consulte .</block>
   <block id="f0de068c81c765820aca0fa8fe017396" category="paragraph">Para obter suporte à região do Azure,<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block> consulte .</block>
   <block id="9b986795dc6a434c7339bfecbd5e5c8b" category="paragraph">Para obter suporte à região do Google Cloud,<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>consulte .</block>
@@ -801,7 +791,6 @@
   <block id="88e2312354057a90322664c2df9708ae" category="list-text">^4^ Para obter informações sobre os tipos de disco suportados em implantações de nó único, consulte <block ref="5d976ccca41daf11d6b5e395edda488a" category="inline-link-rx"></block> . A alta velocidade de gravação é suportada em todos os tipos de instância ao usar um sistema de nó único. Você pode ativar a alta velocidade de gravação do BlueXP  durante a implantação ou a qualquer momento depois.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>. O desempenho de gravação aprimorado é habilitado ao usar SSDs.</block>
   <block id="9116d248ecfb6241ae0ac82e933291a7" category="cell">Tipos de disco suportados 6</block>
   <block id="70ed196a226ad517ee4fecdca325036d" category="inline-link">Azure (par de HA)</block>
-  <block id="129a14de9bbb8e2dc343a37a19f5ea3d" category="list-text">Para obter informações sobre os tipos de disco suportados para implantações de HA em zonas de disponibilidade únicas e múltiplas, consulte <block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block> .</block>
   <block id="7ec816bcf3858e037c57a46bfa8643ba" category="paragraph">Para obter mais informações sobre tipos específicos de máquinas, consulte a documentação do Google Cloud:</block>
   <block id="7f53645b2b3a6e77999ceeea01208792" category="inline-link">Tipos de máquinas de uso geral da série n1</block>
   <block id="b10cf18ba66c2ae046931259e614fe81" category="list-text"><block ref="b10cf18ba66c2ae046931259e614fe81" category="inline-link-rx"></block></block>
@@ -811,4 +800,20 @@
   <block id="c40872b813fc8acca04c5e909c600b0c" category="paragraph">O patch 9.16.1 P4 agora pode ser implantado e atualizado para o Cloud Volumes ONTAP no Azure e no Google Cloud. No entanto, essa versão não está disponível para implantação e atualização na AWS. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
   <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P4</block>
   <block id="0a8093de16aa3f6ac64c7b6c07e3a0e9" category="paragraph"><block ref="4287819b7b6c3d729049717a25b7809c" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
+  <block id="313e5c6346ba30bdb749b42654c60b9e" category="list-text">^1^ O Cloud Volumes ONTAP oferece suporte a alta velocidade de gravação com esses tipos de VM ao usar um par de HA. Você pode ativar a alta velocidade de gravação do BlueXP  durante a implantação ou a qualquer momento depois.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
+  <block id="7a44fe38188ff958cad09ce844759662" category="list-text">^2^ Esta VM é recomendada somente quando o controle de manutenção do Azure é necessário. Não é recomendado para qualquer outro caso de uso devido ao preço mais alto.</block>
+  <block id="7b78f11572d7f890feb55bd86cdbee51" category="list-text">^3^ Essas VMs são suportadas apenas em implantações do Cloud Volumes ONTAP 9.11.1 ou anterior. Com esses tipos de VM, você pode atualizar uma implantação de blob de página existente do Cloud Volumes ONTAP 9.11.1 para o 9.12.1. Você não pode executar novas implantações de blob de página com o Cloud Volumes ONTAP 9.12.1 ou superior.</block>
+  <block id="fd50247d3654244e2fa376c69aef2589" category="list-text">L8s_v3 1,3,5</block>
+  <block id="c1e3164a5d2ff8f31e49973a181ebbee" category="list-text">^1^ O Cloud Volumes ONTAP oferece suporte a alta velocidade de gravação com esses tipos de VM ao usar um par de HA. Você pode ativar a alta velocidade de gravação do BlueXP  durante a implantação ou a qualquer momento depois.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
+  <block id="e8226b64239abaa5e0216217eaa35aae" category="list-text">^3^ O suporte a múltiplas zonas de disponibilidade começa na versão 9.13.1 do ONTAP .</block>
+  <block id="ada5a0f28401b1863a90b26fafa4c5ef" category="list-text">^4^ O suporte a múltiplas zonas de disponibilidade começa na versão 9.14.1 RC1 do ONTAP .</block>
+  <block id="3d286a847602807c5f94bcf6fdef60be" category="list-text">^5^ Este tipo de VM inclui armazenamento NVMe local, que o Cloud Volumes ONTAP usa como _Flash Cache_. O Flash Cache acelera o acesso aos dados por meio do armazenamento em cache inteligente em tempo real dos dados do usuário lidos recentemente e dos metadados do NetApp. Ele é eficaz para workloads com uso intenso de leitura aleatória, incluindo bancos de dados, e-mail e serviços de arquivos.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
+  <block id="ee1f574bc95607cfdc97b1c953a104b2" category="list-text">^6^ Para obter informações sobre os tipos de disco suportados para implantações de HA em zonas de disponibilidade únicas e múltiplas, consulte <block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block> .</block>
+  <block id="b0975698f88b92c8fbe80f0dbf6305ad" category="list-text">L8s_v3 ^4,5^</block>
+  <block id="c06088d15edfd911af2ec4c45b08e41b" category="list-text">^3^ Esses tipos de VM são suportados apenas para pares de HA em uma única configuração de zona de disponibilidade em execução em discos gerenciados compartilhados.</block>
+  <block id="549504876cb29a5866aca5cf3802fe6d" category="list-text">^4^ Esses tipos de VM são suportados para pares de HA em configurações de zona de disponibilidade única e de múltiplas zonas de disponibilidade executadas em discos gerenciados compartilhados. Para os tipos de VM LS_v3, o suporte a várias zonas de disponibilidade começa a partir do ONTAP versão 9.13.1. Para os tipos de VM EDS_v5, o suporte a várias zonas de disponibilidade começa a partir da versão 9.14.1 RC1 do ONTAP.</block>
+  <block id="4e2d7e12a50a6543c1e295c672343668" category="cell">Otimizado ^4^</block>
+  <block id="dd47c5ffc608943bbe951c1bc249e4a3" category="inline-link">O que há de novo no Cloud Volumes ONTAP</block>
+  <block id="6d0094db764c8adadbabb02e37cfc44d" category="admonition">_Flash cache_, modo de gravação alta e um MTU de 8.896 dependem de recursos e não podem ser desativados individualmente em uma instância configurada. . ^4^ A partir de 1º de julho de 2025, a licença Cloud Volumes ONTAP Optimized será descontinuada e não estará mais disponível para compra ou renovação no marketplace do Google Cloud para assinaturas de pagamento conforme o uso (PAYGO). Para obter informações,<block ref="1080c8772df7208f65fb600e0d40b155" category="inline-link-rx"></block> consulte .</block>
+  <block id="3cf421bc57be614ba02e4f59f34859a2" category="paragraph">O Cloud Volumes ONTAP não oferece suporte a extensões de máquina virtual (VM) do Azure porque elas atrasam as operações. Após a implantação do Cloud Volumes ONTAP, o BlueXP desabilita periodicamente as extensões de VM. Se você instalou essas extensões em seu ambiente de trabalho, entre em contato com o Suporte do Microsoft Azure para desabilitá-las ou excluí-las.</block>
 </blocks>

@@ -78,20 +78,25 @@ O tipo de máquina personalizado-4-16384 não é mais suportado com novos sistem
 link:reference-limits-gcp.html["Saiba mais sobre os limites de disco no Google Cloud"].
 
 . O desempenho de gravação aprimorado é habilitado ao usar discos persistentes balanceados e discos persistentes de desempenho (SSD). 3
-
-
++
 A partir do Cloud Volumes ONTAP 9.13.0, _Flash Cache_, alta velocidade de gravação e uma unidade máxima de transmissão (MTU) mais alta de 8.896 bytes, estão disponíveis para as seguintes instâncias de implantação de par de HA:
 
-* n2-padrão-16
-* n2-padrão-32
-* n2-padrão-48
-* n2-padrão-64
-
-
++
+** n2-padrão-16
+** n2-padrão-32
+** n2-padrão-48
+** n2-padrão-64
++
 Você pode ativar _Flash Cache_ e alta velocidade de gravação ao implantar um tipo de instância elegível. Para ativar a unidade máxima de transmissão superior de 8.896 bytes, você deve escolher VPC-1, VPC-2 ou VPC-3 para a implantação. A MTU mais alta permite maior taxa de transferência de rede. Para obter mais informações sobre como iniciar uma dessas implantações, https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud["Lançamento de um par de HA no Google Cloud"] consulte .
 
++
 
-NOTE: _Flash cache_, modo de gravação alta e um MTU de 8.896 dependem de recursos e não podem ser desativados individualmente em uma instância configurada. . ^4^ A partir de 1º de julho de 2025, a licença Cloud Volumes ONTAP Optimized será descontinuada e não estará mais disponível para compra ou renovação no marketplace do Google Cloud para assinaturas de pagamento conforme o uso (PAYGO). Para obter informações, https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["O que há de novo no Cloud Volumes ONTAP"^] consulte .
+NOTE: _Flash cache_, modo de gravação alta e um MTU de 8.896 dependem de recursos e não podem ser desativados individualmente em uma instância configurada.
+
+
+
+. ^4^ A partir de 11 de agosto de 2025, a licença Cloud Volumes ONTAP Optimized será descontinuada e não estará mais disponível para compra ou renovação no marketplace do Google Cloud para assinaturas de pagamento conforme o uso (PAYGO).  Para obter informações, consulte https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["O que há de novo no Cloud Volumes ONTAP"^] .
+
 
 --
 .Licenças baseadas em nós

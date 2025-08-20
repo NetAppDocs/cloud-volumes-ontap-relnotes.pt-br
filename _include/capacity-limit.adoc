@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+Com o licenciamento baseado em capacidade, cada sistema Cloud Volumes ONTAP oferece suporte à hierarquização para armazenamento de objetos.  A capacidade total em camadas pode ser ampliada até o limite de bucket do provedor de nuvem.  Embora a licença não imponha restrições de capacidade, você deve seguir as https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Melhores práticas do FabricPool"^] para garantir desempenho ideal, confiabilidade e eficiência de custos ao configurar e gerenciar camadas.

@@ -47,7 +47,7 @@ Cada licença suporta uma capacidade máxima de sistema diferente. A capacidade 
 
  a| 
 * Capacidade máxima do sistema* (discos e armazenamento de objetos) 1
-| 500 GiB | 2 PIB 2 
+| 500 GiB | Flexível ^2^ 
 
 
  a| 
@@ -70,6 +70,9 @@ Notas:
 
 . Para um par de HA, o limite de capacidade aplica-se a todo o par de HA. Não é por nó. Por exemplo, se você usar a licença Premium, poderá ter até 368 TIB de capacidade entre os dois nós.
 . Para algumas configurações, os limites de disco impedem que você alcance o limite de capacidade usando discos sozinhos. Nesses casos, você pode alcançar o limite de capacidade em https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["disposição em camadas dos dados inativos no storage de objetos"^]. Para obter informações sobre limites de disco, link:reference-limits-aws.html["limites de armazenamento"]consulte .
++
+Com o licenciamento baseado em capacidade, cada sistema Cloud Volumes ONTAP oferece suporte à hierarquização para armazenamento de objetos.  A capacidade total em camadas pode ser ampliada até o limite de bucket do provedor de nuvem.  Embora a licença não imponha restrições de capacidade, você deve seguir as https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Melhores práticas do FabricPool"^] para garantir desempenho ideal, confiabilidade e eficiência de custos ao configurar e gerenciar camadas.
+
 . O desempenho de gravação aprimorado é habilitado ao usar SSDs com todas as configurações do Cloud Volumes ONTAP.
 . A disposição em camadas dos dados no storage de objetos não é recomendada quando se usa HDDs otimizados para taxa de transferência (st1).
 . As configurações do Cloud Volumes ONTAP nas zonas locais da AWS suportam apenas o tipo de disco SSD de uso geral (GP2). Nenhum outro tipo de disco é suportado no Cloud Volumes ONTAP nas Zonas Locais da AWS.

@@ -35,7 +35,9 @@ O Cloud Volumes ONTAP pode ser executado em uma instância de VM reservada ou so
 |  | Freemium | Otimizado ^4^ | Licença baseada em capacidade (Essentials e Professional) 
 
 
-| Capacidade máxima do sistema (discos e armazenamento de objetos) | 500 GiB | 2 PIB | 2 PIB 
+| Capacidade máxima do sistema (discos e armazenamento de objetos) | 500 GiB  a| 
+Com o licenciamento baseado em capacidade, cada sistema Cloud Volumes ONTAP oferece suporte à hierarquização para armazenamento de objetos.  A capacidade total em camadas pode ser ampliada até o limite de bucket do provedor de nuvem.  Embora a licença não imponha restrições de capacidade, você deve seguir as https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Melhores práticas do FabricPool"^] para garantir desempenho ideal, confiabilidade e eficiência de custos ao configurar e gerenciar camadas.
+
 
 
 | Tipos de máquinas suportados 1  a| 

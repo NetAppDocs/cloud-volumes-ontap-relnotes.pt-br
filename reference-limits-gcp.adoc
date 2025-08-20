@@ -26,6 +26,12 @@ O NetApp não suporta exceder o limite de capacidade do sistema. Se você atingi
 
 Para algumas configurações, os limites de disco impedem que você alcance o limite de capacidade usando discos sozinhos. Você pode alcançar o limite de capacidade por https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["disposição em camadas dos dados inativos no storage de objetos"^]. Consulte os limites de disco abaixo para obter mais detalhes.
 
+.Limite de capacidade para licenças baseadas em capacidade
+Com o licenciamento baseado em capacidade, cada sistema Cloud Volumes ONTAP oferece suporte à hierarquização para armazenamento de objetos.  A capacidade total em camadas pode ser ampliada até o limite de bucket do provedor de nuvem.  Embora a licença não imponha restrições de capacidade, você deve seguir as https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Melhores práticas do FabricPool"^] para garantir desempenho ideal, confiabilidade e eficiência de custos ao configurar e gerenciar camadas. Consulte o  https://cloud.google.com/storage/docs/buckets["Documentação do Google Cloud"^] para maiores informações.
+
+Limites de capacidade para outros tipos de licença::
+
+
 [cols="25,75"]
 |===
 | Licença | Capacidade máxima do sistema (discos e armazenamento de objetos) 
@@ -44,15 +50,12 @@ Para algumas configurações, os limites de disco impedem que você alcance o li
 
 
 | Licença baseada em nó | 2 PIB (requer várias licenças) 
-
-
-| Licença baseada em capacidade | 2 PIB 
 |===
 .Para um par de HA, o limite de capacidade licenciada por nó ou para todo o par de HA?
 O limite de capacidade aplica-se a todo o par de HA. Não é por nó. Por exemplo, se você usar a licença Premium, poderá ter até 368 TB de capacidade entre os dois nós.
 
 .Para um par de HA, os dados espelhados contam para o limite de capacidade licenciada?
-Não, não. Os dados em um par de HA são espelhados de forma síncrona entre os nós para que os dados estejam disponíveis em caso de falha no Google Cloud. Por exemplo, se você comprar um disco de 8 TB no nó A, o BlueXP  também aloca um disco de 8 TB no nó B que é usado para dados espelhados. Embora 16 TB de capacidade tenha sido provisionada, apenas 8 TB contam contra o limite de licença.
+Não, não é.  Os dados em um par de HA são espelhados de forma sincronizada entre os nós para que os dados estejam disponíveis em caso de falha no Google Cloud.  Por exemplo, se você comprar um disco de 8 TB no nó A, o BlueXP também alocará um disco de 8 TB no nó B que será usado para dados espelhados.  Embora 16 TB de capacidade sejam configurados, apenas 8 TB são contabilizados no limite da licença.
 
 
 
@@ -83,7 +86,7 @@ O Cloud Volumes ONTAP agrupa discos do Google Cloud Platform em _agregados_. Agr
 Notas:
 
 . O número máximo de agregados de dados não inclui o agregado raiz.
-. O limite de capacidade agregada é baseado nos discos que compõem o agregado. O limite não inclui o storage de objetos usado para categorização de dados.
+. Os discos que compõem o agregado determinam o limite de capacidade do agregado.  Este limite não inclui o armazenamento de objetos usado para hierarquização de dados.
 . Todos os discos em um agregado devem ter o mesmo tamanho.
 
 
@@ -121,7 +124,7 @@ Este limite é definido por limites de máquinas virtuais no Google Cloud Platfo
 
 Algumas configurações permitem que você crie VMs de storage adicionais (SVMs) para o Cloud Volumes ONTAP.
 
-Estes são os limites testados. Embora teoricamente seja possível configurar VMs de armazenamento adicionais, isso não é suportado.
+Estes são os limites testados.  Não há suporte para configurar mais VMs de armazenamento.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Saiba como criar VMs de armazenamento adicionais"^].
 
@@ -153,7 +156,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.
 |===
 . Essas 24 VMs de storage podem fornecer dados ou ser configuradas para recuperação de desastres (DR).
 . Para o licenciamento baseado em capacidade, não há custos adicionais de licenciamento para VMs de storage adicionais, mas há uma taxa de capacidade mínima de 4 TIB por VM de storage. Por exemplo, se você criar duas VMs de storage e cada uma tiver 2 TIB de capacidade provisionada, será cobrado um total de 8 TIB.
-. Para o BYOL baseado em nós, é necessária uma licença complementar para cada VM de storage _data-service_ adicional além da primeira VM de storage fornecida com o Cloud Volumes ONTAP por padrão. Entre em Contato com sua equipe de conta para obter uma licença adicional de VM de storage.
+. Para BYOL baseado em nó, uma licença complementar é necessária para cada VM de armazenamento de _servidor de dados_ adicional além da primeira VM de armazenamento que vem com o Cloud Volumes ONTAP por padrão.  Entre em contato com sua equipe de contas para obter uma licença complementar de VM de armazenamento.
 +
 As VMs de storage configuradas para recuperação de desastres (DR) não exigem uma licença complementar (elas são gratuitas), mas contam com o limite de VM de storage. Por exemplo, se você tiver 12 VMs de armazenamento de fornecimento de dados e 12 VMs de armazenamento configuradas para recuperação de desastres, atingiu o limite e não pode criar VMs de armazenamento adicionais.
 

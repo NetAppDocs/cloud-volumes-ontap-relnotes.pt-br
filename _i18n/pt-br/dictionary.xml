@@ -632,8 +632,6 @@
   <block id="302f571fec3e23b2236f116e51e46721" category="cell">Profundidade do clone hierárquico 12</block>
   <block id="7b9e5415e02ff7ad5eaae61345740517" category="inline-link">Saiba como o storage funciona em um par de HA do Cloud Volumes ONTAP em execução no Google Cloud</block>
   <block id="81a074db33c6f62838933c92142f16d6" category="paragraph"><block ref="f969ecf664fae2f86e88c525c7dd7acf" category="inline-link-rx"></block>.</block>
-  <block id="9889b7a9df56580016f59ccd942fb1d1" category="inline-link">Notas de versão do BlueXP </block>
-  <block id="4bdb15bfe1bad472d818dc31e8f53185" category="paragraph">Recursos e aprimoramentos adicionais também são introduzidos nas versões mais recentes do BlueXP . Consulte<block ref="c7887e85c6060ae2594d873a0f2ae025" category="inline-link-rx"></block> para obter detalhes.</block>
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">Leia estas notas para saber mais sobre a atualização para esta versão.</block>
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">Como atualizar</block>
   <block id="c716eebe2519c2ba4a2e109b59dd8b13" category="inline-link-macro">Saiba como atualizar quando o BlueXP  o notificar</block>
@@ -718,19 +716,7 @@
   <block id="f0de068c81c765820aca0fa8fe017396" category="paragraph">Para obter suporte à região do Azure,<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block> consulte .</block>
   <block id="9b986795dc6a434c7339bfecbd5e5c8b" category="paragraph">Para obter suporte à região do Google Cloud,<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>consulte .</block>
   <block id="d798d4963d0ac509a1bda5483d9b9a52" category="paragraph"><block ref="5a94f18247116693735ff13d8eeaa964" category="inline-link-rx"></block>.</block>
-  <block id="1c182fc8eafc7e652c5e3a7cea77ae91" category="inline-link-macro">Aviso para o Cloud Volumes ONTAP 9.16.1</block>
-  <block id="f7087a9aa590270aa7eb0bf5d5eda74b" category="list-text"><block ref="f7087a9aa590270aa7eb0bf5d5eda74b" category="inline-link-macro-rx"></block></block>
-  <block id="6000586891d4341a74a8eb5979a68d8a" category="summary">O Cloud Volumes ONTAP 9.16.1 inclui uma nova melhoria.</block>
-  <block id="0d90329231a911346776f18bdb9fe1d9" category="doc">Novidades do Cloud Volumes ONTAP 9.16.1</block>
-  <block id="401876f2194826845d51d17f3f6e4236" category="paragraph">O Cloud Volumes ONTAP 9.16.1 inclui novos aprimoramentos.</block>
-  <block id="5c34e70965e9144b3d44955edb1b5d5e" category="section-title">9.16.1 GA (6 de março de 2025)</block>
-  <block id="2bb6251babdc5f589145b9c5611ca36d" category="paragraph">Agora você pode usar a versão de disponibilidade geral do Cloud Volumes ONTAP 9.16.1 para implantação e atualização no Azure e no Google Cloud. No entanto, essa versão não está disponível para implantação e atualização na AWS.</block>
-  <block id="25e5ddb54eebfa8e5f1383c46695e645" category="paragraph">Você pode atualizar para o Cloud Volumes ONTAP 9.16.1 GA a partir da versão 9.15.1 no Azure e no Google Cloud. A BlueXP  solicitará que você atualize os sistemas Cloud Volumes ONTAP qualificados para esta versão.</block>
-  <block id="0966109eb7f93cf95b69fc9bfb21fb7f" category="admonition">Para a AWS, você não será solicitado a fazer essa atualização. A atualização para o Cloud Volumes ONTAP 9.16.1 GA não é suportada na AWS.</block>
   <block id="2dc71138ad7976e187566f7ce79883cc" category="list-text">A atualização de um par de HA não causa interrupções e e/S é ininterrupta. Durante esse processo de atualização sem interrupções, cada nó é atualizado em conjunto para continuar fornecendo e/S aos clientes.</block>
-  <block id="2da6ea8a8da761338b986437b7c763e3" category="sidebar">Essas notas de versão descrevem novos recursos, limitações e problemas conhecidos do Cloud Volumes ONTAP 9.16.1.</block>
-  <block id="5be79231089884d51ddb2bec45163e7f" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.16.1</block>
-  <block id="adf61d35044cf1717f8515aac5ebf98f" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.16.1</block>
   <block id="071315f659ff3eed03e994aa4f772449" category="doc">Visão geral do licenciamento para o Cloud Volumes ONTAP</block>
   <block id="d4f1750ecbae7aeb8e4608c6adadf1b3" category="doc">Configurações compatíveis com o Cloud Volumes ONTAP na AWS</block>
   <block id="906e9645769246d4a98e725adf188964" category="list-text">As configurações do Cloud Volumes ONTAP nas zonas locais da AWS suportam apenas o tipo de disco SSD de uso geral (GP2).</block>
@@ -746,24 +732,12 @@
   <block id="f2642484d82ac71ab617437045e56b35" category="doc">Limites de armazenamento para Cloud Volumes ONTAP no Google Cloud</block>
   <block id="0d965f3057c75408feddc192acd12da8" category="doc">Colaboração com fornecedores de nuvem do Cloud Volumes ONTAP</block>
   <block id="6e9c766eb64d674ed321c13842973979" category="paragraph">Saiba como a NetApp colabora com fornecedores de nuvem para lidar com possíveis problemas.</block>
-  <block id="26207601cd717bed61f9a69941108f87" category="section-title">9.16.1 P2 (17 de abril de 2025)</block>
-  <block id="c4792f112f7f491e5d7e61fba2f33329" category="paragraph">O patch 9.16.1 P2 agora pode ser implantado e atualizado para o Cloud Volumes ONTAP no Azure e no Google Cloud. No entanto, essa versão não está disponível para implantação e atualização na AWS. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
-  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P2</block>
-  <block id="448f9263b6e5828ecbede3a8f78d17eb" category="paragraph"><block ref="6454149a5f999950d701a0bf861b958d" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
-  <block id="008c5c510153b3136387ddcd33bc112c" category="section-title">9.16.1 P1 (17 de abril de 2025)</block>
-  <block id="3b3592b54b76bb5d60a585ffacea4e61" category="paragraph">O patch 9.16.1 P1 agora pode ser implantado e atualizado para o Cloud Volumes ONTAP no Azure e no Google Cloud. No entanto, essa versão não está disponível para implantação e atualização na AWS. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
-  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P1</block>
-  <block id="664e6349e84880f6407173721fad810a" category="paragraph"><block ref="e1914bcb543b75972205a0cc76dbb433" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
   <block id="77d9dd558dce394d624e008a5015c43e" category="section-title">Limitações com implantações de alta disponibilidade</block>
   <block id="47e6c824f3fe7a0a707fd6f94c2b0d5e" category="paragraph">Pares de alta disponibilidade (HA) não são compatíveis em algumas regiões.</block>
   <block id="e62fa1e447749b7b88523431cfe1cb23" category="section-title">Limitações com implantações de HA em zonas de disponibilidade únicas</block>
   <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">Implante pares de HA em zonas de disponibilidade únicas no Azure</block>
   <block id="d8bb5ee8ceb2ff0c0fd5de1a5d8db6ea" category="paragraph">A partir do Cloud Volumes ONTAP 9.15.1, é possível implantar instâncias de máquina virtual (VM) no modo HA em zonas de disponibilidade únicas (AZs) no Azure. Para obter informações sobre os critérios que suportam este recurso,<block ref="70422bd689a7303399dff3dd5e571c65" category="inline-link-rx"></block> consulte .</block>
   <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">Se a versão do Cloud Volumes ONTAP for anterior a 9.15.1 ou se alguma dessas condições não for atendida, o modelo de implantação anterior que utiliza conjuntos de disponibilidade entrará em vigor. Isso se aplica apenas a configurações de HA.</block>
-  <block id="2b0112a3fe8db72b28cea3e10ddba401" category="section-title">9.16.1 P3 (29 de maio de 2025)</block>
-  <block id="79d2490a076742db13fbcc8f0776a458" category="paragraph">O patch 9.16.1 P3 agora pode ser implantado e atualizado para o Cloud Volumes ONTAP no Azure e no Google Cloud. No entanto, essa versão não está disponível para implantação e atualização na AWS. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
-  <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P3</block>
-  <block id="4beb9f52d4c281cb89fd47e4aaa780cf" category="paragraph"><block ref="77df283c529cda018d08e767dda3eebd" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
   <block id="fbb17e3b93a1070f3de5e45b66842d95" category="list-text">As configurações do Cloud Volumes ONTAP nas zonas locais da AWS suportam apenas o tipo de disco SSD de uso geral (GP2). Nenhum outro tipo de disco é suportado no Cloud Volumes ONTAP nas Zonas Locais da AWS.</block>
   <block id="f051f95f393c93123644b448ca3165c0" category="paragraph">O Cloud Volumes ONTAP não oferece mais suporte aos tipos de instância EC2 c4, m4 e r4 na AWS. Se o seu sistema for executado em uma instância c4, m4 ou r4, altere para uma instância c5, m5 ou r5. Não é possível atualizar para esta versão até alterar o tipo de instância.</block>
   <block id="2f8299f876158db323c08455b12b585a" category="paragraph">Para obter mais informações, consulte:</block>
@@ -784,10 +758,6 @@
   <block id="b10cf18ba66c2ae046931259e614fe81" category="list-text"><block ref="b10cf18ba66c2ae046931259e614fe81" category="inline-link-rx"></block></block>
   <block id="d59a55e5a766d0a45a73ef03504c6b5b" category="inline-link">Tipos de máquinas de uso geral da série N2</block>
   <block id="0ab6f9218085a410dabf81dbe7da1b1a" category="list-text"><block ref="0ab6f9218085a410dabf81dbe7da1b1a" category="inline-link-rx"></block></block>
-  <block id="63b64193e993dd2f6062619d953aeb95" category="section-title">9.16.1 P4 (8 de julho de 2025)</block>
-  <block id="c40872b813fc8acca04c5e909c600b0c" category="paragraph">O patch 9.16.1 P4 agora pode ser implantado e atualizado para o Cloud Volumes ONTAP no Azure e no Google Cloud. No entanto, essa versão não está disponível para implantação e atualização na AWS. O BlueXP  solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
-  <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P4</block>
-  <block id="0a8093de16aa3f6ac64c7b6c07e3a0e9" category="paragraph"><block ref="4287819b7b6c3d729049717a25b7809c" category="inline-link-macro-rx"></block> (É necessário iniciar sessão no site de suporte da NetApp).</block>
   <block id="313e5c6346ba30bdb749b42654c60b9e" category="list-text">^1^ O Cloud Volumes ONTAP oferece suporte a alta velocidade de gravação com esses tipos de VM ao usar um par de HA. Você pode ativar a alta velocidade de gravação do BlueXP  durante a implantação ou a qualquer momento depois.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
   <block id="7a44fe38188ff958cad09ce844759662" category="list-text">^2^ Esta VM é recomendada somente quando o controle de manutenção do Azure é necessário. Não é recomendado para qualquer outro caso de uso devido ao preço mais alto.</block>
   <block id="7b78f11572d7f890feb55bd86cdbee51" category="list-text">^3^ Essas VMs são suportadas apenas em implantações do Cloud Volumes ONTAP 9.11.1 ou anterior. Com esses tipos de VM, você pode atualizar uma implantação de blob de página existente do Cloud Volumes ONTAP 9.11.1 para o 9.12.1. Você não pode executar novas implantações de blob de página com o Cloud Volumes ONTAP 9.12.1 ou superior.</block>
@@ -806,10 +776,6 @@
   <block id="b469f24f7b40dd39d564f20b26834f51" category="paragraph"><block ref="8c32a537fad73fe139f927507d338c47" category="inline-link-rx"></block> para operações não disruptivas não são suportadas.</block>
   <block id="a658c03927efcbcb7170fb429c8a9408" category="paragraph">Clientes CIFS/SMB que utilizam compartilhamentos CIFS não continuamente disponíveis do Cloud Volumes ONTAP sofrerão perda de sessão tanto quando ocorrer uma aquisição quanto quando o agregado que a sessão está usando for devolvido ao nó inicial do agregado. Essa é uma limitação imposta pelo próprio protocolo CIFS/SMB. Você pode usar produtos de terceiros aprovados para evitar problemas decorrentes de aquisição e devolução. Para obter mais assistência, entre em contato com o Suporte da NetApp .</block>
   <block id="c04ba4ba4463685b70d448688626a589" category="admonition"><block ref="8c32a537fad73fe139f927507d338c47" category="inline-link-rx"></block> para operações não disruptivas não são suportadas no Cloud Volumes ONTAP.</block>
-  <block id="804568356abbd917c2b16399c1d74469" category="section-title">9.16.1 P5 (28 de julho de 2025)</block>
-  <block id="b18cddec63bbac4d331412b33193f19d" category="paragraph">O patch 9.16.1 P5 já pode ser implantado e atualizado para o Cloud Volumes ONTAP no Azure e no Google Cloud. No entanto, esta versão não está disponível para implantação e atualização na AWS. O BlueXP solicitará que você atualize seus sistemas existentes para esta versão do patch.</block>
-  <block id="e890150484086859b9a5078abe9c6f20" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P5</block>
-  <block id="594276b7568f8909a2e4145873978b46" category="paragraph"><block ref="be3338d2845a087c634560014a857fc0" category="inline-link-macro-rx"></block> (É necessário fazer login no site de suporte da NetApp ).</block>
   <block id="849836109f5a7c7779b41aa322a0b75f" category="cell">Otimizado ^5^</block>
   <block id="9def883103b7b964dcbb0993e3f8a065" category="inline-link">Fim da disponibilidade das licenças otimizadas</block>
   <block id="84f2cfe539c789603fba39917f99f628" category="list-text">^5^ A partir de 11 de agosto de 2025, a licença Cloud Volumes ONTAP Optimized será descontinuada e não estará mais disponível para compra ou renovação no marketplace do Azure para assinaturas de pagamento conforme o uso (PAYGO). Para obter mais informações, consulte <block ref="43fcd9c2498ef205b9218293a558faae" category="inline-link-rx"></block> .</block>
@@ -857,4 +823,16 @@
   <block id="d894dfdb1bbb11ae0641d7c6e97d92e2" category="cell">Discos gerenciados SSD Premium ou discos gerenciados SSD Premium v2.</block>
   <block id="09c6a071fdfa0f65318d9e3e960e825e" category="list-text">^6^ Para obter informações sobre os discos internos para dados do sistema para implantações de HA em zonas de disponibilidade únicas e múltiplas, consulte<block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block> .</block>
   <block id="42762fecca2ab07cc92a3d950f2052c9" category="list-text">^7^ A partir de 11 de agosto de 2025, a licença Cloud Volumes ONTAP Optimized será descontinuada e não estará mais disponível para compra ou renovação no marketplace do Azure para assinaturas pagas conforme o uso (PAYGO).<block ref="43fcd9c2498ef205b9218293a558faae" category="inline-link-rx"></block> .</block>
+  <block id="be666ea41d284101ddfda886424c2d07" category="inline-link-macro">Aviso para o Cloud Volumes ONTAP 9.17.1</block>
+  <block id="5d400a6226e85167dbd60b61421128ef" category="list-text"><block ref="5d400a6226e85167dbd60b61421128ef" category="inline-link-macro-rx"></block></block>
+  <block id="6076bde119ef4c539333767fd60b037b" category="summary">O Cloud Volumes ONTAP 9.17.1 inclui um novo aprimoramento.</block>
+  <block id="35e59ce342eaf6b146f59a2ec17b5019" category="doc">Novidades no Cloud Volumes ONTAP 9.17.1</block>
+  <block id="c9636b1359c39d947689e7d7030a3876" category="paragraph">O Cloud Volumes ONTAP 9.17.1 está disponível para implantação e atualização no Azure e no Google Cloud.</block>
+  <block id="db3cc6b5ebbff132de6d6986ec232460" category="section-title">9.17.1 RC1 (4 de setembro de 2025)</block>
+  <block id="8d9a14656b6d91eecabf8d5f9a39888c" category="paragraph">Agora você pode usar o Release Candidate 1 do Cloud Volumes ONTAP 9.17.1 para implantação e atualização no Azure e no Google Cloud. No entanto, esta versão não está disponível para implantação e atualização na AWS.</block>
+  <block id="1dc5d2150ca63e1eb180153cd4fd3848" category="paragraph">Você pode atualizar para o Cloud Volumes ONTAP 9.17.1 RC1 a partir da versão 9.16.1 no Azure e no Google Cloud.  O BlueXP solicitará que você atualize os sistemas Cloud Volumes ONTAP qualificados para esta versão.</block>
+  <block id="a925267cf1e3f473e26af9a1c7e069bd" category="admonition">Para a AWS, você não será solicitado a fazer essa atualização.  A atualização para o Cloud Volumes ONTAP 9.17.1 RC1 não é suportada na AWS.</block>
+  <block id="1be92e36c3e9ca47e988acc51bde4499" category="sidebar">Estas notas de versão descrevem novos recursos, limitações e problemas conhecidos do Cloud Volumes ONTAP 9.17.1.</block>
+  <block id="4cf5c8db7f505fa308225ecc9355e4d5" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.17.1</block>
+  <block id="003bdd8b041b75252a40e81df0fa7067" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.17.1</block>
 </blocks>

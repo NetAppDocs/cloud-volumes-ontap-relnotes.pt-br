@@ -732,11 +732,8 @@
   <block id="f2642484d82ac71ab617437045e56b35" category="doc">Limites de armazenamento para Cloud Volumes ONTAP no Google Cloud</block>
   <block id="0d965f3057c75408feddc192acd12da8" category="doc">Colaboração com fornecedores de nuvem do Cloud Volumes ONTAP</block>
   <block id="6e9c766eb64d674ed321c13842973979" category="paragraph">Saiba como a NetApp colabora com fornecedores de nuvem para lidar com possíveis problemas.</block>
-  <block id="77d9dd558dce394d624e008a5015c43e" category="section-title">Limitações com implantações de alta disponibilidade</block>
-  <block id="47e6c824f3fe7a0a707fd6f94c2b0d5e" category="paragraph">Pares de alta disponibilidade (HA) não são compatíveis em algumas regiões.</block>
   <block id="e62fa1e447749b7b88523431cfe1cb23" category="section-title">Limitações com implantações de HA em zonas de disponibilidade únicas</block>
   <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">Implante pares de HA em zonas de disponibilidade únicas no Azure</block>
-  <block id="d8bb5ee8ceb2ff0c0fd5de1a5d8db6ea" category="paragraph">A partir do Cloud Volumes ONTAP 9.15.1, é possível implantar instâncias de máquina virtual (VM) no modo HA em zonas de disponibilidade únicas (AZs) no Azure. Para obter informações sobre os critérios que suportam este recurso,<block ref="70422bd689a7303399dff3dd5e571c65" category="inline-link-rx"></block> consulte .</block>
   <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">Se a versão do Cloud Volumes ONTAP for anterior a 9.15.1 ou se alguma dessas condições não for atendida, o modelo de implantação anterior que utiliza conjuntos de disponibilidade entrará em vigor. Isso se aplica apenas a configurações de HA.</block>
   <block id="fbb17e3b93a1070f3de5e45b66842d95" category="list-text">As configurações do Cloud Volumes ONTAP nas zonas locais da AWS suportam apenas o tipo de disco SSD de uso geral (GP2). Nenhum outro tipo de disco é suportado no Cloud Volumes ONTAP nas Zonas Locais da AWS.</block>
   <block id="f051f95f393c93123644b448ca3165c0" category="paragraph">O Cloud Volumes ONTAP não oferece mais suporte aos tipos de instância EC2 c4, m4 e r4 na AWS. Se o seu sistema for executado em uma instância c4, m4 ou r4, altere para uma instância c5, m5 ou r5. Não é possível atualizar para esta versão até alterar o tipo de instância.</block>
@@ -835,4 +832,19 @@
   <block id="1be92e36c3e9ca47e988acc51bde4499" category="sidebar">Estas notas de versão descrevem novos recursos, limitações e problemas conhecidos do Cloud Volumes ONTAP 9.17.1.</block>
   <block id="4cf5c8db7f505fa308225ecc9355e4d5" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.17.1</block>
   <block id="003bdd8b041b75252a40e81df0fa7067" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.17.1</block>
+  <block id="7662ffdf9f88ef8d3503c5a47332d185" category="section-title">Limitações de discos SSD v2 premium para configurações de HA</block>
+  <block id="628be05f52730d9bc1ff4a25a8803b9f" category="paragraph">Os discos gerenciados SSD v2 Premium têm as seguintes limitações para implantações de alta disponibilidade (HA) no Azure:</block>
+  <block id="c393fdd1e5323cfc775d4d2f67c6ee3c" category="list-text">Não suportado em implantações de HA em regiões não zonais.</block>
+  <block id="a1a6ff52f4f044bbb48a8b6e32faefee" category="list-text">Não suportado em implantações de HA em várias zonas de disponibilidade.</block>
+  <block id="57deebd91c1b4f79fe1ace5075015908" category="list-text">Suportado somente em configurações de HA implantadas em zonas de disponibilidade únicas.</block>
+  <block id="026daacd5fe0a67d4cbbccda5dc168d4" category="paragraph">Para usar discos gerenciados Premium SSD v2 com configurações de alta disponibilidade do Cloud Volumes ONTAP , certifique-se de que os seguintes requisitos sejam atendidos:</block>
+  <block id="6a1350d029dd7fa7f1741f50e36f86ab" category="list-text">A versão do Cloud Volumes ONTAP é 9.15.1 ou posterior.</block>
+  <block id="ceb986bf3d3490c0ed01497de9d5d2be" category="list-text">A implantação de HA está em uma única zona de disponibilidade do Azure.</block>
+  <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Site do Microsoft Azure: Produtos disponíveis por região</block>
+  <block id="b6a84b78c406cfef42bd6862aa774c74" category="list-text">As regiões e zonas selecionadas oferecem suporte a discos gerenciados Premium SSD v2.  Para obter informações sobre as regiões suportadas, consulte o<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block> .</block>
+  <block id="0dc254fad1832eb1cdccc5261264b7ef" category="inline-link">Suporte para discos gerenciados SSD v2 Premium no Azure</block>
+  <block id="59e0d21b78c6b5234e43ce7e3f97f417" category="paragraph">Para obter mais informações, consulte <block ref="8eeec6c9a71de31b434ae927dfa55f28" category="inline-link-rx"></block> .</block>
+  <block id="17f65eba8f584b7ce968f1741f49a63d" category="paragraph">A partir do Cloud Volumes ONTAP 9.15.1, você pode implantar instâncias de máquina virtual (VM) no modo HA em zonas de disponibilidade únicas (AZs) no Azure. Para obter informações sobre os critérios que suportam esse recurso, consulte<block ref="49b9d02c37364ae9681ce7a59d4d9548" category="inline-link-rx"></block> .</block>
+  <block id="ed5b1d9ebcc8b8d189007ac8c9494846" category="section-title">Limitações com implantações de HA</block>
+  <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">Pares HA não são suportados em algumas regiões.</block>
 </blocks>

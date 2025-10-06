@@ -20,9 +20,9 @@ As seguintes limitações conhecidas são específicas do Cloud Volumes ONTAP no
 
 == Limitações com o uso de extensões Azure VM
 
-O Cloud Volumes ONTAP não oferece suporte a extensões de máquina virtual (VM) do Azure porque elas afetam as operações de gerenciamento do BlueXP .  Durante a implantação, o BlueXP impede a instalação de qualquer extensão em suas VMs.  Se as extensões já estiverem instaladas nas suas VMs Cloud Volumes ONTAP existentes, entre em contato com o Suporte do Microsoft Azure para removê-las.  Para obter orientação, consulte o artigo da base de conhecimento (KB) https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Can_Azure_VM_Management_Extensions_be_installed_into_Cloud_Volume_ONTAP["As extensões de gerenciamento de VM do Azure podem ser instaladas no Cloud Volume ONTAP?"^]
+O Cloud Volumes ONTAP não oferece suporte a extensões de máquina virtual (VM) do Azure porque elas afetam as operações de gerenciamento no NetApp Console.  Durante a implantação, o Console impede a instalação de quaisquer extensões em suas VMs. Se as extensões já estiverem instaladas nas suas VMs Cloud Volumes ONTAP existentes, entre em contato com o Suporte do Microsoft Azure para removê-las. Para obter orientação, consulte o artigo da base de conhecimento (KB) https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Can_Azure_VM_Management_Extensions_be_installed_into_Cloud_Volume_ONTAP["As extensões de gerenciamento de VM do Azure podem ser instaladas no Cloud Volume ONTAP?"^]
 
-A partir de 14 de julho de 2025, a NetApp enviará e-mails e notificará você no BlueXP se extensões de VM forem detectadas em suas VMs do Cloud Volumes ONTAP .
+A partir de 14 de julho de 2025, a NetApp enviará e-mails e notificará você no Console se extensões de VM forem detectadas em suas VMs do Cloud Volumes ONTAP .
 
 
 

@@ -22,7 +22,7 @@ O Cloud Volumes ONTAP tem limites de configuração de storage para fornecer ope
 
 A capacidade máxima do sistema inclui armazenamento baseado em disco, além de armazenamento de objetos usado para armazenamento de dados em camadas.
 
-O NetApp não suporta exceder o limite de capacidade do sistema. Se você atingir o limite de capacidade licenciado, o BlueXP  exibirá uma mensagem de ação necessária e não permitirá mais adicionar discos adicionais.
+A NetApp não oferece suporte para exceder o limite de capacidade do sistema. Se você atingir o limite de capacidade licenciada, o NetApp Console exibirá uma mensagem de ação necessária e não permitirá mais que você adicione discos adicionais.
 
 Para algumas configurações, os limites de disco impedem que você alcance o limite de capacidade usando discos sozinhos. Nesses casos, você pode alcançar o limite de capacidade em https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["disposição em camadas dos dados inativos no storage de objetos"^]. Consulte os limites de capacidade e disco abaixo para obter mais detalhes.
 
@@ -55,7 +55,7 @@ Limites de capacidade para outros tipos de licença::
 O limite de capacidade é para todo o par HA.  Não é por nó.  Por exemplo, a licença Premium permite até 368 TiB em ambos os nós.
 
 .Para um sistema de HA na AWS, os dados espelhados contam com limite de capacidade?
-Não, não. Os dados em um par de HA da AWS são espelhados de forma síncrona entre os nós para que os dados estejam disponíveis em caso de falha. Por exemplo, se você comprar um disco TIB de 8 TB no nó A, o BlueXP  também aloca um disco TIB de 8 TB no nó B que é usado para dados espelhados. Embora 16 TIB de capacidade tenha sido provisionado, apenas 8 TIB conta contra o limite de licença.
+Não, não é. Os dados em um par de HA da AWS são espelhados de forma sincronizada entre os nós para que os dados estejam disponíveis em caso de falha. Por exemplo, se você comprar um disco de 8 TiB no nó A, o Console também alocará um disco de 8 TiB no nó B que será usado para dados espelhados. Embora 16 TiB de capacidade tenham sido provisionados, apenas 8 TiB contam para o limite da licença.
 
 
 
@@ -408,7 +408,7 @@ As instâncias listadas abaixo são para as famílias de instâncias C5, M5 e R5
 | *.24xlarge | 50 | 44 | 24 | 12 
 |===
 . Esse número indica quantos endereços IP privados _restantes_ estão disponíveis na porta e0a depois que o Cloud Volumes ONTAP é implantado e configurado. Por exemplo, um sistema *.2xlarge suporta um máximo de 15 endereços IP por interface de rede. Quando um par de HA é implantado em uma única AZ, 5 endereços IP privados são alocados à porta e0a. Como resultado, um par de HA que usa um tipo de instância *.2xlarge tem 10 endereços IP privados restantes para VMs de storage adicionais.
-. O número listado nessas colunas inclui a VM de armazenamento inicial que o BlueXP  cria por padrão. Por exemplo, se 24 estiver listado nesta coluna, isso significa que você pode criar 23 VMs de armazenamento adicionais para um total de 24.
+. O número listado nessas colunas inclui a VM de armazenamento inicial que o Console cria por padrão. Por exemplo, se 24 estiver listado nesta coluna, significa que você pode criar 23 VMs de armazenamento adicionais para um total de 24.
 . Um LIF de gerenciamento para a VM de storage é opcional. Um LIF de gerenciamento fornece uma conexão com ferramentas de gerenciamento como o SnapCenter.
 +
 Como ele requer um endereço IP privado, ele limitará o número de VMs de armazenamento adicionais que você pode criar. A única exceção é um par HA em vários AZs. Nesse caso, o endereço IP do LIF de gerenciamento é um endereço IP _flutuante_, portanto, ele não conta com o limite IP _private_.
@@ -452,7 +452,7 @@ Como ele requer um endereço IP privado, ele limitará o número de VMs de armaz
 . A criação do FlexVol volume até o tamanho máximo de 300 TIB é suportada usando as seguintes ferramentas e versões mínimas:
 +
 ** O Gerenciador de sistemas e a CLI do ONTAP a partir do Cloud Volumes ONTAP 9.12.1 P2 e 9.13.0 P2
-** BlueXP  a partir de Cloud Volumes ONTAP 9.13.1
+** Começando com o Cloud Volumes ONTAP 9.13.1
 
 
 

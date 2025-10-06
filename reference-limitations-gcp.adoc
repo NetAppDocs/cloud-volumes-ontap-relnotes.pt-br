@@ -28,6 +28,6 @@ O Cloud Volumes ONTAP não pode funcionar corretamente se o espelhamento de paco
 
 == Limitações do Google Private Service Connect
 
-Se você utilizar https://cloud.google.com/vpc/docs/private-service-connect["Google Private Service Connect"^] a VPC na qual está implantando o Cloud Volumes ONTAP, precisará implementar Registros DNS que encaminham o tráfego para o necessário https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Pontos finais da API do BlueXP "^].
+Se você alavancar https://cloud.google.com/vpc/docs/private-service-connect["Google Private Service Connect"^] dentro da VPC na qual você está implantando o Cloud Volumes ONTAP , você precisará implementar registros DNS que encaminham o tráfego para o necessário https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Pontos de extremidade da API"^] .
 
 A disposição em camadas dos dados do Cloud Volumes ONTAP em um bucket do Google Cloud Storage não é compatível com o Private Service Connect.

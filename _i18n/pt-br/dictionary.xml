@@ -792,10 +792,7 @@
   <block id="5d400a6226e85167dbd60b61421128ef" category="list-text"><block ref="5d400a6226e85167dbd60b61421128ef" category="inline-link-macro-rx"></block></block>
   <block id="6076bde119ef4c539333767fd60b037b" category="summary">O Cloud Volumes ONTAP 9.17.1 inclui um novo aprimoramento.</block>
   <block id="35e59ce342eaf6b146f59a2ec17b5019" category="doc">Novidades no Cloud Volumes ONTAP 9.17.1</block>
-  <block id="c9636b1359c39d947689e7d7030a3876" category="paragraph">O Cloud Volumes ONTAP 9.17.1 está disponível para implantação e atualização no Azure e no Google Cloud.</block>
   <block id="db3cc6b5ebbff132de6d6986ec232460" category="section-title">9.17.1 RC1 (4 de setembro de 2025)</block>
-  <block id="8d9a14656b6d91eecabf8d5f9a39888c" category="paragraph">Agora você pode usar o Release Candidate 1 do Cloud Volumes ONTAP 9.17.1 para implantação e atualização no Azure e no Google Cloud. No entanto, esta versão não está disponível para implantação e atualização na AWS.</block>
-  <block id="a925267cf1e3f473e26af9a1c7e069bd" category="admonition">Para a AWS, você não será solicitado a fazer essa atualização.  A atualização para o Cloud Volumes ONTAP 9.17.1 RC1 não é suportada na AWS.</block>
   <block id="1be92e36c3e9ca47e988acc51bde4499" category="sidebar">Estas notas de versão descrevem novos recursos, limitações e problemas conhecidos do Cloud Volumes ONTAP 9.17.1.</block>
   <block id="4cf5c8db7f505fa308225ecc9355e4d5" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.17.1</block>
   <block id="003bdd8b041b75252a40e81df0fa7067" category="sidebar">Notas de versão do Cloud Volumes ONTAP 9.17.1</block>
@@ -845,15 +842,19 @@
   <block id="26a761fa26c9fc375a164034ff206aca" category="paragraph">Não, não é. Os dados em um par de HA são espelhados de forma sincronizada entre os nós para que os dados estejam disponíveis em caso de falha no Google Cloud. Por exemplo, se você comprar um disco de 8 TB no nó A, o Console também alocará um disco de 8 TB no nó B que será usado para dados espelhados. Embora 16 TB de capacidade sejam configurados, apenas 8 TB são contabilizados no limite da licença.</block>
   <block id="1d3b6bcaa662fb815c64aec0bffd0aa5" category="inline-link-macro">Aprenda como fazer upgrade quando o Console notificar você</block>
   <block id="c1c95a79ba017a924aa27e6d62ce3148" category="paragraph"><block ref="96dd1055c54322c16d3691cb1f44b801" category="inline-link-macro-rx"></block> .</block>
-  <block id="ec7fa7e95a261dd6d86a889d93e8e7fd" category="paragraph">Você pode atualizar para o Cloud Volumes ONTAP 9.17.1 RC1 a partir da versão 9.16.1 no Azure e no Google Cloud. O Console solicitará que você atualize os sistemas Cloud Volumes ONTAP qualificados para esta versão.</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">Console NetApp</block>
   <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">Serviços de dados NetApp</block>
   <block id="8217e312ff09919418aea279cfd2ad1b" category="list-text">4 ou 8 com Volumes Elásticos ^3^</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
-  <block id="5d1eb95c23458b15c13fe46f408728aa" category="paragraph">Recursos e aprimoramentos adicionais também foram introduzidos na versão mais recente do NetApp Console. Para mais informações, veja as novidades em<block ref="56e5ce972271b4b4616ecc1db39a9778" category="inline-link-rx"></block> gerenciado no Console.</block>
   <block id="86de323bb8011aa153a28e1ec6251441" category="section-title">9.17.1 P1 (04 de novembro de 2025)</block>
-  <block id="8027200a53fea356fb83667e546c5730" category="paragraph">O patch Cloud Volumes ONTAP 9.17.1 P1 já está disponível para implantação e atualização no Azure e no Google Cloud. No entanto, esta versão não está disponível para implantação e atualização na AWS. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P1</block>
   <block id="eea79595a199aeba235c28ddf7c6a513" category="paragraph"><block ref="429dec56698d9248dce2c6adf256ffe7" category="inline-link-macro-rx"></block>(É necessário fazer login no site de suporte da NetApp ).</block>
+  <block id="ecf15dfab4d665bf128d1e2206f73a60" category="paragraph">O Cloud Volumes ONTAP 9.17.1 inclui novos aprimoramentos.</block>
+  <block id="efb171bcd8d21c30ceeb8df57557cce9" category="paragraph">Novos recursos do Cloud Volumes ONTAP também foram introduzidos nas versões mais recentes do NetApp Console. Para mais informações, veja as novidades em<block ref="56e5ce972271b4b4616ecc1db39a9778" category="inline-link-rx"></block> gerenciado no Console.</block>
+  <block id="6fb051256b243143bc0b276db97f7c41" category="paragraph">O patch Cloud Volumes ONTAP 9.17.1 P1 já está disponível para implantação e atualização na AWS, Azure e Google Cloud. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
+  <block id="9545c7a855bc88b301687212c3cb35d6" category="paragraph">Agora você pode usar o Release Candidate 1 do Cloud Volumes ONTAP 9.17.1 para implantação e atualização no Azure e no Google Cloud.</block>
+  <block id="8690f53f07f007360e78dc29e5309562" category="admonition">Esta versão não está disponível para implantação e atualização na AWS.</block>
+  <block id="57a0ba977b3ce94f8d770dc7f07f0621" category="paragraph">As atualizações do Cloud Volumes ONTAP devem ser concluídas a partir do Console. Você não deve atualizar o Cloud Volumes ONTAP usando o System Manager ou a CLI. Isso pode afetar a estabilidade do sistema.</block>
+  <block id="39c7d7fdae3f61f4fd797ff61941cf21" category="paragraph">Você pode atualizar para o Cloud Volumes ONTAP 9.17.1 a partir da versão 9.16.1 na AWS, Azure e Google Cloud.  Para AWS, você pode atualizar para o Cloud Volumes ONTAP 9.17.1 P1 ou posterior.  O Console solicitará que você atualize os sistemas Cloud Volumes ONTAP elegíveis para esta versão.</block>
 </blocks>

@@ -248,7 +248,6 @@
   <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3 1,4,5</block>
   <block id="2bf4a4b22f921c225f089ec2954ee9e8" category="list-text">L48s_v3 1,4,5</block>
   <block id="c130660d20dd5cec8fbf6045fb61af08" category="list-text">L64s_v3 1,4,5</block>
-  <block id="b869cbdadaa9844d32c24de3f4db3242" category="cell">Discos gerenciados</block>
   <block id="88d444d836b2ea3ca342f4cc3a6b2b50" category="paragraph">No Azure, um agregado pode conter até 12 discos com o mesmo tipo e tamanho.</block>
   <block id="90d1dad6ac7388ba65631ec0b927dabc" category="paragraph">Sistemas de nó único usam discos gerenciados do Azure. Os seguintes tamanhos de disco são suportados:</block>
   <block id="fac18bfae2384f6eccc3a9779ce41d25" category="cell">SSD premium</block>
@@ -860,4 +859,16 @@
   <block id="ef472153bbc56318dce19177ac3fa1b4" category="paragraph">O patch P2 do Cloud Volumes ONTAP 9.17.1 já está disponível para atualização na AWS, Azure e Google Cloud. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
   <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P2</block>
   <block id="a40be2bf2d5d6d88cd3370cec7aad194" category="paragraph"><block ref="ac39adedf16f862832f2e839cb1736f3" category="inline-link-macro-rx"></block>(É necessário fazer login no site de suporte da NetApp ).</block>
+  <block id="02fab2cadf45bea30480ac0cf50e7203" category="list-text">E4ds_v6 ^6^</block>
+  <block id="06413994c4aa1a93ecf2981f24ff2396" category="list-text">E20ds_v6 ^6^</block>
+  <block id="10dc072def6ec7e5386a9f5dd3ab2c8a" category="list-text">E32ds_v6 ^6^</block>
+  <block id="2ae3c16964ee90fd940bb8328b5a3663" category="list-text">E48ds_v6 ^6^</block>
+  <block id="92d6fd9aadcde9f296b1479b74c1cf7f" category="list-text">E64ds_v6 ^6^</block>
+  <block id="4bdfb2bd07bacb86cc6544fcf6ff0886" category="inline-link">Documentação do Azure: Série de tamanhos Edsv6</block>
+  <block id="92ad9c31e57427cf475ee8d5349fc4b9" category="list-text">^6^ Os tipos de VM Edsv6 são suportados para novas implementações do Cloud Volumes ONTAP 9.17.1 e versões posteriores. Não é possível migrar uma implantação existente com outro tipo de VM, por exemplo, de Edsv5 para Edsv6; somente alterações de tamanho entre variantes do Edsv6 (por exemplo, E20ds_v6 → E32ds_v6) são suportadas. Para obter informações sobre esse tipo de VM, consulte o<block ref="45ec24eb73012d89f19225059116e005" category="inline-link-rx"></block>.</block>
+  <block id="56ca123545ff7cba565948f4938058fb" category="list-text">E20ds_v6 ^8^</block>
+  <block id="e697f2679cf554cf428572d7d2257b81" category="list-text">E32ds_v6 ^8^</block>
+  <block id="6fca818cb2b74d72dd8849c2a4e34d2b" category="list-text">E48ds_v6 ^8^</block>
+  <block id="bbc7e0e0269760cbd08e32205763eede" category="list-text">E64ds_v6 ^8^</block>
+  <block id="312c1718d8151f9dd3f53ad516f59210" category="list-text">^8^ Os tipos de VM Edsv6 são suportados para novas implementações do Cloud Volumes ONTAP 9.17.1 e versões posteriores. Não é possível migrar uma implantação existente com outro tipo de VM, por exemplo, de Edsv5 para Edsv6; somente alterações de tamanho entre variantes do Edsv6 (por exemplo, E20ds_v6 → E32ds_v6) são suportadas. Para obter informações sobre esse tipo de VM, consulte o<block ref="45ec24eb73012d89f19225059116e005" category="inline-link-rx"></block>.</block>
 </blocks>

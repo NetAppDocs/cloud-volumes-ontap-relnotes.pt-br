@@ -20,6 +20,14 @@ Novos recursos do Cloud Volumes ONTAP também foram introduzidos nas versões ma
 
 
 
+== 9.17.1 P3 (22 de dezembro de 2025)
+
+O patch P3 do Cloud Volumes ONTAP 9.17.1 já está disponível para atualização na AWS, Azure e Google Cloud. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P3["Veja a lista de bugs corrigidos no patch P3"^](É necessário fazer login no site de suporte da NetApp ).
+
+
+
 == 9.17.1 P2 (04 de dezembro de 2025)
 
 O patch P2 do Cloud Volumes ONTAP 9.17.1 já está disponível para atualização na AWS, Azure e Google Cloud. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.

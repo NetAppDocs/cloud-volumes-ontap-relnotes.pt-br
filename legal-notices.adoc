@@ -47,6 +47,6 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 Os arquivos de aviso fornecem informações sobre direitos autorais de terceiros e licenças usadas no software NetApp.
 
-* link:media/notice-cvo.pdf["Aviso para o Cloud Volumes ONTAP 9.17.1"^]
+* link:media/notice-cvo.pdf["Aviso para o Cloud Volumes ONTAP 9.18.1"^]
 * https://docs.netapp.com/us-en/ontap/reference_legal_notices.html#open-source["Aviso para ONTAP"^]
 

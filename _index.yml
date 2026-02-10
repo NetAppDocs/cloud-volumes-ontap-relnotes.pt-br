@@ -1,11 +1,11 @@
 ---
 indexpage:
-  title: Notas de versão do Cloud Volumes ONTAP 9.17.1
+  title: Cloud Volumes ONTAP 9.18.1 Notas de versão
   summary: Estas notas de versão descrevem novos recursos, limitações e problemas
-    conhecidos do Cloud Volumes ONTAP 9.17.1.
+    conhecidos do Cloud Volumes ONTAP 9.18.1.
   keywords: RN, CVO, release notes Cloud Volumes ONTAP
   lead: Estas notas de versão descrevem novos recursos, limitações e problemas conhecidos
-    do Cloud Volumes ONTAP 9.17.1.
+    do Cloud Volumes ONTAP 9.18.1.
   tiles:
   - title: Comece agora
     links:

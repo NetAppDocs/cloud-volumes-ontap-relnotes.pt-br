@@ -51,6 +51,6 @@ NOTE: Cloud Volumes ONTAP 9.18.1 não está disponível para upgrade no Google C
 
 === Tempo de inatividade
 
-* A atualização de um sistema de nó único leva o sistema off-line por até 25 minutos, durante os quais a e/S é interrompida.
+* A atualização de um sistema de nó único deixa o sistema offline por até 25 minutos, durante os quais a E/S é interrompida.
 * A atualização de um par de HA não causa interrupções e e/S é ininterrupta. Durante esse processo de atualização sem interrupções, cada nó é atualizado em conjunto para continuar fornecendo e/S aos clientes.
 

@@ -30,7 +30,7 @@ A NetApp implementou ferramentas destinadas a se conetar com fornecedores de nuv
 
 A Microsoft agenda e anuncia programaticamente eventos de manutenção em sua infraestrutura de máquina virtual (VM) do Azure que podem afetar as VMs do Cloud Volumes ONTAP. Estes eventos são anunciados 15 minutos antes da janela de manutenção.
 
-O manuseio especial dos eventos de manutenção é suportado para pares de alta disponibilidade (HA) da Cloud Volumes ONTAP. Para manter a integridade das aplicações, realizamos uma aquisição preventiva para priorizar a estabilidade, pois qualquer perda de conetividade de mais de 15 segundos desativará os recursos de failover.
+O tratamento especial de eventos de manutenção é suportado para pares de HA do Cloud Volumes ONTAP. Para manter a integridade do aplicativo, realizamos uma tomada de controle preventiva para priorizar a estabilidade, pois qualquer perda de conectividade superior a 15 segundos desativará os recursos de failover.
 
 Quando a janela de manutenção for anunciada, o nó parceiro do nó de destino executará um takeover. Quando a manutenção estiver concluída, um giveback será iniciado. Após a giveback, espera-se que o par HA retorne a um estado saudável. Se isso não ocorrer, entre em Contato com o suporte da NetApp para obter assistência. Observe que os eventos de manutenção são direcionados a uma das VMs em um par de HA de cada vez e, normalmente, ambos os nós são direcionados em um período de tempo relativamente curto.
 

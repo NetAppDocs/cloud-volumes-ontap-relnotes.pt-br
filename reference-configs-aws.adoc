@@ -20,9 +20,9 @@ Várias configurações do Cloud Volumes ONTAP são suportadas na AWS.
 
 == Número de nós com suporte
 
-O Cloud Volumes ONTAP está disponível na AWS como um sistema de nó único e como um par de nós de alta disponibilidade (HA) para tolerância de falhas e operações ininterruptas.
+Cloud Volumes ONTAP está disponível na AWS como um sistema de nó único e como um par de HA para tolerância de falhas e operações não disruptivas.
 
-A atualização de um único sistema de nós para um par de HA não é compatível. Se você quiser alternar entre um único sistema de nós e um par de HA, precisará implantar um novo sistema e replicar dados do sistema existente para o novo sistema.
+A atualização de um sistema de nó único para um par de HA não é suportada. Se você deseja alternar entre um sistema de nó único e um par de HA, então é necessário implantar um novo sistema e replicar dados do sistema existente para o novo sistema.
 
 
 
@@ -79,7 +79,7 @@ Com o licenciamento baseado em capacidade, cada sistema Cloud Volumes ONTAP ofer
 
 
 --
-.Licenças baseadas em nós
+.Outras licenças
 --
 [cols="h,d,d,d,d"]
 |===
@@ -245,8 +245,8 @@ As larguras de banda mostradas na tabela abaixo correspondem aos limites documen
 | m6id.32xlarge | 64 4 | 512 | Suportado | 50 | 40.000 | Suportado 
 |===
 . Alguns tipos de instância incluem armazenamento NVMe local, que o Cloud Volumes ONTAP usa como _Flash Cache_. O Flash Cache acelera o acesso aos dados por meio do armazenamento em cache inteligente em tempo real dos dados do usuário lidos recentemente e dos metadados do NetApp. Ele é eficaz para cargas de trabalho com uso intenso de leitura aleatória, incluindo bancos de dados, e-mail e serviços de arquivos. A compactação deve ser desativada em todos os volumes para aproveitar as melhorias de desempenho do Flash Cache. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["Saiba mais sobre o Flash Cache"^].
-. O Cloud Volumes ONTAP dá suporte à alta velocidade de gravação com a maioria dos tipos de instância ao usar um par de HA. A alta velocidade de gravação é suportada em todos os tipos de instância ao usar um sistema de nó único. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["Saiba mais sobre como escolher uma velocidade de escrita"^].
-. O tipo de instância r5,12xlarge tem uma limitação conhecida com capacidade de suporte. Se um nó for reiniciado inesperadamente devido a um pânico, o sistema poderá não coletar arquivos principais usados para solucionar problemas e causar o problema. O cliente aceita os riscos e os termos de suporte limitados e assume toda a responsabilidade de suporte se esta condição ocorrer. Essa limitação afeta pares de HA recém-implantados e pares de HA atualizados de 9,8. A limitação não afeta sistemas de nó único recém-implantados.
+. Cloud Volumes ONTAP oferece suporte a alta velocidade de gravação na maioria dos tipos de instância ao usar um par de HA. A alta velocidade de gravação é suportada em todos os tipos de instância ao usar um sistema de nó único https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["Saiba mais sobre como escolher uma velocidade de escrita"^].
+. O tipo de instância r5.12xlarge possui uma limitação conhecida em relação ao suporte. Se um nó reiniciar inesperadamente devido a um pânico, o sistema pode não coletar os arquivos de núcleo usados para solucionar problemas e identificar a causa raiz. O cliente aceita os riscos e os termos de suporte limitados e assume toda a responsabilidade pelo suporte se essa condição ocorrer. Essa limitação afeta pares de HA recém-implantados e pares de HA atualizados a partir da versão 9.8. A limitação não afeta sistemas de nó único recém-implantados.
 . Embora esses tipos de instância EC2 suportem mais de 64 vCPUs, o Cloud Volumes ONTAP suporta apenas até 64 vCPUs.
 . Quando você escolhe um tipo de instância EC2, você pode especificar se é uma instância compartilhada ou uma instância dedicada.
 . As zonas locais da AWS são suportadas nas seguintes famílias de tipos de instâncias do EC2 com tamanhos xlarge a 4xlarge: M5, C5, C5d, R5 e R5d. link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Você deve consultar a AWS para obter os detalhes mais recentes e completos sobre os tipos de instâncias EC2 compatíveis em zonas locais"^].

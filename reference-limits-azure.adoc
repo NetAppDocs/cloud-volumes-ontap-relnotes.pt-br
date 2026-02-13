@@ -96,7 +96,7 @@ Os limites não incluem o disco raiz, o disco central e a VNVRAM.
 * Você pode ver a capacidade máxima do sistema quando usa apenas discos e quando usa discos e camadas de dados frios para armazenamento de objetos.
 * Os sistemas de nó único e HA que usam discos gerenciados têm um máximo de 32 TIB por disco. O número de discos suportados varia de acordo com o tamanho da VM.
 * Os sistemas HA que usam blobs de página têm um máximo de 8 TIB por blob de página. O número de discos suportados varia de acordo com o tamanho da VM.
-* O limite 896 TIB baseado em disco listado para sistemas de nó único com determinados tamanhos de VM é o limite _tested_.
+* O limite baseado em disco de 896 TiB listado para sistemas de nó único com determinados tamanhos de VM é o limite _testado_.
 
 
 

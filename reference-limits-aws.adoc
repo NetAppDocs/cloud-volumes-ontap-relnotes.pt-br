@@ -99,7 +99,7 @@ Notas:
 
 == Limites de disco e disposição em camadas por instância do EC2
 
-Os limites de capacidade são diferentes dependendo da família de tipos de instância do EC2 usada e se você está usando um único sistema de nós ou um par de HA.
+Os limites de capacidade variam dependendo da família de instâncias EC2 que você usa e se você está usando um sistema de nó único ou um par de HA.
 
 As notas a seguir fornecem detalhes sobre os números que você verá nas tabelas abaixo:
 

@@ -34,8 +34,6 @@
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
   <block id="fa082ab1a05e05550971e6e5f583dcfe" category="summary">Várias configurações do Cloud Volumes ONTAP são suportadas na AWS.</block>
   <block id="7db0f9060b8b2def82346add7b8e89c0" category="section-title">Número de nós com suporte</block>
-  <block id="a0a1c13507a24083c5a835cbc79ea6c7" category="paragraph">O Cloud Volumes ONTAP está disponível na AWS como um sistema de nó único e como um par de nós de alta disponibilidade (HA) para tolerância de falhas e operações ininterruptas.</block>
-  <block id="ffe182d798fac96ff130cb1500052036" category="paragraph">A atualização de um único sistema de nós para um par de HA não é compatível. Se você quiser alternar entre um único sistema de nós e um par de HA, precisará implantar um novo sistema e replicar dados do sistema existente para o novo sistema.</block>
   <block id="bff50f1947dbec1e11bc66d60ca0b1d9" category="section-title">Armazenamento suportado</block>
   <block id="721f444864f7f20b038565facc11ed77" category="paragraph">O Cloud Volumes ONTAP dá suporte a vários tipos de discos EBS e ao storage de objetos S3 para categorização de dados. A capacidade máxima de armazenamento é determinada pela licença que você escolher.</block>
   <block id="e17c7f98af970809162c4395474988ad" category="section-title">Suporte de storage por licença</block>
@@ -156,8 +154,6 @@
   <block id="dfeeabb8d703f59f841c2a6e2ed8d240" category="inline-link">Saiba mais sobre o Flash Cache</block>
   <block id="9df4ca2adcfbf390d35edbeb52928a78" category="list-text">Alguns tipos de instância incluem armazenamento NVMe local, que o Cloud Volumes ONTAP usa como _Flash Cache_. O Flash Cache acelera o acesso aos dados por meio do armazenamento em cache inteligente em tempo real dos dados do usuário lidos recentemente e dos metadados do NetApp. Ele é eficaz para cargas de trabalho com uso intenso de leitura aleatória, incluindo bancos de dados, e-mail e serviços de arquivos. A compactação deve ser desativada em todos os volumes para aproveitar as melhorias de desempenho do Flash Cache.<block ref="da56a164195bbdee72f1dfc4ea53669d" category="inline-link-rx"></block>.</block>
   <block id="18ca3c89ae9e8edbe217f2c9b7c6107d" category="inline-link">Saiba mais sobre como escolher uma velocidade de escrita</block>
-  <block id="ce4956d12fe22f1b1243720ce22651e0" category="list-text">O Cloud Volumes ONTAP dá suporte à alta velocidade de gravação com a maioria dos tipos de instância ao usar um par de HA. A alta velocidade de gravação é suportada em todos os tipos de instância ao usar um sistema de nó único.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
-  <block id="8e6a2ebba2f4ad1a560224744383ef97" category="list-text">O tipo de instância r5,12xlarge tem uma limitação conhecida com capacidade de suporte. Se um nó for reiniciado inesperadamente devido a um pânico, o sistema poderá não coletar arquivos principais usados para solucionar problemas e causar o problema. O cliente aceita os riscos e os termos de suporte limitados e assume toda a responsabilidade de suporte se esta condição ocorrer. Essa limitação afeta pares de HA recém-implantados e pares de HA atualizados de 9,8. A limitação não afeta sistemas de nó único recém-implantados.</block>
   <block id="5ce58b1e3bfddca3ae7d5a13676224ff" category="list-text">Embora esses tipos de instância EC2 suportem mais de 64 vCPUs, o Cloud Volumes ONTAP suporta apenas até 64 vCPUs.</block>
   <block id="9de28fbf6817cd511eb799f9575b611d" category="list-text">Quando você escolhe um tipo de instância EC2, você pode especificar se é uma instância compartilhada ou uma instância dedicada.</block>
   <block id="5eaba9c26c7009842affe7562eb137d3" category="inline-link-macro">Você deve consultar a AWS para obter os detalhes mais recentes e completos sobre os tipos de instâncias EC2 compatíveis em zonas locais</block>
@@ -167,9 +163,7 @@
   <block id="a3f8304ab1695053d71855c60f8abf63" category="inline-link">Regiões globais do Cloud volumes</block>
   <block id="b889869e31827a33530d6fd02141fdb5" category="summary">Várias configurações do Cloud Volumes ONTAP são suportadas no Azure.</block>
   <block id="c334038ed8a782403ae705a8de1f584b" category="section-title">Configurações suportadas por licença</block>
-  <block id="9f1dc929787c1a2d05667987a87c083b" category="paragraph">O Cloud Volumes ONTAP está disponível no Azure como um sistema de nó único e como um par de nós de alta disponibilidade (HA) para tolerância de falhas e operações ininterruptas.</block>
   <block id="e7089e61c962cfdae0de5b1d0748b6f2" category="paragraph">O Cloud Volumes ONTAP pode ser executado em uma instância de VM reservada ou sob demanda do seu provedor de nuvem. As soluções que usam outros tipos de instância de VM não são suportadas.</block>
-  <block id="078325cc35a9c8c9290e445f32bd1855" category="section-title">Sistemas de nó único</block>
   <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">Você pode escolher entre as seguintes configurações de licenciamento baseadas em nó ou capacidade ao implantar o Cloud Volumes ONTAP como um sistema de nó único no Azure.</block>
   <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">Licenças baseadas em capacidade</block>
   <block id="32d6fe93ba69b4395a45277c1885f29f" category="cell">Licença baseada em capacidade (Essentials e Professional)</block>
@@ -249,7 +243,6 @@
   <block id="2bf4a4b22f921c225f089ec2954ee9e8" category="list-text">L48s_v3 1,4,5</block>
   <block id="c130660d20dd5cec8fbf6045fb61af08" category="list-text">L64s_v3 1,4,5</block>
   <block id="88d444d836b2ea3ca342f4cc3a6b2b50" category="paragraph">No Azure, um agregado pode conter até 12 discos com o mesmo tipo e tamanho.</block>
-  <block id="90d1dad6ac7388ba65631ec0b927dabc" category="paragraph">Sistemas de nó único usam discos gerenciados do Azure. Os seguintes tamanhos de disco são suportados:</block>
   <block id="fac18bfae2384f6eccc3a9779ce41d25" category="cell">SSD premium</block>
   <block id="be08eab34bc0f034d51f82767686b3b7" category="cell">SSD padrão</block>
   <block id="ef80fe66906aa69c663bc559d808a821" category="cell">HDD padrão</block>
@@ -260,8 +253,6 @@
   <block id="0bd47e4dae550ba8bfd133248f3efde6" category="list-text">16 TIB (somente discos gerenciados)</block>
   <block id="e976f9591845e426a456344d35bd0caf" category="list-text">32 TIB (somente discos gerenciados)</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Várias configurações do Cloud Volumes ONTAP são compatíveis com o Google Cloud.</block>
-  <block id="ea724697af39ce2b490b5643777ed273" category="paragraph">O Cloud Volumes ONTAP está disponível no Google Cloud como um sistema de nó único e como um par de nós de alta disponibilidade (HA) para tolerância de falhas e operações ininterruptas.</block>
-  <block id="12fe559ef81ce645ef1aee77885e1827" category="paragraph">A atualização de um único sistema de nós para um par de HA não é compatível. Se você quiser alternar entre um único sistema de nós e um par de HA, precisará implantar um novo sistema e replicar dados do sistema existente para o novo sistema.</block>
   <block id="c217f1a10b2c84178d69b991f9ca2a8d" category="cell">Tipos de máquinas suportados 3</block>
   <block id="88ba83f191bd27de24492d3f347d8add" category="list-text">n2-padrão-4</block>
   <block id="056d5ee0191954b71fbb1a0eec04a22a" category="list-text">n2-padrão-8</block>
@@ -387,7 +378,6 @@
   <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1</block>
   <block id="a40e4d3ab198f5d9c9e23e409e7abae3" category="list-text">Todos os discos em um agregado devem ter o mesmo tamanho.</block>
   <block id="c029ebf0cab0f40812ebec7c644fef41" category="section-title">Limites de disco e disposição em camadas por instância do EC2</block>
-  <block id="4309266475af7c71bb88f9be6f8c3940" category="paragraph">Os limites de capacidade são diferentes dependendo da família de tipos de instância do EC2 usada e se você está usando um único sistema de nós ou um par de HA.</block>
   <block id="b1fb395f7c47ced4c12fc74fad2320b5" category="paragraph">As notas a seguir fornecem detalhes sobre os números que você verá nas tabelas abaixo:</block>
   <block id="3ee4a294c58f9e6c4461dc10d825844c" category="list-text">Os limites de disco são específicos para discos que contêm dados de usuário.</block>
   <block id="e7caa46d6e70a5b96752b4644b9f1527" category="paragraph">Os limites não incluem o disco de inicialização e o disco raiz.</block>
@@ -534,7 +524,6 @@
   <block id="bbeef84c33f1676ea87c5c7f476795e6" category="paragraph">Os limites não incluem o disco raiz, o disco central e a VNVRAM.</block>
   <block id="e98bce0be8732d20b80eac572bcc68ff" category="list-text">Os sistemas de nó único e HA que usam discos gerenciados têm um máximo de 32 TIB por disco. O número de discos suportados varia de acordo com o tamanho da VM.</block>
   <block id="2238d2bddb746e5efc3e1ffb351260bc" category="list-text">Os sistemas HA que usam blobs de página têm um máximo de 8 TIB por blob de página. O número de discos suportados varia de acordo com o tamanho da VM.</block>
-  <block id="0d5277886c056c697a81cb7ba46178fc" category="list-text">O limite 896 TIB baseado em disco listado para sistemas de nó único com determinados tamanhos de VM é o limite _tested_.</block>
   <block id="50c51ed959c686d478aaf3f5e64ce255" category="cell">Tamanho da VM</block>
   <block id="1522e1d48d50a8b533ccfa8eeaad6405" category="cell">Discos MAX Data por nó</block>
   <block id="6ea9ab1baa0efb9e19094440c317e21b" category="cell">29</block>
@@ -594,7 +583,6 @@
   <block id="466cd90b62b5da75ee4bd662add41e7f" category="section-title">Limites de disco e disposição em camadas</block>
   <block id="a4a5e7bfb7afd26ff6a225ef7681add9" category="paragraph">A tabela abaixo mostra a capacidade máxima do sistema com discos somente e com a disposição em camadas de discos e dados inativos no storage de objetos. Os limites de disco são específicos para discos que contêm dados de usuário. Os limites não incluem o disco de inicialização, o disco raiz ou o NVRAM.</block>
   <block id="08fca9107919e2a3190d5edc75ce7c61" category="cell">Máximo de discos de dados</block>
-  <block id="73a5b4e1955745ba2e19b7f891caf5fd" category="list-text">124 para sistemas de nó único</block>
   <block id="2b7385ac96adbf2201cf7b11333b798c" category="list-text">123 PB por nó para pares de HA</block>
   <block id="4b4891ea5a4ccf6a32baf317c31a9391" category="cell">Tamanho máximo do disco</block>
   <block id="92d6dc05cca759fe0b05fc952ab8d146" category="cell">Capacidade máxima do sistema somente com discos</block>
@@ -614,7 +602,6 @@
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">Como atualizar</block>
   <block id="c4d6a904ef528003bf03bc2e65cffd26" category="section-title">Caminho de atualização suportado</block>
   <block id="75026846c1403e202a52bdb027762fbb" category="section-title">Tempo de inatividade</block>
-  <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">A atualização de um sistema de nó único leva o sistema off-line por até 25 minutos, durante os quais a e/S é interrompida.</block>
   <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">as instâncias c4, m4 e r4 não são mais compatíveis</block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">Saiba como alterar o tipo de instância EC2 para Cloud Volumes ONTAP</block>
   <block id="34b2f4eab827285a262b1781e672e882" category="paragraph"><block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>.</block>
@@ -625,7 +612,6 @@
   <block id="2318ed77a95c79ae448f3b0d0b40414c" category="paragraph">A NetApp implementou ferramentas destinadas a se conetar com fornecedores de nuvem aplicáveis em questões técnicas do cliente que podem ser resultado dos serviços de fornecedores de nuvem aplicáveis. No entanto, a melhor maneira de manter um fluxo de suporte contínuo é que os clientes (i) mantenham um contrato de suporte atual com a NetApp e o provedor de nuvem aplicável e (ii) coordenem reuniões de encaminhamento conjunto com a NetApp e o provedor de nuvem aplicável quando surgirem problemas técnicos e o cliente precisar de clareza sobre quais produtos ou serviços estão causando esses problemas técnicos.</block>
   <block id="034784053601e78fdb1d3e456d5a7c59" category="section-title">Eventos de manutenção do Azure</block>
   <block id="eb43b40e67fff3351b74b6f875e497b9" category="paragraph">A Microsoft agenda e anuncia programaticamente eventos de manutenção em sua infraestrutura de máquina virtual (VM) do Azure que podem afetar as VMs do Cloud Volumes ONTAP. Estes eventos são anunciados 15 minutos antes da janela de manutenção.</block>
-  <block id="5e486cb2e38fc7f03f038af21eb3cdb9" category="paragraph">O manuseio especial dos eventos de manutenção é suportado para pares de alta disponibilidade (HA) da Cloud Volumes ONTAP. Para manter a integridade das aplicações, realizamos uma aquisição preventiva para priorizar a estabilidade, pois qualquer perda de conetividade de mais de 15 segundos desativará os recursos de failover.</block>
   <block id="1222cf807490df82fd7e0146eb6798c1" category="paragraph">Quando a janela de manutenção for anunciada, o nó parceiro do nó de destino executará um takeover. Quando a manutenção estiver concluída, um giveback será iniciado. Após a giveback, espera-se que o par HA retorne a um estado saudável. Se isso não ocorrer, entre em Contato com o suporte da NetApp para obter assistência. Observe que os eventos de manutenção são direcionados a uma das VMs em um par de HA de cada vez e, normalmente, ambos os nós são direcionados em um período de tempo relativamente curto.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Comece agora</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">O que há de novo</block>
@@ -797,10 +783,7 @@
   <block id="17f65eba8f584b7ce968f1741f49a63d" category="paragraph">A partir do Cloud Volumes ONTAP 9.15.1, você pode implantar instâncias de máquina virtual (VM) no modo HA em zonas de disponibilidade únicas (AZs) no Azure. Para obter informações sobre os critérios que suportam esse recurso, consulte<block ref="49b9d02c37364ae9681ce7a59d4d9548" category="inline-link-rx"></block> .</block>
   <block id="ed5b1d9ebcc8b8d189007ac8c9494846" category="section-title">Limitações com implantações de HA</block>
   <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">Pares HA não são suportados em algumas regiões.</block>
-  <block id="3f994f50a7ba231a5397b2a11497b272" category="list-text">^1^ As famílias de máquinas DS_v2 e Es_v3 não estão mais disponíveis para seleção no NetApp Console ao implantar novas instâncias do Cloud Volumes ONTAP no Azure. Essas famílias serão mantidas e apoiadas apenas em sistemas mais antigos e existentes. Novas implantações do Cloud Volumes ONTAP têm suporte no Azure somente a partir da versão 9.12.1. Recomendamos que você mude para o Es_v4 ou qualquer outra série compatível com o Cloud Volumes ONTAP 9.12.1 e posteriores. As máquinas das séries DS_v2 e Es_v3, no entanto, estarão disponíveis para novas implantações feitas por meio da API.</block>
-  <block id="60ffb33f36dd41ec7837416044ddf175" category="list-text">^4^ Para obter informações sobre os tipos de disco suportados em implantações de nó único, consulte<block ref="5d976ccca41daf11d6b5e395edda488a" category="inline-link-rx"></block> . Alta velocidade de gravação é suportada com todos os tipos de instância ao usar um único sistema de nó. Você pode habilitar a alta velocidade de gravação no Console durante a implantação ou a qualquer momento depois.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> . O desempenho de gravação aprimorado é ativado ao usar SSDs.</block>
   <block id="1b86b14d468d8ed84f5d72f2f7d74d10" category="list-text">^1^ As famílias de máquinas DS_v2 e Es_v3 não estão mais disponíveis para seleção no Console ao implantar novas instâncias do Cloud Volumes ONTAP no Azure. Essas famílias serão mantidas e apoiadas apenas em sistemas mais antigos e existentes. Novas implantações do Cloud Volumes ONTAP têm suporte no Azure somente a partir da versão 9.12.1. Recomendamos que você mude para o Es_v4 ou qualquer outra série compatível com o Cloud Volumes ONTAP 9.12.1 e posteriores. As máquinas das séries DS_v2 e Es_v3, no entanto, estarão disponíveis para novas implantações feitas por meio da API.</block>
-  <block id="532ba8cc24d0d71f06b46f9c976e1a08" category="list-text">^4^ A alta velocidade de gravação é suportada com todos os tipos de instância ao usar um único sistema de nó. Você pode habilitar a alta velocidade de gravação no Console durante a implantação ou a qualquer momento depois.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> . O desempenho de gravação aprimorado é ativado ao usar SSDs.</block>
   <block id="63c51e90bb823244bb44fdef3fa111d2" category="list-text">^1^ O Cloud Volumes ONTAP oferece suporte a alta velocidade de gravação com esses tipos de VM ao usar um par de HA. Você pode habilitar a alta velocidade de gravação no Console durante a implantação ou a qualquer momento depois.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block> .</block>
   <block id="addbd739f53cc9b7f78ee8946f1edee3" category="list-text">^1^ O Cloud Volumes ONTAP oferece suporte a alta velocidade de gravação com esses tipos de VM ao usar um par de HA. Você pode habilitar a alta velocidade de gravação no Console durante a implantação ou a qualquer momento depois.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> .</block>
   <block id="9a12688a6b9775d81793103d67b5e77d" category="list-text">^1^ As máquinas da série n1 não estão mais disponíveis para seleção no NetApp Console ao implantar novas instâncias do Cloud Volumes ONTAP no Google Cloud. As máquinas da série n1 serão mantidas e suportadas apenas em sistemas mais antigos e existentes. Novas implantações do Cloud Volumes ONTAP são suportadas no Google Cloud somente a partir da versão 9.8. Recomendamos que você mude para as máquinas da série n2 que são compatíveis com o Cloud Volumes ONTAP 9.8 e posteriores. As máquinas da série n1, no entanto, estarão disponíveis para novas implantações feitas por meio da API.</block>
@@ -863,4 +846,38 @@
   <block id="7ee7c49a2608d3d31956026fdc3bf833" category="sidebar">Estas notas de versão descrevem novos recursos, limitações e problemas conhecidos do Cloud Volumes ONTAP 9.18.1.</block>
   <block id="001b20e35d2188363ca847fd669007f8" category="sidebar">Cloud Volumes ONTAP 9.18.1 Notas de versão</block>
   <block id="e0b3d5810800c1af83b5753f4a2a2f7e" category="sidebar">Cloud Volumes ONTAP 9.18.1 notas de lançamento</block>
+  <block id="9cb5231fae0fa398b4997a3404e75449" category="paragraph">Cloud Volumes ONTAP está disponível na AWS como um sistema de nó único e como um par de HA para tolerância de falhas e operações não disruptivas.</block>
+  <block id="ef4986bf1cd31453df648c0c88caab37" category="paragraph">A atualização de um sistema de nó único para um par de HA não é suportada. Se você deseja alternar entre um sistema de nó único e um par de HA, então é necessário implantar um novo sistema e replicar dados do sistema existente para o novo sistema.</block>
+  <block id="231fd9de718f42c1c9e89368821092dd" category="open-title">Outras licenças</block>
+  <block id="eedc677bbd07d9095251c43bc5a4b33d" category="list-text">Cloud Volumes ONTAP oferece suporte a alta velocidade de gravação na maioria dos tipos de instância ao usar um par de HA. A alta velocidade de gravação é suportada em todos os tipos de instância ao usar um sistema de nó único<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
+  <block id="d79ae3bafac04fb5a94c065465345b1c" category="list-text">O tipo de instância r5.12xlarge possui uma limitação conhecida em relação ao suporte. Se um nó reiniciar inesperadamente devido a um pânico, o sistema pode não coletar os arquivos de núcleo usados para solucionar problemas e identificar a causa raiz. O cliente aceita os riscos e os termos de suporte limitados e assume toda a responsabilidade pelo suporte se essa condição ocorrer. Essa limitação afeta pares de HA recém-implantados e pares de HA atualizados a partir da versão 9.8. A limitação não afeta sistemas de nó único recém-implantados.</block>
+  <block id="4b40cbab0027c4d9d78baf0e5d6fda5d" category="paragraph">Cloud Volumes ONTAP está disponível no Azure como um sistema de nó único e como um par de HA para tolerância de falhas e operações não disruptivas.</block>
+  <block id="1df33292a2fca2da6ee337f54fc40930" category="section-title">Sistemas de nó único</block>
+  <block id="3b8c3df5626bc43aec26530659b49924" category="list-text">E4bds_v5 ^7^</block>
+  <block id="a5ad09c71ba5e0587c92b30e647007d2" category="list-text">E8bds_v5 ^7^</block>
+  <block id="62f13a38954d80d4731af8cce6ff44ce" category="list-text">E16bds_v5 ^7^</block>
+  <block id="790607e207ea5b72ced99b7b00ab5267" category="list-text">E32bds_v5 ^7^</block>
+  <block id="7c9ea67787bbf71717c6975389d413af" category="list-text">E48bds_v5 ^7^</block>
+  <block id="519405312759dbe64953e3db6bed97a5" category="list-text">E64bds_v5 ^7^</block>
+  <block id="1b6e6ed136dc27160aa24ba7c0aa1fd0" category="list-text">E104ids_v5 ^7^</block>
+  <block id="1884aab981286236b4bcfe85e346c59a" category="list-text">^1^ As famílias de máquinas DSv2 e Esv3 não estão mais disponíveis para seleção no NetApp Console ao implantar novas instâncias do Cloud Volumes ONTAP no Azure. Essas famílias serão mantidas e suportadas apenas em sistemas mais antigos existentes. Novas implantações do Cloud Volumes ONTAP são suportadas no Azure somente a partir da 9.12.1 release. Recomendamos que você migre para a Es_v4 ou qualquer outra série compatível com Cloud Volumes ONTAP 9.12.1 e posteriores. As máquinas das séries DS_v2 e Es_v3, no entanto, estarão disponíveis para novas implantações feitas por meio da API.</block>
+  <block id="54eafc097b7ad6fc619cb7eacb3b3eac" category="list-text">^4^ Para obter informações sobre os tipos de disco compatíveis em implantações de nó único, consulte<block ref="5d976ccca41daf11d6b5e395edda488a" category="inline-link-rx"></block>. A alta velocidade de gravação é compatível com todos os tipos de instância ao usar um sistema de nó único. Você pode ativar a alta velocidade de gravação no Console durante a implantação ou a qualquer momento depois.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>. O desempenho de gravação aprimorado é ativado ao usar SSDs.</block>
+  <block id="338aa3c87bbe1645a2248b5cdc2e08d7" category="list-text">^7^ As VMs Ebdsv5 e E104ids_v5 estão disponíveis para novas implementações e upgrade do Cloud Volumes ONTAP 9.18.1 e posteriores. Você pode alterar ou fazer upgrade das suas VMs Edsv4, Edsv5 ou outros tipos de Ebdsv5 existentes para Ebdsv5. Você pode fazer upgrade das VMs Ebdsv5 ou Eidsv5 para E104ids_v5.</block>
+  <block id="bfd11c4f8f3ffe0b82e499f7dc4f9a65" category="list-text">^4^ Alta velocidade de gravação é suportada em todos os tipos de instância ao usar um sistema de nó único. Você pode habilitar alta velocidade de gravação no Console durante a implantação ou a qualquer momento depois.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> O desempenho de gravação aprimorado é habilitado ao usar SSDs.</block>
+  <block id="c15a2dd9239375267b11e9cc0750fde3" category="list-text">E8bds_v5 ^9^</block>
+  <block id="e8d4c23be4f7e5ec7dd2fa499ffe6ac1" category="list-text">E16bds_v5 ^9^</block>
+  <block id="858f6ce34bdf4523d2935c8aec758bc8" category="list-text">E32bds_v5 ^9^</block>
+  <block id="1184562f85d984e07c1bf1c2d17c39b5" category="list-text">E48bds_v5 ^9^</block>
+  <block id="a10a9e62fc438d5cda957750f5be82a2" category="list-text">E64bds_v5 ^9^</block>
+  <block id="22526b360edd5e859e84ac73135c26a8" category="list-text">E104ids_v5 ^9^</block>
+  <block id="b8a35e66cdb2aef61b6d6df1e379eb6d" category="list-text">^9^ As VMs Ebdsv5 e E104ids_v5 estão disponíveis para novas implementações e upgrade do Cloud Volumes ONTAP 9.18.1 e posteriores. Você pode alterar ou fazer upgrade das suas VMs Edsv4, Edsv5 ou outros tipos de Ebdsv5 existentes para Ebdsv5. Você pode fazer upgrade das VMs Ebdsv5 ou Eidsv5 para E104ids_v5.</block>
+  <block id="2734a588d77e522c61fe0ebc740d82c8" category="list-text">^7^ As VMs Ebdsv5 e E104ids_v5 estão disponíveis para novas implementações e upgrade do Cloud Volumes ONTAP 9.18.1 e posteriores. Você pode alterar ou fazer upgrade das suas VMs Edsv4, Edsv5 ou outros tipos de Ebdsv5 existentes para Ebdsv5. Você pode fazer upgrade das VMs Ebdsv5 ou Eidsv5 para E104ids_v5.v</block>
+  <block id="9c1e913676fba2b8aed76868b26dcc89" category="paragraph">Sistemas de nó único usam Discos Gerenciados do Azure. Os seguintes tamanhos de disco são suportados:</block>
+  <block id="7da25d0bfd841afbb16233681b5b72ca" category="paragraph">Cloud Volumes ONTAP está disponível no Google Cloud como um sistema de nó único e como um par de HA para tolerância de falhas e operações não disruptivas.</block>
+  <block id="bd45cef377eedc42228cc5c125be0686" category="paragraph">A atualização de um sistema de nó único para um par de HA não é suportada. Se você deseja alternar entre um sistema de nó único e um par de HA, então é necessário implantar um novo sistema e replicar os dados do sistema existente para o novo sistema.</block>
+  <block id="d462a208123e3b668b64a11f26085e0c" category="paragraph">Os limites de capacidade variam dependendo da família de instâncias EC2 que você usa e se você está usando um sistema de nó único ou um par de HA.</block>
+  <block id="35d763acd264e7f10fbf35d2da58bfe3" category="list-text">O limite baseado em disco de 896 TiB listado para sistemas de nó único com determinados tamanhos de VM é o limite _testado_.</block>
+  <block id="7996776cc07408b62e3e588c6e576723" category="list-text">124 para sistemas de nó único</block>
+  <block id="777aa7f6fc6d119be846af0333b88f27" category="list-text">A atualização de um sistema de nó único deixa o sistema offline por até 25 minutos, durante os quais a E/S é interrompida.</block>
+  <block id="8cfc1cd76589ea7ff4c1934750bae7e9" category="paragraph">O tratamento especial de eventos de manutenção é suportado para pares de HA do Cloud Volumes ONTAP. Para manter a integridade do aplicativo, realizamos uma tomada de controle preventiva para priorizar a estabilidade, pois qualquer perda de conectividade superior a 15 segundos desativará os recursos de failover.</block>
 </blocks>

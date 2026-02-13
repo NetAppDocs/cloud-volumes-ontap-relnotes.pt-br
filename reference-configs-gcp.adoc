@@ -20,9 +20,9 @@ Várias configurações do Cloud Volumes ONTAP são compatíveis com o Google Cl
 
 == Configurações suportadas por licença
 
-O Cloud Volumes ONTAP está disponível no Google Cloud como um sistema de nó único e como um par de nós de alta disponibilidade (HA) para tolerância de falhas e operações ininterruptas.
+Cloud Volumes ONTAP está disponível no Google Cloud como um sistema de nó único e como um par de HA para tolerância de falhas e operações não disruptivas.
 
-A atualização de um único sistema de nós para um par de HA não é compatível. Se você quiser alternar entre um único sistema de nós e um par de HA, precisará implantar um novo sistema e replicar dados do sistema existente para o novo sistema.
+A atualização de um sistema de nó único para um par de HA não é suportada. Se você deseja alternar entre um sistema de nó único e um par de HA, então é necessário implantar um novo sistema e replicar os dados do sistema existente para o novo sistema.
 
 O Cloud Volumes ONTAP pode ser executado em uma instância de VM reservada ou sob demanda do seu provedor de nuvem. As soluções que usam outros tipos de instância de VM não são suportadas.
 

@@ -22,7 +22,7 @@ Para saber sobre os recursos do Cloud Volumes ONTAP que foram introduzidos nas v
 
 == 9.18.1 GA (10 de fevereiro de 2026)
 
-A versão de disponibilidade geral do Cloud Volumes ONTAP 9.18.1 já está disponível para implantação e atualização na Amazon Web Services (AWS) e Microsoft Azure. Esta versão não está disponível para implantação e atualização no Google Cloud.
+A versão de disponibilidade geral do Cloud Volumes ONTAP 9.18.1 já está disponível para implantação e atualização na Amazon Web Services (AWS), Microsoft Azure e Google Cloud.
 
 
 
@@ -42,10 +42,7 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === Caminho de atualização suportado
 
-Você pode atualizar para Cloud Volumes ONTAP 9.18.1 a partir da 9.17.1 P1 e patches posteriores na AWS e Azure. O Console solicitará que você atualize os sistemas Cloud Volumes ONTAP elegíveis para esta versão.
-
-
-NOTE: Cloud Volumes ONTAP 9.18.1 não está disponível para upgrade no Google Cloud.
+Você pode atualizar para o Cloud Volumes ONTAP 9.18.1 a partir da 9.17.1 P1 e patches posteriores na AWS, Azure e Google Cloud. O Console solicitará que você atualize os sistemas Cloud Volumes ONTAP elegíveis para esta versão.
 
 
 

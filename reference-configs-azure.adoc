@@ -166,7 +166,7 @@ Da mesma forma, se você escolher Discos Gerenciados SSD Premium para um ambient
 
 
 --
-.Licenças baseadas em nós
+.Outras licenças
 --
 [cols="h,d,d,d,d"]
 |===
@@ -381,7 +381,7 @@ Notas:
 
 
 --
-.Licenças baseadas em nós
+.Outras licenças
 --
 [cols="h,d,d,d"]
 |===
@@ -543,7 +543,7 @@ Notas:
 
 
 --
-.Licenças baseadas em nós
+.Outras licenças
 --
 [cols="h,d,d,d"]
 |===

@@ -20,6 +20,14 @@ Para saber sobre os recursos do Cloud Volumes ONTAP que foram introduzidos nas v
 
 
 
+== 9.18.1 P1 (31 de março de 2026)
+
+O patch 9.18.1 P1 do Cloud Volumes ONTAP já está disponível para implantação e atualização na AWS, Azure e Google Cloud. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P1["Veja a lista de bugs corrigidos no patch P1"^] (NetApp site de suporte, é necessário login).
+
+
+
 == 9.18.1 GA (10 de fevereiro de 2026)
 
 A versão de disponibilidade geral do Cloud Volumes ONTAP 9.18.1 já está disponível para implantação e atualização na Amazon Web Services (AWS), Microsoft Azure e Google Cloud.

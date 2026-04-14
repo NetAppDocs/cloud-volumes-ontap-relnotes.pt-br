@@ -95,7 +95,7 @@ link:reference-limits-gcp.html["Saiba mais sobre os limites de disco no Google C
 
 . O desempenho de gravação aprimorado é habilitado ao usar discos persistentes balanceados e discos persistentes de desempenho (SSD). 3
 . ^4^ A partir de 11 de agosto de 2025, a licença Cloud Volumes ONTAP Optimized será descontinuada e não estará mais disponível para compra ou renovação no marketplace do Google Cloud para assinaturas de pagamento conforme o uso (PAYGO).  Para obter informações, consulte https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["O que há de novo no Cloud Volumes ONTAP"^] .
-. ^5^ Você pode implantar as VMs da família C3 de nova geração no Cloud Volumes ONTAP 9.18.1 e versões posteriores. As máquinas c3-standard-44 e c3-standard-88 e suas variantes LSSD oferecem suporte à largura de banda Tier-1 no Google Cloud Console por padrão. Com os tipos de VM C3, você não pode adicionar um disco a um agregado existente nem alternar para outra variante dentro da família C3. Consulte link:reference-configs-gcp.html#flash-cache-support["Suporte ao Flash Cache"] para obter mais informações sobre as variantes LSSD.
+. ^5^ Você pode implantar as VMs da família C3 de nova geração no Cloud Volumes ONTAP 9.18.1 e versões posteriores. As máquinas c3-standard-44 e c3-standard-88 e suas variantes LSSD oferecem suporte à largura de banda Tier-1 no Google Cloud Console por padrão. Consulte link:reference-configs-gcp.html#flash-cache-support["Suporte ao Flash Cache"] para obter mais informações sobre as variantes LSSD.
 
 
 --
@@ -160,7 +160,7 @@ link:reference-limits-gcp.html["Saiba mais sobre os limites de disco no Google C
 O tipo de máquina personalizado-4-16384 não é mais suportado com novos sistemas Cloud Volumes ONTAP. Se tiver um sistema existente a funcionar neste tipo de máquina, pode continuar a utilizá-lo, mas recomendamos que mude para o tipo de máquina n2-standard-4.
 
 . O desempenho de gravação aprimorado é habilitado ao usar discos persistentes balanceados e discos persistentes de desempenho (SSD). 4
-. ^5^ Você pode implantar as VMs da família C3 de nova geração no Cloud Volumes ONTAP 9.18.1 e versões posteriores. As máquinas c3-standard-44 e c3-standard-88 e suas variantes LSSD oferecem suporte à largura de banda Tier-1 no Google Cloud Console por padrão. Com os tipos de VM C3, você não pode adicionar um disco a um agregado existente nem alternar para outra variante dentro da família C3. Consulte link:reference-configs-gcp.html#flash-cache-support["Suporte ao Flash Cache"] para obter mais informações sobre as variantes LSSD.
+. ^5^ Você pode implantar as VMs da família C3 de nova geração no Cloud Volumes ONTAP 9.18.1 e versões posteriores. As máquinas c3-standard-44 e c3-standard-88 e suas variantes LSSD oferecem suporte à largura de banda Tier-1 no Google Cloud Console por padrão. Consulte link:reference-configs-gcp.html#flash-cache-support["Suporte ao Flash Cache"] para obter mais informações sobre as variantes LSSD.
 
 
 O Console mostra um tipo de máquina adicional suportado para Standard e BYOL: n1-highmem-4. Entretanto, esse tipo de máquina não é indicado para ambientes de produção. Nós o disponibilizamos somente para um ambiente de laboratório específico.
@@ -313,9 +313,11 @@ A partir do Cloud Volumes ONTAP 9.13.0, _Flash Cache_, alta velocidade de grava�
 Você pode habilitar o _Flash Cache_ e a alta velocidade de gravação ao implantar um tipo de instância elegível. Para habilitar a unidade máxima de transmissão de 8.896 bytes, você deve escolher VPC-1, VPC-2 ou VPC-3 para a implantação. O MTU maior permite maior taxa de transferência de rede. Para obter mais informações sobre como iniciar uma dessas implantações, consulte  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Lançando Cloud Volumes ONTAP no Google Cloud"^].
 
 
-NOTE: _Flash cache_, modo de gravação alta e um MTU de 8.896 dependem de recursos e não podem ser desativados individualmente em uma instância configurada.
+NOTE: _Flash Cache_, o modo de gravação de alta velocidade e um MTU de 8.896 dependem de recursos e não podem ser desativados individualmente em uma instância configurada.
 
-A partir do Cloud Volumes ONTAP 9.18.1, se você selecionar as variantes de SSD local (LSSD) das VMs C3, Flash Cache é ativado por padrão. Consulte esta tabela para entender a variante da VM e o número máximo de LSSDs suportados por elas:
+Em implantações de nó único, a partir do Cloud Volumes ONTAP 9.18.1, se você selecionar as variantes de SSD local (LSSD) das VMs C3, Flash Cache será ativado por padrão. Não é possível alternar entre variantes de VM C3 LSSD em sua implantação do Cloud Volumes ONTAP, mesmo que a variante de destino suporte Flash Cache.
+
+Consulte esta tabela para entender a variante da VM e o número de LSSDs suportados por ela:
 
 [cols="1,1"]
 |===

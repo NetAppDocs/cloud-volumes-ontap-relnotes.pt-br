@@ -22,7 +22,7 @@ As limitações a seguir se aplicam ao Cloud Volumes ONTAP em todos os provedore
 
 == Funcionalidades ONTAP não suportadas
 
-Os seguintes recursos não são compatíveis com o Cloud Volumes ONTAP:
+Alguns recursos do ONTAP não são compatíveis com Cloud Volumes ONTAP, incluindo, entre outros:
 
 * Deduplicação in-line de nível de agregado
 * Deduplicação em segundo plano de nível de agregado
@@ -44,6 +44,7 @@ Ativar a verificação multi-admin no Cloud Volumes ONTAP resultará em uma conf
 * Modos SnapLock Compliance e empresarial (somente o Cloud WORM é suportado)
 * SnapMirror síncrono
 * VLANs
+* Gerenciador de chaves integrado (OKM) para criptografia
 * Disponibilidade Contínua (CA) para PMEs
 +
 https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["Ações SMB continuamente disponíveis"^] para operações não disruptivas não são suportadas.

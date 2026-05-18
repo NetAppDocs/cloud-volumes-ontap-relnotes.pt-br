@@ -313,7 +313,6 @@
   <block id="406156e49006d700786c581646d94504" category="paragraph">A disposição em camadas dos dados do Cloud Volumes ONTAP em um bucket do Google Cloud Storage não é compatível com o Private Service Connect.</block>
   <block id="a20ea8590a5bc20c473682a1138198a0" category="paragraph">As limitações a seguir se aplicam ao Cloud Volumes ONTAP em todos os provedores de nuvem: AWS, Azure e Google Cloud.</block>
   <block id="c3f5fdee9b6adb6eccff2d4c189ead12" category="section-title">Funcionalidades ONTAP não suportadas</block>
-  <block id="534cab245a3cc0ececa966044bad6ba2" category="paragraph">Os seguintes recursos não são compatíveis com o Cloud Volumes ONTAP:</block>
   <block id="a031ea731cd3c4992b7f33bad9f72a00" category="list-text">Deduplicação in-line de nível de agregado</block>
   <block id="98e2e51de88bd2dae78a66fdad91936c" category="list-text">Deduplicação em segundo plano de nível de agregado</block>
   <block id="5873635ff256383dcb0b47a0e49f71b1" category="list-text">Centro de manutenção do disco</block>
@@ -926,4 +925,6 @@
   <block id="3cbfcd6492053f416bf02c99b23b7630" category="paragraph">O patch 9.18.1 P2 do Cloud Volumes ONTAP já está disponível para implantação e atualização na AWS, Azure e Google Cloud. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
   <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P2</block>
   <block id="e4005bbac6c9dcfff8a33e8e077a64c7" category="paragraph"><block ref="4f7e8d39f7d7dbd55e211b03ab5cff07" category="inline-link-macro-rx"></block> (NetApp site de suporte, é necessário login).</block>
+  <block id="2f8a4700ca3941a576474070acbc2005" category="paragraph">Alguns recursos do ONTAP não são compatíveis com Cloud Volumes ONTAP, incluindo, entre outros:</block>
+  <block id="a2733b935845e428d2910b4aedaf426b" category="list-text">Gerenciador de chaves integrado (OKM) para criptografia</block>
 </blocks>

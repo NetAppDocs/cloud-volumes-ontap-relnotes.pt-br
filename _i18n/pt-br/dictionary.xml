@@ -39,7 +39,6 @@
   <block id="e17c7f98af970809162c4395474988ad" category="section-title">Suporte de storage por licença</block>
   <block id="c5a27c05ad608efda7a7a192ee480209" category="paragraph">Cada licença suporta uma capacidade máxima de sistema diferente. A capacidade máxima do sistema inclui storage baseado em disco e storage de objetos usado para categorização de dados. O NetApp não suporta exceder esse limite.</block>
   <block id="d8fe59d93325a956d9b5fd3e85bb96d8" category="cell">Freemium</block>
-  <block id="376c581ebe9ec9aa8853377f8538ebbd" category="cell">Licença baseada em capacidade</block>
   <block id="671e8254c7b0d121dddb0c891a704d08" category="cell">PAYGO Explore</block>
   <block id="42e4a6694dd7d5280c1ebd4d2d70f50d" category="cell">Padrão PAYGO</block>
   <block id="158b2d2f93973854e733f030be8e4545" category="cell">PAYGO Premium</block>
@@ -55,12 +54,10 @@
   <block id="320a1bc96a642b93ac47eb0838fbf1ff" category="list-text">Capacidade de produção otimizada HDD (st1GB) 4</block>
   <block id="1f742543feb3ee22b577a40afbb960a2" category="cell">Disposição de dados inativos em categorias no S3</block>
   <block id="eaa4dc5078017a5c5bebf383ab6f5124" category="cell">Suportado</block>
-  <block id="b13356b20cd05f0312d51b60b5736e0f" category="list-text">Para um par de HA, o limite de capacidade aplica-se a todo o par de HA. Não é por nó. Por exemplo, se você usar a licença Premium, poderá ter até 368 TIB de capacidade entre os dois nós.</block>
   <block id="9cb3b0db1f5a7a0032a165789bcde1dd" category="inline-link-macro">limites de armazenamento</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link">disposição em camadas dos dados inativos no storage de objetos</block>
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">Para algumas configurações, os limites de disco impedem que você alcance o limite de capacidade usando discos sozinhos. Nesses casos, você pode alcançar o limite de capacidade em<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. Para obter informações sobre limites de disco, <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>consulte .</block>
   <block id="714ff467ced5dd4ad0cd34ca2d29d911" category="list-text">O desempenho de gravação aprimorado é habilitado ao usar SSDs com todas as configurações do Cloud Volumes ONTAP, exceto o PAYGO Explore.</block>
-  <block id="907c78338365697be8fd8d4a130503c8" category="list-text">A disposição em camadas dos dados no storage de objetos não é recomendada quando se usa HDDs otimizados para taxa de transferência (st1).</block>
   <block id="36e4aa065725aff22926f2fed53bc3c7" category="section-title">Tamanhos de disco suportados</block>
   <block id="70fb554e00e352dd7da6941d99b53751" category="inline-link">Saiba mais sobre o suporte para volumes elásticos</block>
   <block id="ca40429b1b07555a35de829b976a6961" category="paragraph">Na AWS, um agregado pode conter até 6 discos com o mesmo tamanho. Mas se você tiver uma configuração que suporte o recurso volumes elásticos do Amazon EBS, um agregado pode conter até 8 discos.<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
@@ -73,88 +70,43 @@
   <block id="b23de6890dfc4a44067a64513c3d5411" category="list-text">6 TIB</block>
   <block id="094077c0211aa5522341d3db94bc6419" category="list-text">8 TIB</block>
   <block id="ec74a96b5afa8d112b06af3bec8272c2" category="list-text">16 TIB</block>
-  <block id="789f7b372f32412febae7a678005ae71" category="section-title">Computação EC2K suportada</block>
-  <block id="a1834fbcd2847d469ef79f5526dcee65" category="inline-link">Você deve consultar a AWS para obter os detalhes mais recentes e completos sobre os tipos de instância do EC2</block>
-  <block id="98ade5346ada08656e0c7b517b695d0f" category="paragraph">Cada licença do Cloud Volumes ONTAP suporta diferentes tipos de instância do EC2. Para sua conveniência, a tabela abaixo mostra o vCPU, a RAM e a largura de banda para cada tipo de instância suportada.<block ref="7fe5ce03f92ccda8dcb0aa0fab836a1f" category="inline-link-rx"></block>.</block>
   <block id="afea36f2c9999a231c58b7e9dcf3b16e" category="paragraph">O Cloud Volumes ONTAP pode ser executado em uma instância EC2 reservada ou sob demanda. As soluções que usam outros tipos de instância não são suportadas.</block>
-  <block id="c7d741925ef81824617c6a2975104e27" category="inline-link">Relatório Técnico da NetApp 4383: Caraterização de desempenho do Cloud Volumes ONTAP em Serviços Web da Amazon com cargas de trabalho de aplicativos</block>
-  <block id="b710bbf07a9ba1fa06f2e6f4e77a42db" category="paragraph">As larguras de banda mostradas na tabela abaixo correspondem aos limites documentados da AWS para cada tipo de instância. Esses limites não se alinham completamente com o que o Cloud Volumes ONTAP pode fornecer. Para obter o desempenho esperado,<block ref="c23654021de34c23e6d408104aa3bf49" category="inline-link-rx"></block> consulte a .</block>
   <block id="794df3791a8c800841516007427a2aa3" category="cell">Licença</block>
   <block id="4a7243646d30fc1e81eca2df9826cc03" category="cell">Instância suportada</block>
-  <block id="5d56dbd20d9ee1ab8a722ff12e331953" category="cell">VCPU</block>
-  <block id="e53619c1fe611a51eeeb8d148ba6e532" category="cell">RAM</block>
-  <block id="5a4320e0d1d7864b4d60f96e40d68e02" category="cell">Flash Cache 1</block>
-  <block id="e1a9836eca39e3ec1e898f9b217094d4" category="cell">Largura de banda da rede (Gbps)</block>
-  <block id="f851d5567887464712f1cbde0c7c70db" category="cell">Largura de banda EBS (Mbps)</block>
-  <block id="885c7ba30dea785406ff04e1995c0cef" category="cell">Alta velocidade de gravação 2</block>
-  <block id="4144774af30f71c8fc794c50d0a2a85e" category="cell">*Explore ou qualquer outra licença*</block>
-  <block id="5f5ab830f312b366e90a01041e1aedca" category="cell">m5.xlarge 6</block>
   <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4</block>
   <block id="c74d97b01eae257e44aa9d5bade97baf" category="cell">16</block>
   <block id="aa7f77e663b832d5b0e544c5511e680c" category="cell">Não suportado</block>
-  <block id="940d46ce8af31c99727566b6b6529db7" category="cell">Até 10 TB</block>
-  <block id="3b1fce8d4128e9484676e12056c94fd7" category="cell">Até 4.750 TB</block>
   <block id="24fd5ed21b125319b3c7c4825a764b66" category="cell">Compatível (somente nó único)</block>
-  <block id="b47f486130ec0322b29fe8cf873eda99" category="cell">*Standard ou qualquer outra licença*</block>
-  <block id="6bfe086862809cf64cd507fa55b90a47" category="cell">r5.xlarge 6</block>
   <block id="6364d3f0f495b6ab9dcf8d3b5c6e0b01" category="cell">32</block>
   <block id="1ffd24563a8ba078752a34d474e1f403" category="cell">m5a.2xlarge</block>
   <block id="c9f0f895fb98ab9159f51fd0297e236d" category="cell">8</block>
-  <block id="c82994e8dd530a69b81d79cb4e505f09" category="cell">Até 2.880 TB</block>
-  <block id="39bce1e4c62e073845823cfaa75353ee" category="cell">m5,2xlarge 6</block>
-  <block id="ed0336aa4dbbeed8e48332f1f7a834b6" category="cell">*Premium ou qualquer outra licença*</block>
   <block id="3755b8d0a0506aff1de991cab29e9205" category="cell">m5n.2xlarge</block>
-  <block id="a21bb08ff7c4cfeeef06cb3b4bcbc0a1" category="cell">Até 25 TB</block>
-  <block id="1daf8852093393eddb2a0375368cd424" category="cell">r5,2xlarge 6</block>
-  <block id="ea5d2f1c4608232e07d3aa3d998e5135" category="cell">64</block>
   <block id="779e6562c3768b528bec3198ecdd790e" category="cell">r5d.2xlarge</block>
-  <block id="112890879693861f10abb1dff5a8168e" category="cell">c5d.4xlarge. 6</block>
-  <block id="97a5ba2ab2869def9595028833dfa605" category="cell">4.570</block>
-  <block id="db71cf30c589b91cc71cbd78dda531cb" category="cell">m5,4xlarge 6</block>
-  <block id="f778f69b84929a5c80bb4590373a7119" category="cell">4.750</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xlarge</block>
   <block id="3bf5113b1c70942177a6ee64a8200ded" category="cell">m5d.8xlarge</block>
   <block id="76dc611d6ebaafc66cc0879c71b5db5c" category="cell">128</block>
   <block id="d3d9446802a44259755d38e6d163e820" category="cell">10</block>
-  <block id="28a48803c3f0a20888e6791904e3baa8" category="cell">6.800</block>
   <block id="240c30af8e0d147ae84043d1fc9d1776" category="cell">r5.8xlarge</block>
   <block id="f718499c1c8cef6730f9fd03c8125cab" category="cell">256</block>
   <block id="bccfea3b653422d5fd8560cff3483d5b" category="cell">c5.9xlarge</block>
-  <block id="19ca14e7ea6328a42e0eb13d585e4c22" category="cell">36</block>
-  <block id="32bb90e8976aab5298d5da10fe66f21d" category="cell">72</block>
-  <block id="93ebb09c93a802d9a872e5cedf9ba399" category="cell">9.500</block>
   <block id="7f9623c09f1541aea407df05491c9ac4" category="cell">c5d.9xlarge</block>
   <block id="a59ad4f9735c6c90fea48ef6e88441ac" category="cell">c5n.9xlarge</block>
-  <block id="26657d5ff9020d2abefe558796b99584" category="cell">96</block>
   <block id="c0c7c76d30bd3dcaefc96f40275bdc0a" category="cell">50</block>
   <block id="2d3e51e89d3f05d2abe99df631cb0b4c" category="cell">c5a.12xlarge</block>
-  <block id="642e92efb79421734881b53e1e1b18b6" category="cell">48</block>
   <block id="c20ad4d76fe97759aa27a0c99bff6710" category="cell">12</block>
   <block id="c5349a9d783e985390617543cf910af4" category="cell">c5.18xlarge</block>
-  <block id="f5d86d667fcde1b9fc5b1c45e55d135e" category="cell">64 4</block>
-  <block id="0a09c8844ba8f0936c20bd791130d6b6" category="cell">144</block>
   <block id="8e296a067a37563370ded05f5a3bf3ec" category="cell">25</block>
-  <block id="99a85ba98f759e2af5b37706147521a4" category="cell">19.000</block>
   <block id="754828c9b88626872a73b65943afe305" category="cell">c5d.18xlarge</block>
   <block id="3953e14134095c5c41a5bdde5d817581" category="cell">m5d.12xlarge</block>
-  <block id="58a2fc6ed39fd083f55d4182bf88826d" category="cell">192</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12xlarge</block>
   <block id="8bfc3cdc1d0308d0df3f444e6a54e5c0" category="cell">c5n.18xlarge</block>
-  <block id="f899139df5e1059396431415e770c6dd" category="cell">100</block>
   <block id="f5efe0addbdd614da5490e8dfe6205cc" category="cell">m5a.16xlarge</block>
   <block id="36339cdd29b164bf6617e204878be132" category="cell">m5.16xlarge</block>
-  <block id="98f13708210194c475687be6106a3b84" category="cell">20</block>
-  <block id="4a09e412cafbab3b737f40385783c222" category="cell">13.600</block>
-  <block id="0ac094105593f2223af0fadea2d4e6d0" category="cell">r5,12xlarge 3</block>
-  <block id="0584ce565c824b7b7f50282d9a19945b" category="cell">384</block>
   <block id="fa8f49d51a641a3bff30030d048d2d98" category="cell">m5dn.24xlarge</block>
   <block id="f59964eb1e1669da7d916b7e136c88bd" category="cell">m6id.32xlarge</block>
   <block id="10a7cdd970fe135cf4f7bb55c0e3b59f" category="cell">512</block>
-  <block id="e19784a5420512b2876c7b24680652b5" category="cell">40.000</block>
   <block id="dfeeabb8d703f59f841c2a6e2ed8d240" category="inline-link">Saiba mais sobre o Flash Cache</block>
-  <block id="9df4ca2adcfbf390d35edbeb52928a78" category="list-text">Alguns tipos de instância incluem armazenamento NVMe local, que o Cloud Volumes ONTAP usa como _Flash Cache_. O Flash Cache acelera o acesso aos dados por meio do armazenamento em cache inteligente em tempo real dos dados do usuário lidos recentemente e dos metadados do NetApp. Ele é eficaz para cargas de trabalho com uso intenso de leitura aleatória, incluindo bancos de dados, e-mail e serviços de arquivos. A compactação deve ser desativada em todos os volumes para aproveitar as melhorias de desempenho do Flash Cache.<block ref="da56a164195bbdee72f1dfc4ea53669d" category="inline-link-rx"></block>.</block>
   <block id="18ca3c89ae9e8edbe217f2c9b7c6107d" category="inline-link">Saiba mais sobre como escolher uma velocidade de escrita</block>
-  <block id="5ce58b1e3bfddca3ae7d5a13676224ff" category="list-text">Embora esses tipos de instância EC2 suportem mais de 64 vCPUs, o Cloud Volumes ONTAP suporta apenas até 64 vCPUs.</block>
   <block id="9de28fbf6817cd511eb799f9575b611d" category="list-text">Quando você escolhe um tipo de instância EC2, você pode especificar se é uma instância compartilhada ou uma instância dedicada.</block>
   <block id="5eaba9c26c7009842affe7562eb137d3" category="inline-link-macro">Você deve consultar a AWS para obter os detalhes mais recentes e completos sobre os tipos de instâncias EC2 compatíveis em zonas locais</block>
   <block id="0b1bcd721d49fbe0a3ff4bd80dfcd83f" category="list-text">As zonas locais da AWS são suportadas nas seguintes famílias de tipos de instâncias do EC2 com tamanhos xlarge a 4xlarge: M5, C5, C5d, R5 e R5d. <block ref="3d9029b658475a88eed4e09e15fa8cce" category="inline-link-macro-rx"></block>.</block>
@@ -628,10 +580,8 @@
   <block id="e1e1effee5380369716ff955c2de6215" category="cell">Tipos de máquinas suportados 1</block>
   <block id="1ea028151d07abb047b4e2f17d215216" category="cell">Discos persistentes balanceados 3, discos persistentes Performance (SSD) 3 e discos persistentes Standard (HDD).</block>
   <block id="6b145cfa91f7c68c4c0c6f2bf60bcf9d" category="paragraph">O tipo de máquina personalizado-4-16384 não é mais suportado com novos sistemas Cloud Volumes ONTAP. Se tiver um sistema existente a funcionar neste tipo de máquina, pode continuar a utilizá-lo, mas recomendamos que mude para o tipo de máquina n2-standard-4.</block>
-  <block id="29aaeb333a41db01888c537148053c70" category="paragraph">* Capacidade máxima do sistema* (discos e armazenamento de objetos) 1</block>
   <block id="06cf24f6f7b06cb3d2778a1a70e9ff2f" category="paragraph">*Tipos de disco suportados*</block>
   <block id="17943cfde2a5e23c7925dc95a8dde6a4" category="paragraph">*Disposição em camadas de dados inativos até S3 TB*</block>
-  <block id="640897782baa10cc7d259d38d703b275" category="list-text">O desempenho de gravação aprimorado é habilitado ao usar SSDs com todas as configurações do Cloud Volumes ONTAP.</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">Notas de atualização</block>
   <block id="6b32e99bddf60938239aabe092cb4c16" category="paragraph">Várias opções de licenciamento estão disponíveis para o Cloud Volumes ONTAP. Cada opção permite que você escolha um modelo de consumo que atenda às suas necessidades.</block>
   <block id="27fe4eb3edbaff8f250e2d51f7462681" category="inline-link">Pacotes</block>
@@ -669,7 +619,6 @@
   <block id="2dc71138ad7976e187566f7ce79883cc" category="list-text">A atualização de um par de HA não causa interrupções e e/S é ininterrupta. Durante esse processo de atualização sem interrupções, cada nó é atualizado em conjunto para continuar fornecendo e/S aos clientes.</block>
   <block id="071315f659ff3eed03e994aa4f772449" category="doc">Visão geral do licenciamento para o Cloud Volumes ONTAP</block>
   <block id="d4f1750ecbae7aeb8e4608c6adadf1b3" category="doc">Configurações compatíveis com o Cloud Volumes ONTAP na AWS</block>
-  <block id="906e9645769246d4a98e725adf188964" category="list-text">As configurações do Cloud Volumes ONTAP nas zonas locais da AWS suportam apenas o tipo de disco SSD de uso geral (GP2).</block>
   <block id="a09c3a7be8e7dc42776a7b03793d536c" category="doc">Configurações compatíveis com o Cloud Volumes ONTAP no Azure</block>
   <block id="8f4e28604a8893d6adb6f9b81569d19b" category="doc">Configurações compatíveis com o Cloud Volumes ONTAP no Google Cloud</block>
   <block id="581f6b5312764acdc88160c41a391898" category="doc">Problemas conhecidos do Cloud Volumes ONTAP</block>
@@ -685,9 +634,6 @@
   <block id="e62fa1e447749b7b88523431cfe1cb23" category="section-title">Limitações com implantações de HA em zonas de disponibilidade únicas</block>
   <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">Implante pares de HA em zonas de disponibilidade únicas no Azure</block>
   <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">Se a versão do Cloud Volumes ONTAP for anterior a 9.15.1 ou se alguma dessas condições não for atendida, o modelo de implantação anterior que utiliza conjuntos de disponibilidade entrará em vigor. Isso se aplica apenas a configurações de HA.</block>
-  <block id="fbb17e3b93a1070f3de5e45b66842d95" category="list-text">As configurações do Cloud Volumes ONTAP nas zonas locais da AWS suportam apenas o tipo de disco SSD de uso geral (GP2). Nenhum outro tipo de disco é suportado no Cloud Volumes ONTAP nas Zonas Locais da AWS.</block>
-  <block id="f051f95f393c93123644b448ca3165c0" category="paragraph">O Cloud Volumes ONTAP não oferece mais suporte aos tipos de instância EC2 c4, m4 e r4 na AWS. Se o seu sistema for executado em uma instância c4, m4 ou r4, altere para uma instância c5, m5 ou r5. Não é possível atualizar para esta versão até alterar o tipo de instância.</block>
-  <block id="2f8299f876158db323c08455b12b585a" category="paragraph">Para obter mais informações, consulte:</block>
   <block id="304f5226697d03123fa4611d02bf8546" category="inline-link">Artigo da base de conhecimento (KB): Convertendo uma instância AWS Xen CVO para Nitro KVM</block>
   <block id="0dc3c417fc362585e0e7b3798f00b8bb" category="list-text"><block ref="0dc3c417fc362585e0e7b3798f00b8bb" category="inline-link-rx"></block></block>
   <block id="b5dc3ce37b75c52be2427ecee207d24f" category="inline-link">Artigo da KB: Não é possível alterar o tipo de instância de r4 para r5 com erro de contagem de disco</block>
@@ -840,7 +786,6 @@
   <block id="9cb5231fae0fa398b4997a3404e75449" category="paragraph">Cloud Volumes ONTAP está disponível na AWS como um sistema de nó único e como um par de HA para tolerância de falhas e operações não disruptivas.</block>
   <block id="ef4986bf1cd31453df648c0c88caab37" category="paragraph">A atualização de um sistema de nó único para um par de HA não é suportada. Se você deseja alternar entre um sistema de nó único e um par de HA, então é necessário implantar um novo sistema e replicar dados do sistema existente para o novo sistema.</block>
   <block id="231fd9de718f42c1c9e89368821092dd" category="open-title">Outras licenças</block>
-  <block id="eedc677bbd07d9095251c43bc5a4b33d" category="list-text">Cloud Volumes ONTAP oferece suporte a alta velocidade de gravação na maioria dos tipos de instância ao usar um par de HA. A alta velocidade de gravação é suportada em todos os tipos de instância ao usar um sistema de nó único<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
   <block id="d79ae3bafac04fb5a94c065465345b1c" category="list-text">O tipo de instância r5.12xlarge possui uma limitação conhecida em relação ao suporte. Se um nó reiniciar inesperadamente devido a um pânico, o sistema pode não coletar os arquivos de núcleo usados para solucionar problemas e identificar a causa raiz. O cliente aceita os riscos e os termos de suporte limitados e assume toda a responsabilidade pelo suporte se essa condição ocorrer. Essa limitação afeta pares de HA recém-implantados e pares de HA atualizados a partir da versão 9.8. A limitação não afeta sistemas de nó único recém-implantados.</block>
   <block id="4b40cbab0027c4d9d78baf0e5d6fda5d" category="paragraph">Cloud Volumes ONTAP está disponível no Azure como um sistema de nó único e como um par de HA para tolerância de falhas e operações não disruptivas.</block>
   <block id="1df33292a2fca2da6ee337f54fc40930" category="section-title">Sistemas de nó único</block>
@@ -927,4 +872,90 @@
   <block id="e4005bbac6c9dcfff8a33e8e077a64c7" category="paragraph"><block ref="4f7e8d39f7d7dbd55e211b03ab5cff07" category="inline-link-macro-rx"></block> (NetApp site de suporte, é necessário login).</block>
   <block id="2f8a4700ca3941a576474070acbc2005" category="paragraph">Alguns recursos do ONTAP não são compatíveis com Cloud Volumes ONTAP, incluindo, entre outros:</block>
   <block id="a2733b935845e428d2910b4aedaf426b" category="list-text">Gerenciador de chaves integrado (OKM) para criptografia</block>
+  <block id="81fd9aedd2fba0299b8a468e7058717a" category="inline-link">Tipos de instâncias do Amazon EC2</block>
+  <block id="ee4fdec5b1bb1b7bc6f3f136f70bb6fa" category="paragraph">As tabelas a seguir listam as combinações de storage e tipo de máquina EC2 compatíveis com cada licença. Para obter as especificações mais recentes da instância EC2, incluindo vCPU, memória, largura de banda de rede e largura de banda do Amazon EBS, consulte <block ref="226f24838b262a0eae3391fa5fddf137" category="inline-link-rx"></block>.</block>
+  <block id="3eac5cbe998f674de343ab193660c26e" category="paragraph">*Capacidade máxima do sistema* ^1^ (discos + storage de objetos)</block>
+  <block id="2374c35a1fc87e3bf7446df7d5ec3dc1" category="paragraph">*Tipos de máquinas suportados*</block>
+  <block id="4ad3110a60e3a029d7be7c8f4d6f2d81" category="example-title">Série C5</block>
+  <block id="df74b1a95a7c717abe70faa6c9ce6a34" category="list-text">c5.18xlarge ^7^</block>
+  <block id="d437fb4d444786977fee27414fa5a9d2" category="example-title">Série C5a</block>
+  <block id="61cb037d7b847a5f4d73d7064b172778" category="example-title">Série C5d</block>
+  <block id="89446c1a6641092bc1895d9de77cb54a" category="list-text">c5d.4xlarge ^8^</block>
+  <block id="cf32f28f729ea6aa7448abbcd6c65f04" category="list-text">c5d.18xlarge ^7^</block>
+  <block id="22261aaef8bdc324122610c4bead00a4" category="example-title">Série C5n</block>
+  <block id="af376cda8164386f8cf8ef6b557b7408" category="list-text">c5n.18xlarge ^7^</block>
+  <block id="4d54652767c6eddebf292e236334cca3" category="example-title">Série M5</block>
+  <block id="a6b42cd4343c8182a94d4f37a5eb35eb" category="list-text">m5.xlarge ^8^</block>
+  <block id="ded3a7f3156bd2e6e104325e1c52c6ac" category="list-text">m5.2xlarge ^8^</block>
+  <block id="8c22291f40406b86823f832fd8a0ffbc" category="list-text">m5.4xlarge ^8^</block>
+  <block id="d9682ac8bd1648333d6c342be3a903eb" category="example-title">Série M5a</block>
+  <block id="e96ddbffafe22cc7cee70974d6673382" category="example-title">Série M5d</block>
+  <block id="9f38396b394e38135d8e96dcfef18ad5" category="example-title">Série M5dn</block>
+  <block id="95a8f9fe0c977bc18244e46dc873f75e" category="list-text">m5dn.24xlarge ^7^</block>
+  <block id="910fe540353bfa7fd90349b4de4fe09a" category="example-title">Série M5n</block>
+  <block id="622f9975164565a0db26aa39b7ed872a" category="example-title">Série M6id</block>
+  <block id="3316cf447f298770890b342eaffca3fb" category="list-text">m6id.xlarge ^9^</block>
+  <block id="1ab6a5de00c638ce58ed9bd765dd0b5c" category="list-text">m6id.2xlarge ^9^</block>
+  <block id="ac6db1a6fec1559e67bb0edb9025dd52" category="list-text">m6id.4xlarge ^9^</block>
+  <block id="9bf1c46f0703ccb148327435b949d9ce" category="list-text">m6id.8xlarge ^9^</block>
+  <block id="e1de38c1b8c807783b266fe4983af618" category="list-text">m6id.16xlarge ^7,9^</block>
+  <block id="348ee253b148bf2e4e7ef63270ab9ebd" category="list-text">m6id.32xlarge ^7,9^</block>
+  <block id="0a62b1b3d2ab1420b41183ad1be01d72" category="example-title">Série M6idn</block>
+  <block id="be1498be17b8c2939a7d32b2acd07282" category="list-text">m6idn.xlarge ^9^</block>
+  <block id="383abc9d7c1bdb7684e87048763c06bb" category="list-text">m6idn.2xlarge ^9^</block>
+  <block id="e47033db626186ad0d167b4eb175205d" category="list-text">m6idn.4xlarge ^9^</block>
+  <block id="734fa71557674751ea333cfcc73a2de8" category="list-text">m6idn.8xlarge ^9^</block>
+  <block id="4918297550202aa848796a53309a63b0" category="list-text">m6idn.16xlarge ^7,9^</block>
+  <block id="d4ce3985ead5205a19b8b3a3f871159f" category="list-text">m6idn.32xlarge ^9^</block>
+  <block id="e2d1c24325802fe2559a93248380d0c0" category="example-title">Série R5</block>
+  <block id="4e1657b9f47145bbe1465ac877f4a43b" category="list-text">r5.xlarge ^8^</block>
+  <block id="82c13d422fd41922fca03fba5ed8b424" category="list-text">r5.2xlarge ^8^</block>
+  <block id="c843fb1322ca6ec353b8f076ab9c5068" category="list-text">r5.12xlarge ^6^</block>
+  <block id="3642b44406a6e54bbb9204bdceea0c63" category="example-title">Série R5d</block>
+  <block id="dc731aa5a0f3d80dfe6ca0a835e769be" category="list-text">Para um par de HA, o limite de capacidade se aplica ao par de HA. Não é por nó. Por exemplo, se você usar a licença PAYGO Premium, poderá ter até 368 TiB de capacidade entre ambos os nós.</block>
+  <block id="34f2ac75114e099ddfd4614a3c3590e1" category="list-text">Não é recomendável fazer tiering de dados para storage de objetos ao usar HDDs otimizados para throughput (st1).</block>
+  <block id="56dfb490d8ac568bcf0cbe0ff5ac0e50" category="list-text">As configurações do Cloud Volumes ONTAP em Zonas Locais da AWS suportam apenas o tipo de disco SSD de uso geral (gp2). Nenhum outro tipo de disco é suportado em Zonas Locais da AWS.</block>
+  <block id="df2afd870740ec05f8f69fac589d0e46" category="list-text">Embora esses tipos de instâncias EC2 suportem mais de 64 vCPUs, Cloud Volumes ONTAP suporta até 64 vCPUs.</block>
+  <block id="17401787703e038e2e9f91b3a9297ad4" category="list-text">Esses tipos de instância requerem ONTAP 9.16.1 GA ou posterior.</block>
+  <block id="bdffec98e6d23168e67ec60edb566516" category="cell">Tipos de máquinas suportados</block>
+  <block id="d20df58753fbc9c52414524392db7da4" category="section-title">Suporte para Flash Cache e alta velocidade de gravação</block>
+  <block id="f9beb51fa441c2950ee01b34400048ee" category="paragraph">A tabela a seguir identifica quais tipos de instâncias EC2 suportam Flash Cache e alta velocidade de gravação.</block>
+  <block id="5fbc523d8d2ad241522a15100f23bef2" category="cell">Flash Cache</block>
+  <block id="c7d199adcfee4046f5f5b3e5bd396a3e" category="cell">Alta velocidade de gravação</block>
+  <block id="55b122095d7b69d814bc6849b383e4df" category="cell">c5d.4xlarge</block>
+  <block id="af5930828f5a5fb8d4c21928b5ccdd0d" category="cell">m5.xlarge</block>
+  <block id="fdb9b168c2139e67e282db861cf21967" category="cell">m5.2xlarge</block>
+  <block id="6124944413e19a98a7cefa988e91f90e" category="cell">m5.4xlarge</block>
+  <block id="6ea6f3b204b2dff8f0976ff9e2b5ccbe" category="cell">m6id.xlarge</block>
+  <block id="787f0409c3db5385b203630c013a9014" category="cell">Compatível ^*^</block>
+  <block id="4040d2074406c56786605eb0cabb286f" category="cell">m6id.2xlarge</block>
+  <block id="6dec6db76b4597dec6197b4e512ef5f1" category="cell">m6id.4xlarge</block>
+  <block id="63eb9c5c511b3bec71fa252db49120e3" category="cell">m6id.8xlarge</block>
+  <block id="7e297a6b9bf6316e972a013d22a9fb33" category="cell">m6id.16xlarge</block>
+  <block id="7cb437b5120b3a23edafe4917b4a840e" category="cell">m6idn.xlarge</block>
+  <block id="023ed24892281ff61a48cc442038c3a6" category="cell">m6idn.2xlarge</block>
+  <block id="4967b147e0aef27d43fd878fc99d85f7" category="cell">m6idn.4xlarge</block>
+  <block id="3dc2978d3bf77a8f5655a75c2b4da0b6" category="cell">m6idn.8xlarge</block>
+  <block id="a1ac5f0e90ef55247038b6b57bbefd54" category="cell">m6idn.16xlarge</block>
+  <block id="dd930bd4176145c6159837468ab13dde" category="cell">m6idn.32xlarge</block>
+  <block id="e1369dc9aee5f7165363f55d10884546" category="cell">r5.xlarge</block>
+  <block id="859e8cd8d7a83d36983b0e9860a11e84" category="cell">r5.2xlarge</block>
+  <block id="4a6116f629595cfeff4104820f93ab85" category="cell">r5.12xlarge</block>
+  <block id="351a266866c8a648d5dc30495f392196" category="paragraph">pass:[*] Flash Cache é compatível com m6id.xlarge, m6id.2xlarge, m6idn.xlarge e m6idn.2xlarge. No entanto, esses tipos de instância têm menos de 16 núcleos de processador e não são recomendados para cargas de trabalho de alto desempenho ou com uso intensivo de memória. Sob carga pesada, eles podem reiniciar devido a restrições de memória. Para evitar isso, use um tipo de instância com maior contagem de núcleos e mais memória.</block>
+  <block id="fe2d8cb96f939a1bb432056954a763b8" category="paragraph">As notas a seguir fornecem orientações gerais sobre o comportamento de instâncias suportadas e opções de implantação.</block>
+  <block id="6f6137d0b20b902942af04d90a52ff7e" category="list-text">Alguns tipos de instância incluem armazenamento NVMe local, que Cloud Volumes ONTAP usa como Flash Cache. Flash Cache acelera o acesso aos dados por meio de armazenamento em cache inteligente em tempo real de dados de usuário e metadados da NetApp. É eficaz para cargas de trabalho com uso intensivo de leitura aleatória, incluindo bancos de dados, e-mail e serviços de arquivos. A compactação deve ser desativada em todos os volumes para aproveitar as melhorias de desempenho do Flash Cache.<block ref="da56a164195bbdee72f1dfc4ea53669d" category="inline-link-rx"></block></block>
+  <block id="45188ca1f19d6bde820ffb0c36a87bb9" category="list-text">Cloud Volumes ONTAP oferece suporte a alta velocidade de gravação com todos os tipos de instância compatíveis ao usar um sistema de nó único. Ao usar um par de HA, a alta velocidade de gravação é compatível apenas com os tipos de instância compatíveis.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block></block>
+  <block id="fca44ab5df0d2d05c08e1218a248ebb9" category="paragraph">Cloud Volumes ONTAP não oferece mais suporte aos tipos de instância EC2 c4, m4 e r4 na AWS.</block>
+  <block id="befcc93fb12ae5e86952e4037dfbba7c" category="paragraph">Se o seu sistema estiver em execução em uma instância c4, m4 ou r4, altere-a para uma instância c5, m5 ou r5 antes de atualizar para esta versão.</block>
+  <block id="857017ab8aeb5fac4c965258ba0894a6" category="paragraph">Para obter mais informações, consulte os seguintes recursos:</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">Informações relacionadas</block>
+  <block id="74524c6f5a9f872f5f4089bf0491c318" category="list-text"><block ref="74524c6f5a9f872f5f4089bf0491c318" category="inline-link-rx"></block></block>
+  <block id="8f54b4aa5c8b6ebbbd7b9d377d2916da" category="inline-link">Instâncias M5 do Amazon EC2</block>
+  <block id="642182eaa61146f63105c836930249fa" category="list-text"><block ref="642182eaa61146f63105c836930249fa" category="inline-link-rx"></block></block>
+  <block id="96cfe021a3263d9ffd40df885aa82381" category="inline-link">Instâncias Amazon EC2 M6i</block>
+  <block id="6592e083b44fb0e105f5011dbcf66cb6" category="list-text"><block ref="6592e083b44fb0e105f5011dbcf66cb6" category="inline-link-rx"></block></block>
+  <block id="cf4e29ea0777598593e5fcb57a63c365" category="inline-link">Instâncias C5 do Amazon EC2</block>
+  <block id="1b976ec3c5a29cc801abf14a5b73d976" category="list-text"><block ref="1b976ec3c5a29cc801abf14a5b73d976" category="inline-link-rx"></block></block>
+  <block id="511ad3b8ad49da139e74e84deac5f108" category="inline-link">Instâncias Amazon EC2 R5</block>
+  <block id="fc58e772b0e187c9acd0ead80273cfa3" category="list-text"><block ref="fc58e772b0e187c9acd0ead80273cfa3" category="inline-link-rx"></block></block>
 </blocks>

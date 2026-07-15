@@ -18,6 +18,7 @@ Saiba como a NetApp colabora com fornecedores de nuvem para lidar com possíveis
 
 
 
+[[collaborative-support-best-practices]]
 == Práticas recomendadas de suporte colaborativo
 
 A NetApp está empenhada em fornecer suporte ao Licenciado e envidará esforços comercialmente razoáveis para resolver problemas de suporte técnico para a Cloud Volumes ONTAP quando comunicados pelo Licenciado. A NetApp e o provedor de nuvem aplicável não têm nenhuma obrigação direta de suporte para o software ou a infraestrutura licenciados uns dos outros.
@@ -26,6 +27,7 @@ A NetApp implementou ferramentas destinadas a se conetar com fornecedores de nuv
 
 
 
+[[azure-maintenance-events]]
 == Eventos de manutenção do Azure
 
 A Microsoft agenda e anuncia programaticamente eventos de manutenção em sua infraestrutura de máquina virtual (VM) do Azure que podem afetar as VMs do Cloud Volumes ONTAP. Estes eventos são anunciados 15 minutos antes da janela de manutenção.

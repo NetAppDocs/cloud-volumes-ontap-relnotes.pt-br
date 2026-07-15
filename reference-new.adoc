@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.18.1 inclui um novo aprimoramento. 
+summary: Cloud Volumes ONTAP 9.19.1 inclui um novo aprimoramento. 
 ---
-= Novidades no Cloud Volumes ONTAP 9.18.1
+= Novidades no Cloud Volumes ONTAP 9.19.1
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,49 +14,27 @@ summary: Cloud Volumes ONTAP 9.18.1 inclui um novo aprimoramento.
 
 
 [role="lead"]
-Agora você pode implantar e atualizar para Cloud Volumes ONTAP 9.18.1. Você pode ver a versão base deste lançamento e as versões de patch mais recentes disponíveis para implantação e atualização no Console.
+Agora você pode implantar e atualizar para Cloud Volumes ONTAP 9.19.1. Você pode ver a versão base deste lançamento e as versões de patch mais recentes disponíveis para implantação e atualização no Console.
 
 Para saber sobre os recursos do Cloud Volumes ONTAP que foram introduzidos nas versões mais recentes do NetApp Console, veja o que há de novo em https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^].
 
 
 
-== 9.18.1 P2 (30 de abril de 2026)
+[[9-19-1-rc-13-july-2026]]
+== 9.19.1 RC (13 de julho de 2026)
 
-O patch 9.18.1 P2 do Cloud Volumes ONTAP já está disponível para implantação e atualização na AWS, Azure e Google Cloud. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.
-
-
-NOTE: Para a AWS, Cloud Volumes ONTAP 9.18.1 P2 é a versão padrão para implantação e atualização. Qualquer versão ou patch inferior ao 9.18.1 não é suportado.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P2["Veja a lista de bugs corrigidos no patch P2"^] (NetApp site de suporte, é necessário login).
+O Release Candidate (RC) 9.19.1 do Cloud Volumes ONTAP já está disponível para implantação e atualização somente no Google Cloud. Esta versão não está disponível para implantação e atualização na Amazon Web Services (AWS) e Microsoft Azure (Azure).
 
 
 
-== 9.18.1 P1 (31 de março de 2026)
-
-O patch 9.18.1 P1 do Cloud Volumes ONTAP já está disponível para implantação e atualização no Azure e no Google Cloud. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.
-
-
-NOTE: Esta versão não está disponível para implantação e atualização na AWS.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P1["Veja a lista de bugs corrigidos no patch P1"^] (NetApp site de suporte, é necessário login).
-
-
-
-== 9.18.1 GA (10 de fevereiro de 2026)
-
-A versão de disponibilidade geral do Cloud Volumes ONTAP 9.18.1 já está disponível para implantação e atualização no Microsoft Azure e no Google Cloud.
-
-
-NOTE: Esta versão não está disponível para implantação e atualização na Amazon Web Services (AWS).
-
-
-
+[[upgrade-notes]]
 == Notas de atualização
 
 Leia estas notas para saber mais sobre a atualização para esta versão.
 
 
 
+[[how-to-upgrade]]
 === Como atualizar
 
 As atualizações do Cloud Volumes ONTAP devem ser concluídas a partir do Console. Você não deve atualizar o Cloud Volumes ONTAP usando o System Manager ou a CLI. Isso pode afetar a estabilidade do sistema.
@@ -65,12 +43,17 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 
 
+[[supported-upgrade-path]]
 === Caminho de atualização suportado
 
-Você pode atualizar para o Cloud Volumes ONTAP 9.18.1 a partir da 9.17.1 P1 e patches posteriores na AWS, Azure e Google Cloud. O Console solicitará que você atualize os sistemas Cloud Volumes ONTAP elegíveis para esta versão.
+Você pode atualizar para Cloud Volumes ONTAP 9.19.1 RC a partir da versão 9.18.1 somente no Google Cloud. O Console solicitará que você atualize os sistemas Cloud Volumes ONTAP elegíveis para esta versão.
+
+
+NOTE: Na AWS e no Azure, você não será solicitado a atualizar para a versão 9.19.1 RC porque essa versão não está disponível para implantação e atualização nesses provedores de nuvem.
 
 
 
+[[downtime]]
 === Tempo de inatividade
 
 * A atualização de um sistema de nó único deixa o sistema offline por até 25 minutos, durante os quais a E/S é interrompida.

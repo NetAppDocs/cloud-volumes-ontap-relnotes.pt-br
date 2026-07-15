@@ -20,6 +20,7 @@ As limitações a seguir se aplicam ao Cloud Volumes ONTAP em todos os provedore
 
 
 
+[[unsupported-ontap-features]]
 == Funcionalidades ONTAP não suportadas
 
 Alguns recursos do ONTAP não são compatíveis com Cloud Volumes ONTAP, incluindo, entre outros:
@@ -53,12 +54,14 @@ https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Avail
 
 
 
+[[maximum-concurrent-replication-operations]]
 == Máximo de operações de replicação simultânea
 
 O número máximo de transferências simultâneas de SnapMirror ou SnapVault para Cloud Volumes ONTAP é de 100 por nó, independentemente do tipo de instância ou do tipo de máquina.
 
 
 
+[[cloud-provider-snapshots-must-not-be-used-for-your-backup-and-recovery-plans]]
 == Os snapshots do fornecedor de nuvem não devem ser usados para seus planos de backup e recuperação
 
 Você não deve usar os snapshots do seu provedor de nuvem como parte do plano de backup e recuperação para dados do Cloud Volumes ONTAP. Você sempre deve usar as cópias Snapshot do ONTAP ou soluções de backup de terceiros para fazer backup e restaurar dados hospedados no Cloud Volumes ONTAP.
@@ -70,24 +73,28 @@ NOTE: Os pontos de consistência do ONTAP no sistema de arquivos WAFL determinam
 
 
 
+[[cloud-volumes-ontap-supports-only-reserved-and-on-demand-vm-instances]]
 == O Cloud Volumes ONTAP é compatível apenas com instâncias de VM reservadas e sob demanda
 
 O Cloud Volumes ONTAP pode ser executado em uma instância de VM reservada ou sob demanda do seu provedor de nuvem. Outros tipos de instâncias de VM não são suportados.
 
 
 
+[[automatic-application-resource-management-solutions-shouldnt-be-used]]
 == As soluções de gerenciamento automático de recursos de aplicativos não devem ser usadas
 
 As soluções de gerenciamento automático de recursos de aplicativos não devem gerenciar sistemas Cloud Volumes ONTAP. Isso pode resultar em uma alteração para uma configuração não suportada. Por exemplo, a solução pode alterar o Cloud Volumes ONTAP para um tipo de instância de VM não suportado.
 
 
 
+[[software-updates-must-be-completed-by-netapp-console]]
 == As atualizações de software devem ser concluídas pelo NetApp Console
 
 As atualizações do Cloud Volumes ONTAP devem ser concluídas no NetApp Console. Você não deve atualizar o Cloud Volumes ONTAP usando o System Manager ou a CLI. Isso pode afetar a estabilidade do sistema.
 
 
 
+[[cloud-volumes-ontap-deployment-must-not-be-modified-from-your-cloud-providers-console]]
 == A implantação do Cloud Volumes ONTAP não deve ser modificada a partir do console do seu provedor de nuvem
 
 Alterações na configuração do Cloud Volumes ONTAP no console do seu provedor de nuvem resultam em uma configuração não suportada. Quaisquer alterações nos recursos do Cloud Volumes ONTAP que o Console cria e gerencia podem afetar a estabilidade do sistema e a capacidade do Console de gerenciar o sistema.
@@ -97,18 +104,21 @@ NOTE: Após a implantação inicial, a modificação do nome de assinatura do Az
 
 
 
+[[disks-and-aggregates-must-be-managed-from-the-console]]
 == Discos e agregados devem ser gerenciados pelo Console
 
 Todos os discos e agregados devem ser criados e excluídos diretamente do Console. Você não deve executar essas ações a partir de outra ferramenta de gerenciamento. Isso pode afetar a estabilidade do sistema, dificultar a capacidade de adicionar discos no futuro e potencialmente gerar taxas redundantes de provedores de nuvem.
 
 
 
+[[snapmanager-licensing-limitation]]
 == Limitação de licenciamento do SnapManager
 
 As licenças SnapManager por servidor são suportadas com o Cloud Volumes ONTAP. As licenças por sistema de storage (pacote SnapManager) não são suportadas.
 
 
 
+[[limitations-with-third-party-agents-and-extensions]]
 == Limitações com agentes e extensões de terceiros
 
 Agentes de terceiros e extensões de VM não são suportados em instâncias de máquina virtual Cloud Volumes ONTAP.

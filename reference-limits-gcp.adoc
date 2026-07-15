@@ -18,6 +18,7 @@ O Cloud Volumes ONTAP tem limites de configuração de storage para fornecer ope
 
 
 
+[[maximum-system-capacity-by-license]]
 == Capacidade máxima do sistema por licença
 
 A capacidade máxima do sistema para um sistema Cloud Volumes ONTAP é determinada pela sua licença. A capacidade máxima do sistema inclui storage baseado em disco e storage de objetos usado para categorização de dados.
@@ -26,6 +27,7 @@ A NetApp não oferece suporte para exceder o limite de capacidade do sistema. Se
 
 Para algumas configurações, os limites de disco impedem que você alcance o limite de capacidade usando discos sozinhos. Você pode alcançar o limite de capacidade por https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["disposição em camadas dos dados inativos no storage de objetos"^]. Consulte os limites de disco abaixo para obter mais detalhes.
 
+[[cap-license-gcp]]
 .Limite de capacidade para licenças baseadas em capacidade
 Com o licenciamento baseado em capacidade, cada sistema Cloud Volumes ONTAP oferece suporte à hierarquização para armazenamento de objetos.  A capacidade total em camadas pode ser ampliada até o limite de bucket do provedor de nuvem.  Embora a licença não imponha restrições de capacidade, você deve seguir as https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Melhores práticas do FabricPool"^] para garantir desempenho ideal, confiabilidade e eficiência de custos ao configurar e gerenciar camadas. Consulte o  https://cloud.google.com/storage/docs/buckets["Documentação do Google Cloud"^] para maiores informações.
 
@@ -59,6 +61,7 @@ Não, não é. Os dados em um par de HA são espelhados de forma sincronizada en
 
 
 
+[[aggregate-limits]]
 == Limites agregados
 
 O Cloud Volumes ONTAP agrupa discos do Google Cloud Platform em _agregados_. Agregados fornecem storage para volumes.
@@ -92,6 +95,7 @@ Notas:
 
 
 
+[[disk-and-tiering-limits]]
 == Limites de disco e disposição em camadas
 
 A tabela abaixo mostra a capacidade máxima do sistema com discos somente e com a disposição em camadas de discos e dados inativos no storage de objetos. Os limites de disco são específicos para discos que contêm dados de usuário. Os limites não incluem o disco de inicialização, o disco raiz ou o NVRAM.
@@ -120,6 +124,7 @@ Este limite é definido por limites de máquinas virtuais no Google Cloud Platfo
 
 
 
+[[storage-vm-limits]]
 == Limites de VM de storage
 
 Algumas configurações permitem que você crie VMs de storage adicionais (SVMs) para o Cloud Volumes ONTAP.
@@ -164,6 +169,7 @@ As VMs de storage configuradas para recuperação de desastres (DR) não exigem 
 
 
 
+[[logical-storage-limits]]
 == Limites lógicos de armazenamento
 
 [cols="22,22,56"]
@@ -206,6 +212,7 @@ As VMs de storage configuradas para recuperação de desastres (DR) não exigem 
 
 
 
+[[iscsi-storage-limits]]
 == Limites de armazenamento iSCSI
 
 [cols="3*"]
@@ -247,6 +254,7 @@ As VMs de storage configuradas para recuperação de desastres (DR) não exigem 
 |===
 
 
+[[cloud-volumes-ontap-ha-pairs-do-not-support-immediate-storage-giveback]]
 == Os pares de HA do Cloud Volumes ONTAP não são compatíveis com storage imediato para giveback
 
 Depois que um nó é reiniciado, o parceiro deve sincronizar os dados antes que ele possa retornar o armazenamento. O tempo necessário para sincronizar os dados depende da quantidade de dados gravados pelos clientes enquanto o nó estava inativo e da velocidade de gravação de dados durante o tempo de giveback.

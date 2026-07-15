@@ -18,6 +18,7 @@ Várias configurações do Cloud Volumes ONTAP são suportadas na AWS.
 
 
 
+[[supported-number-of-nodes]]
 == Número de nós com suporte
 
 Cloud Volumes ONTAP está disponível na AWS como um sistema de nó único e como um par de HA para tolerância de falhas e operações não disruptivas.
@@ -26,12 +27,14 @@ A atualização de um sistema de nó único para um par de HA não é suportada.
 
 
 
+[[supported-storage]]
 == Armazenamento suportado
 
 O Cloud Volumes ONTAP dá suporte a vários tipos de discos EBS e ao storage de objetos S3 para categorização de dados. A capacidade máxima de armazenamento é determinada pela licença que você escolher.
 
 
 
+[[storage-support-by-license]]
 === Suporte de storage por licença
 
 Cada licença suporta uma capacidade máxima de sistema diferente. A capacidade máxima do sistema inclui storage baseado em disco e storage de objetos usado para categorização de dados. O NetApp não suporta exceder esse limite.
@@ -532,6 +535,7 @@ A alta velocidade de gravação não é suportada com esses tipos de instância 
 ====
 
 
+[[support-for-flash-cache-and-high-write-speed]]
 === Suporte para Flash Cache e alta velocidade de gravação
 
 A tabela a seguir identifica quais tipos de instâncias EC2 suportam Flash Cache e alta velocidade de gravação.
@@ -662,6 +666,7 @@ As notas a seguir fornecem orientações gerais sobre o comportamento de instân
 
 
 
+[[supported-disk-sizes]]
 === Tamanhos de disco suportados
 
 Na AWS, um agregado pode conter até 6 discos com o mesmo tamanho. Mas se você tiver uma configuração que suporte o recurso volumes elásticos do Amazon EBS, um agregado pode conter até 8 discos. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Saiba mais sobre o suporte para volumes elásticos"^]
@@ -704,6 +709,7 @@ Na AWS, um agregado pode conter até 6 discos com o mesmo tamanho. Mas se você 
 |===
 
 
+[[c4-m4-and-r4-instances-no-longer-supported]]
 === as instâncias c4, m4 e r4 não são mais compatíveis
 
 Cloud Volumes ONTAP não oferece mais suporte aos tipos de instância EC2 c4, m4 e r4 na AWS.
@@ -721,12 +727,14 @@ Para obter mais informações, consulte os seguintes recursos:
 
 
 
+[[supported-regions]]
 == Regiões suportadas
 
 Para obter suporte à região da AWS, https://bluexp.netapp.com/cloud-volumes-global-regions["Regiões globais do Cloud volumes"^] consulte .
 
 
 
+[[related-information]]
 == Informações relacionadas
 
 * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html["Tipos de instâncias do Amazon EC2"^]

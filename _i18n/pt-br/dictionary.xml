@@ -211,7 +211,6 @@
   <block id="8f66358785ed8f4d9a356630a4ee515c" category="list-text">n2-padrão-32</block>
   <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">n2-padrão-48</block>
   <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">n2-padrão-64</block>
-  <block id="8363a389e0c602867cfdadb32a0bb680" category="cell">Discos persistentes balanceados 4, discos persistentes Performance (SSD) 4 e discos persistentes Standard (HDD).</block>
   <block id="f30cabe0a77d16d16cf1ef723d8eb186" category="inline-link-macro">Saiba mais sobre os limites de disco no Google Cloud</block>
   <block id="a93742b808592a2ce1b1926f98f391eb" category="paragraph"><block ref="46bbc0e4d7a811f26e46cbb2c2ad7173" category="inline-link-macro-rx"></block>.</block>
   <block id="8c0495bb0212f48146ab592de8a205d9" category="cell">2 TB 2</block>
@@ -578,7 +577,6 @@
   <block id="1fff298355326f8c77bd77059a41c1a2" category="sidebar">Limitações no Azure</block>
   <block id="9a3a0c4b2afbb088e029484d4b34ba8b" category="sidebar">Limitações no Google Cloud</block>
   <block id="e1e1effee5380369716ff955c2de6215" category="cell">Tipos de máquinas suportados 1</block>
-  <block id="1ea028151d07abb047b4e2f17d215216" category="cell">Discos persistentes balanceados 3, discos persistentes Performance (SSD) 3 e discos persistentes Standard (HDD).</block>
   <block id="6b145cfa91f7c68c4c0c6f2bf60bcf9d" category="paragraph">O tipo de máquina personalizado-4-16384 não é mais suportado com novos sistemas Cloud Volumes ONTAP. Se tiver um sistema existente a funcionar neste tipo de máquina, pode continuar a utilizá-lo, mas recomendamos que mude para o tipo de máquina n2-standard-4.</block>
   <block id="06cf24f6f7b06cb3d2778a1a70e9ff2f" category="paragraph">*Tipos de disco suportados*</block>
   <block id="17943cfde2a5e23c7925dc95a8dde6a4" category="paragraph">*Disposição em camadas de dados inativos até S3 TB*</block>
@@ -775,14 +773,7 @@
   <block id="312c1718d8151f9dd3f53ad516f59210" category="list-text">^8^ Os tipos de VM Edsv6 são suportados para novas implementações do Cloud Volumes ONTAP 9.17.1 e versões posteriores. Não é possível migrar uma implantação existente com outro tipo de VM, por exemplo, de Edsv5 para Edsv6; somente alterações de tamanho entre variantes do Edsv6 (por exemplo, E20ds_v6 → E32ds_v6) são suportadas. Para obter informações sobre esse tipo de VM, consulte o<block ref="45ec24eb73012d89f19225059116e005" category="inline-link-rx"></block>.</block>
   <block id="e8d1ba67e4c7362e24e23edc094c913a" category="inline-link-macro">Aviso para o Cloud Volumes ONTAP 9.18.1</block>
   <block id="cbacdd329731dd3da20817c0b9394825" category="list-text"><block ref="cbacdd329731dd3da20817c0b9394825" category="inline-link-macro-rx"></block></block>
-  <block id="b8aa7f56f0169d56c55b780e1d221a2d" category="summary">Cloud Volumes ONTAP 9.18.1 inclui um novo aprimoramento.</block>
-  <block id="e20a47504b3168c3c934ea71a6245502" category="doc">Novidades no Cloud Volumes ONTAP 9.18.1</block>
-  <block id="c9cd8b532a08b529a0ff7a2fffea627b" category="paragraph">Agora você pode implantar e atualizar para Cloud Volumes ONTAP 9.18.1. Você pode ver a versão base deste lançamento e as versões de patch mais recentes disponíveis para implantação e atualização no Console.</block>
   <block id="08a0be2ea6fee1009726a83673928a21" category="paragraph">Para saber sobre os recursos do Cloud Volumes ONTAP que foram introduzidos nas versões mais recentes do NetApp Console, veja o que há de novo em<block ref="56e5ce972271b4b4616ecc1db39a9778" category="inline-link-rx"></block>.</block>
-  <block id="5374a9a52531aed841e032cdf44811c1" category="section-title">9.18.1 GA (10 de fevereiro de 2026)</block>
-  <block id="7ee7c49a2608d3d31956026fdc3bf833" category="sidebar">Estas notas de versão descrevem novos recursos, limitações e problemas conhecidos do Cloud Volumes ONTAP 9.18.1.</block>
-  <block id="001b20e35d2188363ca847fd669007f8" category="sidebar">Cloud Volumes ONTAP 9.18.1 Notas de versão</block>
-  <block id="e0b3d5810800c1af83b5753f4a2a2f7e" category="sidebar">Cloud Volumes ONTAP 9.18.1 notas de lançamento</block>
   <block id="9cb5231fae0fa398b4997a3404e75449" category="paragraph">Cloud Volumes ONTAP está disponível na AWS como um sistema de nó único e como um par de HA para tolerância de falhas e operações não disruptivas.</block>
   <block id="ef4986bf1cd31453df648c0c88caab37" category="paragraph">A atualização de um sistema de nó único para um par de HA não é suportada. Se você deseja alternar entre um sistema de nó único e um par de HA, então é necessário implantar um novo sistema e replicar dados do sistema existente para o novo sistema.</block>
   <block id="231fd9de718f42c1c9e89368821092dd" category="open-title">Outras licenças</block>
@@ -836,7 +827,6 @@
   <block id="d6c145d4553197e1dff7b37e2e78e57f" category="cell">c3-standard-44-lssd</block>
   <block id="c11765d8ed27e45d59d4e9a92f2affd7" category="cell">c3-standard-88-lssd</block>
   <block id="f2b67364b67c3341da14d3dd6cc4e565" category="section-title">Capacidade máxima do sistema com base no tipo de máquina virtual</block>
-  <block id="bd99c8077f7f97c91591a847f840881b" category="cell">Máximo de discos de dados suportados</block>
   <block id="66c4d8e765ff8bcb8923251a797c3122" category="cell">Capacidade máxima (em TiB)</block>
   <block id="1adacbb72826f9b83c0140c9286c1820" category="cell">n2 (todas as variantes)</block>
   <block id="c8ffe9a587b126f152ed3d89a146b445" category="cell">124</block>
@@ -846,10 +836,6 @@
   <block id="3b7cc07efa81c4ceb17419c4584c144f" category="cell">c3-standard-22</block>
   <block id="578ae146a454ae8eb958e84ae9263447" category="cell">c3-standard-44</block>
   <block id="ed861c7159dd25edfdb3756b850c62c0" category="cell">c3-standard-88</block>
-  <block id="83462a4045d14d58d15d9f74015dd308" category="paragraph">Você pode atualizar para o Cloud Volumes ONTAP 9.18.1 a partir da 9.17.1 P1 e patches posteriores na AWS, Azure e Google Cloud. O Console solicitará que você atualize os sistemas Cloud Volumes ONTAP elegíveis para esta versão.</block>
-  <block id="e819c4410e5eb8f68db481717f672a21" category="section-title">9.18.1 P1 (31 de março de 2026)</block>
-  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P1</block>
-  <block id="d4e91a63e862afe5d30e173965c6c4a1" category="paragraph"><block ref="eb1c958143bf6120158dde219a58c506" category="inline-link-macro-rx"></block> (NetApp site de suporte, é necessário login).</block>
   <block id="180b53d09539df4cd298ca82cb98c8bb" category="example-title">Série DSv2</block>
   <block id="ffe4ca59df6616b254c0040e73c39f29" category="example-title">Série Ebdsv5</block>
   <block id="ad3e18365947f98cd146bb09d36a6798" category="example-title">Série Edsv4</block>
@@ -860,14 +846,8 @@
   <block id="34e6880c88acc332512e9f643fb56b1f" category="example-title">Série Edsv5</block>
   <block id="96623089d34324947cb85e45a7aa6d71" category="example-title">Série Edsv6</block>
   <block id="74236a30875ab4ba4eba0b2066b112a0" category="example-title">Série Dsv2</block>
-  <block id="83ec1da92379d4aa7444743f42a48c24" category="list-text">^5^ Você pode implantar as VMs da família C3 de nova geração no Cloud Volumes ONTAP 9.18.1 e versões posteriores. As máquinas c3-standard-44 e c3-standard-88 e suas variantes LSSD oferecem suporte à largura de banda Tier-1 no Google Cloud Console por padrão. Consulte <block ref="a3ca704cc55629e0cfb930ef958889bb" category="inline-link-macro-rx"></block> para obter mais informações sobre as variantes LSSD.</block>
   <block id="e4dc6128b719feb8c40c1a651d390050" category="admonition">_Flash Cache_, o modo de gravação de alta velocidade e um MTU de 8.896 dependem de recursos e não podem ser desativados individualmente em uma instância configurada.</block>
-  <block id="c538e24ff658f3f0f3239b6f8d51e48f" category="paragraph">Em implantações de nó único, a partir do Cloud Volumes ONTAP 9.18.1, se você selecionar as variantes de SSD local (LSSD) das VMs C3, Flash Cache será ativado por padrão. Não é possível alternar entre variantes de VM C3 LSSD em sua implantação do Cloud Volumes ONTAP, mesmo que a variante de destino suporte Flash Cache.</block>
   <block id="bbbc2c55d76f069b82eb0de6bf28057d" category="paragraph">Consulte esta tabela para entender a variante da VM e o número de LSSDs suportados por ela:</block>
-  <block id="27f7ce2af3afe3ff869adedcf68e85cc" category="section-title">9.18.1 P2 (30 de abril de 2026)</block>
-  <block id="3cbfcd6492053f416bf02c99b23b7630" category="paragraph">O patch 9.18.1 P2 do Cloud Volumes ONTAP já está disponível para implantação e atualização na AWS, Azure e Google Cloud. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
-  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P2</block>
-  <block id="e4005bbac6c9dcfff8a33e8e077a64c7" category="paragraph"><block ref="4f7e8d39f7d7dbd55e211b03ab5cff07" category="inline-link-macro-rx"></block> (NetApp site de suporte, é necessário login).</block>
   <block id="2f8a4700ca3941a576474070acbc2005" category="paragraph">Alguns recursos do ONTAP não são compatíveis com Cloud Volumes ONTAP, incluindo, entre outros:</block>
   <block id="a2733b935845e428d2910b4aedaf426b" category="list-text">Gerenciador de chaves integrado (OKM) para criptografia</block>
   <block id="81fd9aedd2fba0299b8a468e7058717a" category="inline-link">Tipos de instâncias do Amazon EC2</block>
@@ -957,9 +937,26 @@
   <block id="511ad3b8ad49da139e74e84deac5f108" category="inline-link">Instâncias Amazon EC2 R5</block>
   <block id="fc58e772b0e187c9acd0ead80273cfa3" category="list-text"><block ref="fc58e772b0e187c9acd0ead80273cfa3" category="inline-link-rx"></block></block>
   <block id="d725a8f993233f84880bb4bfdd79e966" category="list-text">^2^ Use esta VM somente quando o controle de manutenção do Azure for necessário. Não é recomendada para outros casos de uso devido ao preço mais elevado. Ao usar tipos de instância isolados para controle de manutenção do Azure, certifique-se de que cada VM em um par de HA tenha sua própria configuração de manutenção no Azure com agendamentos escalonados para que ambas as VMs não fiquem offline simultaneamente.</block>
-  <block id="e4050cfabb278e71586e11c10cffa6af" category="admonition">Para a AWS, Cloud Volumes ONTAP 9.18.1 P2 é a versão padrão para implantação e atualização. Qualquer versão ou patch inferior ao 9.18.1 não é suportado.</block>
-  <block id="8f43580fc31dbb2410e11fce972a5f32" category="paragraph">O patch 9.18.1 P1 do Cloud Volumes ONTAP já está disponível para implantação e atualização no Azure e no Google Cloud. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
-  <block id="548040f8ba001121a2a79ff7a79c6fec" category="admonition">Esta versão não está disponível para implantação e atualização na AWS.</block>
-  <block id="4784f30782ad7a581149233cf75620d5" category="paragraph">A versão de disponibilidade geral do Cloud Volumes ONTAP 9.18.1 já está disponível para implantação e atualização no Microsoft Azure e no Google Cloud.</block>
-  <block id="2744e632b0c00bba17d3f5ded4a007b0" category="admonition">Esta versão não está disponível para implantação e atualização na Amazon Web Services (AWS).</block>
+  <block id="e227d6aa101a13d55e579cf599ea1abf" category="inline-link">Cloud Volumes ONTAP 9.18.1 e versões posteriores</block>
+  <block id="eda4e9921c5bcf5935b48f60848e815c" category="list-text">^5^ Você pode implantar as VMs da família C3 de nova geração em<block ref="e6a024684786a7e84934e89ff9cb8d1a" category="inline-link-rx"></block>. As máquinas c3-standard-44 e c3-standard-88 e suas variantes LSSD oferecem suporte à largura de banda Tier-1 no Google Cloud Console por padrão. Consulte <block ref="a3ca704cc55629e0cfb930ef958889bb" category="inline-link-macro-rx"></block> para obter mais informações sobre as variantes LSSD.</block>
+  <block id="9ebbd8414d30acdaeccc7bace26e2483" category="list-text">c3-standard-8 ^5^</block>
+  <block id="f2092492e534d88bf8fa2aab0f15e9fa" category="cell">Discos persistentes balanceados ^3^, discos persistentes de desempenho (SSD) ^3^ e discos persistentes padrão (HDD). VMs C3 suportam apenas discos Hyperdisk Balanced.</block>
+  <block id="38bfde648af399b0c4810dcb8f7496b3" category="inline-link">Cloud Volumes ONTAP 9.19.1 e versões posteriores para implantações HA de zona única</block>
+  <block id="3c14c932228c9b29e2badbcb61150c63" category="list-text">^5^ Você pode implantar as VMs da família C3 de nova geração em <block ref="2bd21449aac49b41d3086a47e8e4afc5" category="inline-link-rx"></block>. As máquinas c3-standard-44 e c3-standard-88 e suas variantes LSSD oferecem suporte à largura de banda Tier-1 no Google Cloud Console por padrão. Consulte <block ref="a3ca704cc55629e0cfb930ef958889bb" category="inline-link-macro-rx"></block> para obter mais informações sobre as variantes LSSD.</block>
+  <block id="7f6dce42f5c55761ef849e204f41d9c3" category="cell">Discos persistentes balanceados ^4^, discos persistentes de desempenho (SSD) ^4^ e discos persistentes padrão (HDD). VMs C3 suportam apenas discos Hyperdisk Balanced.</block>
+  <block id="fa935e7690aa6379e76ff42f9ccb37a3" category="paragraph">O Console mostra um tipo de máquina adicional compatível para Standard e BYOL: n1-highmem-4. No entanto, esse tipo de máquina não se destina a ambientes de produção. Disponibilizamos apenas para um ambiente de laboratório específico. . ^5^ Você pode implantar as VMs da nova geração da família C3 em <block ref="2bd21449aac49b41d3086a47e8e4afc5" category="inline-link-rx"></block>. As máquinas c3-standard-44 e c3-standard-88 e suas variantes LSSD oferecem suporte à largura de banda Tier-1 no Google Cloud Console por padrão. Consulte <block ref="a3ca704cc55629e0cfb930ef958889bb" category="inline-link-macro-rx"></block> para obter mais informações sobre as variantes LSSD.</block>
+  <block id="3ef49aacb12c907f242ae3d929a02369" category="paragraph">As variantes de SSD local (LSSD) das VMs da série C3 são suportadas no Cloud Volumes ONTAP 9.18.1 e versões posteriores para implantações de nó único e no Cloud Volumes ONTAP 9.19.1 e versões posteriores para implantações de HA em uma única AZ. Para essas implantações, se você selecionar as variantes de SSD local (LSSD) das VMs da série C3, o Flash Cache é ativado por padrão. Você não pode alternar entre variantes de VM LSSD da série C3 na sua implantação do Cloud Volumes ONTAP, mesmo que a variante de destino ofereça suporte ao Flash Cache.</block>
+  <block id="4b3e90e111a481336270e5a9f1bcee6f" category="cell">Número máximo de discos de dados suportados para implantações de nó único</block>
+  <block id="a4b02faf6532911772ff28440dc3eb20" category="cell">Número máximo de discos de dados suportados para implantações HA de zona de disponibilidade única</block>
+  <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">N/A</block>
+  <block id="b0f94eabc09f0c220518c1307ae04061" category="summary">Cloud Volumes ONTAP 9.19.1 inclui um novo aprimoramento.</block>
+  <block id="75772205d115792b7e022b200e4e6a95" category="doc">Novidades no Cloud Volumes ONTAP 9.19.1</block>
+  <block id="98236d20e4670591965cd4dfd21922a9" category="paragraph">Agora você pode implantar e atualizar para Cloud Volumes ONTAP 9.19.1. Você pode ver a versão base deste lançamento e as versões de patch mais recentes disponíveis para implantação e atualização no Console.</block>
+  <block id="08a800a81a0c23a501c9fa76721d4af0" category="section-title">9.19.1 RC (13 de julho de 2026)</block>
+  <block id="b926f7bab635bdb5d131f9bdc962939c" category="paragraph">O Release Candidate (RC) 9.19.1 do Cloud Volumes ONTAP já está disponível para implantação e atualização somente no Google Cloud. Esta versão não está disponível para implantação e atualização na Amazon Web Services (AWS) e Microsoft Azure (Azure).</block>
+  <block id="3192a01f82980193bca6b2da17ac7e4a" category="paragraph">Você pode atualizar para Cloud Volumes ONTAP 9.19.1 RC a partir da versão 9.18.1 somente no Google Cloud. O Console solicitará que você atualize os sistemas Cloud Volumes ONTAP elegíveis para esta versão.</block>
+  <block id="b273d14e902fe64f78bff9d72175722f" category="admonition">Na AWS e no Azure, você não será solicitado a atualizar para a versão 9.19.1 RC porque essa versão não está disponível para implantação e atualização nesses provedores de nuvem.</block>
+  <block id="047a301669757aed8837c50560f7106c" category="sidebar">Estas notas de versão descrevem novos recursos, limitações e problemas conhecidos do Cloud Volumes ONTAP 9.19.1.</block>
+  <block id="acfc3dd2bf5b3c0cdaff3742dc4e677d" category="sidebar">Cloud Volumes ONTAP 9.19.1 Notas de versão</block>
+  <block id="baa4551a28b9b9b693078dff3d23a9c8" category="sidebar">Cloud Volumes ONTAP 9.19.1 notas de lançamento</block>
 </blocks>

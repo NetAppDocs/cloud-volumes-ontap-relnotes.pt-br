@@ -20,10 +20,10 @@ Para saber mais sobre os recursos do Cloud Volumes ONTAP, configurações suport
 
 
 
-[[9-19-1-rc-13-july-2026]]
-== 9.19.1 RC (13 de julho de 2026)
+[[9-19-1-10-august-2026]]
+== 9.19.1 (10 de agosto de 2026)
 
-O Release Candidate (RC) 9.19.1 do Cloud Volumes ONTAP já está disponível para implantação e atualização somente no Google Cloud. Esta versão não está disponível para implantação e atualização na Amazon Web Services (AWS) e Microsoft Azure (Azure).
+A versão 9.19.1 de Disponibilidade Geral (GA) do Cloud Volumes ONTAP já está disponível para implantação e atualização apenas na Amazon Web Services (AWS) e no Google Cloud. Esta versão não está disponível para implantação e atualização no Microsoft Azure (Azure).
 
 
 
@@ -39,17 +39,17 @@ Leia estas notas para saber mais sobre a atualização para esta versão.
 
 As atualizações do Cloud Volumes ONTAP devem ser concluídas a partir do Console. Você não deve atualizar o Cloud Volumes ONTAP usando o System Manager ou a CLI. Isso pode afetar a estabilidade do sistema.
 
-link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["Aprenda como fazer upgrade quando o Console notificar você"^] .
+https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-updating-ontap-cloud.html["Aprenda como fazer upgrade quando o Console notificar você"^].
 
 
 
 [[supported-upgrade-path]]
 === Caminho de atualização suportado
 
-Você pode atualizar para Cloud Volumes ONTAP 9.19.1 RC a partir da versão 9.18.1 somente no Google Cloud. O Console solicitará que você atualize os sistemas Cloud Volumes ONTAP elegíveis para esta versão.
+Você pode atualizar para o Cloud Volumes ONTAP 9.19.1 a partir do 9.18.1 na AWS e no Google Cloud. O Console solicitará que você atualize os sistemas Cloud Volumes ONTAP elegíveis para esta versão.
 
 
-NOTE: Na AWS e no Azure, você não será solicitado a atualizar para a versão 9.19.1 RC porque essa versão não está disponível para implantação e atualização nesses provedores de nuvem.
+NOTE: No Azure, você não será solicitado a atualizar para a versão 9.19.1 porque esta versão não está disponível para implantação e atualização neste provedor de nuvem.
 
 
 

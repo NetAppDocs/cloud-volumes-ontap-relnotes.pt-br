@@ -74,4 +74,8 @@
   <block id="00305f14a5070c1c507692101e1b5f2a" category="section-title">9.19.1 GA</block>
   <block id="5feeec301b3ad963361e2c7b26b8036f" category="paragraph">A versão 9.19.1 de Disponibilidade Geral (GA) do Cloud Volumes ONTAP já está disponível para implantação e atualização na Amazon Web Services (AWS), Microsoft Azure (Azure) e Google Cloud.</block>
   <block id="83b5c85b7b7c82ae7b0883b1a1e83be7" category="paragraph">Você pode atualizar para o Cloud Volumes ONTAP 9.19.1 a partir da versão 9.18.1 na AWS, Azure e Google Cloud. O Console solicitará que você atualize os sistemas Cloud Volumes ONTAP qualificados para esta versão.</block>
+  <block id="5bd6b67c0bead7d1ad29ad6605d95760" category="section-title">9.19.1 P4 (12 de novembro de 2026)</block>
+  <block id="9c7c756aa868d5acfe5a496bcd456ab0" category="paragraph">O patch P4 do Cloud Volumes ONTAP 9.19.1 já está disponível para implantação e atualização na Amazon Web Services (AWS), Microsoft Azure (Azure) e Google Cloud. O Console solicitará que você atualize seus sistemas existentes para esta versão de patch.</block>
+  <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link-macro">Veja a lista de bugs corrigidos no patch P4</block>
+  <block id="35eeb65b2fbaa6fc7ec444d614c24f86" category="paragraph"><block ref="85e449d1926faed28bcf6240023bd25a" category="inline-link-macro-rx"></block> (NetApp site de suporte, é necessário login).</block>
 </blocks>
